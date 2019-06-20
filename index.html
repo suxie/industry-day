@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>PRECISE Industry Day 2019</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	<!--Custom-->
+	<link rel="stylesheet" href="landing/landing_style.css">
+	<link rel="stylesheet" href="master_style.css">
+	<link rel="shortcut icon" href="logo.ico">
+
+	<!--Google Fonts:-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+	
+	<style>
+		.cover {
+			position:relative;
+			height: 100vh;
+			z-index:-1;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+		.overlay {
+			position: relative;
+			height:100%;
+			overflow-y:hidden;
+			overflow-x:hidden;
+			background-image: url(assets/overlay.png);
+			background-repeat: no-repeat;
+			background-position: top;
+			background-size: cover;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			z-index: -2;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+		.background {
+			position: relative;
+			height:100%;
+			overflow-y:hidden;
+			overflow-x:hidden;
+			background-image: url(assets/precise.jpg);
+			background-repeat: no-repeat;
+			background-position: bottom right;
+			background-size: cover;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			z-index: -1;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+		.year {
+			font-family:Roboto;
+			font-weight:800;
+			font-size:50vh;
+			color:#fff;
+			opacity:0.10;
+			position:absolute;
+			bottom:-5vh;
+			right:1vh;
+			z-index:-1;
+		}
+
+		.time {
+			background: rgb(228, 21, 26, 0.416);
+		}
+
+		.talk {
+			background: rgb(228, 21, 26, 0.3185);
+		}
+
+		.logo {
+			background: rgb(228, 21, 26, 0.65);
+		}
+
+		.tickets {
+			position: relative;
+			height:100%;
+			overflow-y:hidden;
+			overflow-x:hidden;
+			background-image: url("assets/tickets.svg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			z-index: -2;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			border-style: solid;
+			border-color: rgb(228, 21, 26, 0.84);
+			border-width: 7px;
+		}
+
+		.img-fluid {
+			height:100%;
+		}
+
+		.about {
+			background-color:#0d2034;
+			height:100vh;
+		}
+
+		.menu {
+			background-color:rgb(255, 255, 255, 0.11);
+			background-image:none;
+			border:0px;
+			height:100%;
+			position:fixed;
+			top:0;
+			left:0;
+			margin:0;
+			overflow-x:hidden;
+			width: 40px;
+		}
+
+		@media (max-width:768px) {
+			.squares {
+				padding-top:60vh;
+				z-index:1;
+			}
+
+			.empty {
+				width:10px;
+				height:110px;
+			}
+
+			.square {
+				width:110px;
+				height:110px;
+			}
+
+			.background {
+				min-height: 550px;
+			}
+
+			.overlay {
+				min-height:550px;
+			}
+		}
+
+		@media (min-width:768px) and (max-width:992px) {
+			.squares {
+				padding-top:50vh;
+				z-index:1;
+			}
+
+			.empty {
+				width:50px;
+				height:50px;
+			}
+
+			.square {
+				width:130px;
+				height:130px;
+			}
+
+			.background {
+				min-height: 550px;
+			}
+
+			.overlay {
+				min-height:550px;
+				margin-left:40px;
+			}
+		}
+
+		@media (min-width:992px) and (max-width:1200px) {
+			.squares {
+				padding-top:50vh;
+				z-index:1;
+			}
+
+			.empty {
+				width:80px;
+				height:150px;
+			}
+
+			.square {
+				width:150px;
+				height:150px;
+			}
+
+			.background {
+				min-height: 700px;
+			}
+
+			.overlay {
+				min-height:700px;
+				margin-left:40px;
+			}
+
+		}
+
+		@media (min-width:1200px) {
+			.squares {
+				padding-top:50vh;
+				z-index:1;
+			}
+
+			.empty {
+				width:150px;
+				height:150px;
+			}
+
+			.square {
+				width:150px;
+				height:150px;
+			}
+
+			.background {
+				min-height: 700px;
+			}
+
+			.overlay {
+				min-height:700px;
+				margin-left:40px;
+			}
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<!--Menu-->
+	<div class="d-none d-md-block">
+		<div class="menu">
+			
+		</div>
+	</div>
+	
+	<!-- Landing -->
+	<div class="background" id="landing">
+		<div class="overlay">
+
+		<div class="cover container-fluid">
+			<h1 class="year">19 </h1>
+			<div class="squares">
+				<div class="d-flex flex-row-reverse">
+					<!--padding-->
+					<div class="p-2 empty"></div>
+					<!--time-->
+					<div class="p-2 square time">
+						<img class="img-fluid" src="assets/time.svg">
+					</div>
+					<!--date-->
+					<div class="p-2 square">
+						<img class="img-fluid" src="assets/date.svg">
+					</div>
+				</div>
+				<div class="d-flex flex-row-reverse">
+					<div class="p-2 empty"></div>
+					<!--tickets-->
+					<div class="p-2 square tickets"></div>
+					<!--talks-->
+					<div class="p-2 square talk">
+						<img class="img-fluid" src="assets/talks.svg">
+					</div>
+					<!--logo-->
+					<div class="p-2 square logo">
+						<img class="img-fluid" src="assets/logo.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		</div>
+	</div>
+
+	<!--About-->
+	<div class="about"></div>
+
+	
+
+	
+
+
+	<!-- Custom JavaScript-->
+
+</body>
+</html>
