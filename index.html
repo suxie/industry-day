@@ -26,7 +26,6 @@
 		.cover {
 			position:relative;
 			height: 100vh;
-			z-index:-1;
 			top: 0;
 			right: 0;
 			bottom: 0;
@@ -45,7 +44,6 @@
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
-			z-index: -2;
 			top: 0;
 			right: 0;
 			bottom: 0;
@@ -64,7 +62,6 @@
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
-			z-index: -1;
 			top: 0;
 			right: 0;
 			bottom: 0;
@@ -76,11 +73,10 @@
 			font-weight:800;
 			font-size:50vh;
 			color:#fff;
-			opacity:0.10;
+			opacity:0.1;
 			position:absolute;
 			bottom:-5vh;
 			right:1vh;
-			z-index:-1;
 		}
 
 		.time {
@@ -103,7 +99,6 @@
 			background-image: url("assets/tickets.svg");
 			background-repeat: no-repeat;
 			background-size: cover;
-			z-index: -2;
 			top: 0;
 			right: 0;
 			bottom: 0;
@@ -111,6 +106,43 @@
 			border-style: solid;
 			border-color: rgb(228, 21, 26, 0.84);
 			border-width: 7px;
+			-o-transition: opacity 0.5s ease-in-out;
+			-ms-transition: opacity 0.5s ease-in-out;
+			-moz-transition: opacity 0.5s ease-in-out;
+			-webkit-transition: opacity 0.5s ease-in-out;
+			transition: opacity 0.5s ease-in-out;
+		}
+
+		.tickets:hover {
+			border-style: solid;
+			border-color: rgb(255, 255, 255, 0.9);
+			border-width: 7px;
+			-o-transition: opacity 0.5s ease-in-out;
+			-ms-transition: opacity 0.5s ease-in-out;
+			-moz-transition: opacity 0.5s ease-in-out;
+			-webkit-transition: opacity 0.5s ease-in-out;
+			transition: opacity 0.5s ease-in-out;
+		}
+
+		.hover {
+			height:100%;
+			width:100%;
+			z-index:1;
+			opacity: 0;
+			-o-transition: opacity 0.5s ease-in-out;
+			-ms-transition: opacity 0.5s ease-in-out;
+			-moz-transition: opacity 0.5s ease-in-out;
+			-webkit-transition: opacity 0.5s ease-in-out;
+			transition: opacity 0.5s ease-in-out;
+		}
+
+		.hover:hover {
+			opacity: 1.0;
+			-o-transition: opacity 0.5s ease-in-out;
+			-ms-transition: opacity 0.5s ease-in-out;
+			-moz-transition: opacity 0.5s ease-in-out;
+			-webkit-transition: opacity 0.5s ease-in-out;
+			transition: opacity 0.5s ease-in-out;
 		}
 
 		.img-fluid {
@@ -133,7 +165,10 @@
 			margin:0;
 			overflow-x:hidden;
 			width: 40px;
+			z-index:1;
 		}
+
+		
 
 		@media (max-width:768px) {
 			.squares {
@@ -238,19 +273,11 @@
 				margin-left:40px;
 			}
 		}
-
 	</style>
 
 </head>
 
 <body>
-
-	<!--Menu-->
-	<div class="d-none d-md-block">
-		<div class="menu">
-			
-		</div>
-	</div>
 	
 	<!-- Landing -->
 	<div class="background" id="landing">
@@ -274,14 +301,20 @@
 				<div class="d-flex flex-row-reverse">
 					<div class="p-2 empty"></div>
 					<!--tickets-->
-					<div class="p-2 square tickets"></div>
+					<div class="square tickets" style="padding:0">
+						<a href="#" target="_blank">
+							<img class="img-fluid hover" src="assets/tickets_overlay.svg">
+						</a>
+					</div>
 					<!--talks-->
 					<div class="p-2 square talk">
 						<img class="img-fluid" src="assets/talks.svg">
 					</div>
 					<!--logo-->
 					<div class="p-2 square logo">
-						<img class="img-fluid" src="assets/logo.png">
+						<a href="https://precise.seas.upenn.edu/safe-autonomy" target="_blank">
+							<img class="img-fluid" src="assets/logo.png">
+						</a>
 					</div>
 				</div>
 			</div>
@@ -296,7 +329,12 @@
 	
 
 	
-
+	<!--Menu-->
+	<div class="d-none d-md-block">
+		<div class="menu">
+			
+		</div>
+	</div>
 
 	<!-- Custom JavaScript-->
 
