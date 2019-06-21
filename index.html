@@ -88,7 +88,41 @@
 		}
 
 		.logo {
-			background: rgb(228, 21, 26, 0.65);
+			position: relative;
+			height:100%;
+			overflow-y:hidden;
+			overflow-x:hidden;
+			background-image: url(assets/logo.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			-o-transition: opacity 0.5s ease-in-out;
+			-ms-transition: opacity 0.5s ease-in-out;
+			-moz-transition: opacity 0.5s ease-in-out;
+			-webkit-transition: opacity 0.5s ease-in-out;
+			transition: opacity 0.5s ease-in-out;
+		}
+
+		.logo:hover {
+			position: relative;
+			height:100%;
+			overflow-y:hidden;
+			overflow-x:hidden;
+			background-image: url(assets/logo-hover.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			-o-transition: opacity 0.5s ease-in-out;
+			-ms-transition: opacity 0.5s ease-in-out;
+			-moz-transition: opacity 0.5s ease-in-out;
+			-webkit-transition: opacity 0.5s ease-in-out;
+			transition: opacity 0.5s ease-in-out;
 		}
 
 		.tickets {
@@ -96,7 +130,7 @@
 			height:100%;
 			overflow-y:hidden;
 			overflow-x:hidden;
-			background-image: url("assets/tickets.svg");
+			background-image: url(assets/tickets.svg);
 			background-repeat: no-repeat;
 			background-size: cover;
 			top: 0;
@@ -146,12 +180,13 @@
 		}
 
 		.img-fluid {
-			height:100%;
+			width:100%;
 		}
 
-		.about {
+		#about {
 			background-color:#0d2034;
 			height:100vh;
+			padding-top:5vh;
 		}
 
 		.menu {
@@ -169,8 +204,18 @@
 		}
 
 		
+		p {
+			font-family:Open Sans;
+			color:#fff;
+			padding-top:3vh;
+			line-height:1.6;
+		}
 
 		@media (max-width:768px) {
+			p {
+				font-size:16px;
+			}
+
 			.squares {
 				padding-top:60vh;
 				z-index:1;
@@ -196,6 +241,10 @@
 		}
 
 		@media (min-width:768px) and (max-width:992px) {
+			p {
+				font-size:18px;
+			}
+
 			.squares {
 				padding-top:50vh;
 				z-index:1;
@@ -219,9 +268,17 @@
 				min-height:550px;
 				margin-left:40px;
 			}
+
+			#about {
+				padding-left:40px;
+			}
 		}
 
 		@media (min-width:992px) and (max-width:1200px) {
+			p {
+				font-size:18px;
+			}
+
 			.squares {
 				padding-top:50vh;
 				z-index:1;
@@ -246,9 +303,17 @@
 				margin-left:40px;
 			}
 
+			#about {
+				padding-left:40px;
+			}
+
 		}
 
 		@media (min-width:1200px) {
+			p {
+				font-size:18px;
+			}
+
 			.squares {
 				padding-top:50vh;
 				z-index:1;
@@ -266,11 +331,16 @@
 
 			.background {
 				min-height: 700px;
+				border-left:0px solid #0d2034;
 			}
 
 			.overlay {
 				min-height:700px;
 				margin-left:40px;
+			}
+
+			#about {
+				padding-left:40px;
 			}
 		}
 	</style>
@@ -278,8 +348,16 @@
 </head>
 
 <body>
+
+	<!--Menu-->
+	<div class="d-none d-md-block">
+		<div class="menu">
+			
+		</div>
+	</div>
 	
 	<!-- Landing -->
+	<div style="background-color:#0d2034">
 	<div class="background" id="landing">
 		<div class="overlay">
 
@@ -311,9 +389,9 @@
 						<img class="img-fluid" src="assets/talks.svg">
 					</div>
 					<!--logo-->
-					<div class="p-2 square logo">
+					<div class="square logo">
 						<a href="https://precise.seas.upenn.edu/safe-autonomy" target="_blank">
-							<img class="img-fluid" src="assets/logo.png">
+							<img class="img-fluid hover" src="assets/logo-color.png">
 						</a>
 					</div>
 				</div>
@@ -322,19 +400,34 @@
 		
 		</div>
 	</div>
+	</div>
 
 	<!--About-->
-	<div class="about"></div>
-
-	
-
-	
-	<!--Menu-->
-	<div class="d-none d-md-block">
-		<div class="menu">
-			
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<img class="img-fluid" src="assets/about.png">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-10">
+					<p class="about"> PRECISE’s Industry Day 2019 is an informal and engaging day-long symposium for leading executives and 
+						engineers involved in working towards the same goal of making the world a safer, better place through AI/ML.  
+						The event allows industry the opportunity to see first-hand, the latest, ground-breaking research being 
+						undertaken by PRECISE. Given its success year-after-year, PRECISE's Industry Day has grown to become one of 
+						Penn Engineering's signature events.
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
+
+	
+
+	
+	
 
 	<!-- Custom JavaScript-->
 
