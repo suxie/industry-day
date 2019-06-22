@@ -23,6 +23,11 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 	
 	<style>
+		body {
+			overflow-x:hidden;
+			background-color:#0d2034;
+		}
+
 		.cover {
 			position:relative;
 			height: 100vh;
@@ -185,8 +190,11 @@
 
 		#about {
 			background-color:#0d2034;
-			height:100vh;
 			padding-top:5vh;
+		}
+
+		#keynote {
+			height:50vh;
 		}
 
 		.menu {
@@ -203,17 +211,46 @@
 			z-index:1;
 		}
 
-		
 		p {
 			font-family:Open Sans;
-			color:#fff;
 			padding-top:3vh;
 			line-height:1.6;
+		}
+
+		.white {
+			color:#fff;
+		}
+
+		h1 {
+			font-family: Roboto;
+			font-weight:800;
+		}
+
+		.keynote-background {
+			position: relative;
+			width:100%;
+			overflow-y:hidden;
+			overflow-x:hidden;
+			background-image: url(assets/keynote.png);
+			background-position: top;
+			background-size: 100%;
+			background-repeat:no-repeat;
+		}
+
+		.keynote-speaker {
+			font-family:Roboto;
+			font-weight:800;
+			color:#fff;
+			
 		}
 
 		@media (max-width:768px) {
 			p {
 				font-size:16px;
+			}
+
+			h1 {
+				font-size:20;
 			}
 
 			.squares {
@@ -238,11 +275,25 @@
 			.overlay {
 				min-height:550px;
 			}
+
+			.keynote-background {
+				height:65vw;
+			}
+
+			.keynote-speaker {
+				padding-top:500px;
+				font-size:30px;
+				letter-spacing:2px;
+			}
 		}
 
 		@media (min-width:768px) and (max-width:992px) {
 			p {
 				font-size:18px;
+			}
+
+			h1 {
+				font-size:22;
 			}
 
 			.squares {
@@ -272,11 +323,23 @@
 			#about {
 				padding-left:40px;
 			}
+
+			#keynote {
+				padding-left:40px;
+			}
+
+			.keynote-background {
+				height:61vw;
+			}
 		}
 
 		@media (min-width:992px) and (max-width:1200px) {
 			p {
 				font-size:18px;
+			}
+
+			h1 {
+				font-size:24;
 			}
 
 			.squares {
@@ -307,11 +370,22 @@
 				padding-left:40px;
 			}
 
+			#keynote {
+				padding-left:40px;
+			}
+
+			.keynote-background {
+				height:61vw;
+			}
 		}
 
 		@media (min-width:1200px) {
 			p {
 				font-size:18px;
+			}
+
+			h1 {
+				font-size:24;
 			}
 
 			.squares {
@@ -331,7 +405,6 @@
 
 			.background {
 				min-height: 700px;
-				border-left:0px solid #0d2034;
 			}
 
 			.overlay {
@@ -341,6 +414,14 @@
 
 			#about {
 				padding-left:40px;
+			}
+
+			#keynote {
+				padding-left:40px;
+			}
+
+			.keynote-background {
+				height:61vw;
 			}
 		}
 	</style>
@@ -357,7 +438,6 @@
 	</div>
 	
 	<!-- Landing -->
-	<div style="background-color:#0d2034">
 	<div class="background" id="landing">
 		<div class="overlay">
 
@@ -400,25 +480,43 @@
 		
 		</div>
 	</div>
-	</div>
-
+	
 	<!--About-->
 	<div id="about">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-md-12 d-none d-md-block">
 					<img class="img-fluid" src="assets/about.png">
+				</div>
+				<div class="d-md-none col-12">
+					<img class="img-fluid" src="assets/about_verticle.png">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-1"></div>
 				<div class="col-10">
-					<p class="about"> PRECISE’s Industry Day 2019 is an informal and engaging day-long symposium for leading executives and 
+					<p class="white"> PRECISE’s Industry Day 2019 is an informal and engaging day-long symposium for leading executives and 
 						engineers involved in working towards the same goal of making the world a safer, better place through AI/ML.  
 						The event allows industry the opportunity to see first-hand, the latest, ground-breaking research being 
 						undertaken by PRECISE. Given its success year-after-year, PRECISE's Industry Day has grown to become one of 
 						Penn Engineering's signature events.
 					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<img class="img-fluid" src="assets/keynote_transition.png">
+			</div>
+		</div>
+	</div>
+
+	<!--Keynote-->
+	<div id="keynote">
+		<div class="keynote-background">
+			<div class="row">
+				<div class="col-12">
+					<a class="keynote-speaker" href="https://sites.google.com/view/gottschlich"> JUSTIN GOTTSCHLICH, PH.D. </a>
 				</div>
 			</div>
 		</div>
