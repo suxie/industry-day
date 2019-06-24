@@ -11,421 +11,15 @@
 	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
 	<!--Custom-->
-	<link rel="stylesheet" href="landing/landing_style.css">
 	<link rel="stylesheet" href="master_style.css">
 	<link rel="shortcut icon" href="logo.ico">
 
 	<!--Google Fonts:-->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700,900&display=swap" rel="stylesheet">
 
 	<!--JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-	
-	<style>
-		body {
-			overflow-x:hidden;
-			background-color:#0d2034;
-		}
-
-		.cover {
-			position:relative;
-			height: 100vh;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-		}
-
-		.overlay {
-			position: relative;
-			height:100%;
-			overflow-y:hidden;
-			overflow-x:hidden;
-			background-image: url(assets/overlay.png);
-			background-repeat: no-repeat;
-			background-position: top;
-			background-size: cover;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-		}
-
-		.background {
-			position: relative;
-			height:100%;
-			overflow-y:hidden;
-			overflow-x:hidden;
-			background-image: url(assets/precise.jpg);
-			background-repeat: no-repeat;
-			background-position: bottom right;
-			background-size: cover;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-		}
-
-		.year {
-			font-family:Roboto;
-			font-weight:800;
-			font-size:50vh;
-			color:#fff;
-			opacity:0.1;
-			position:absolute;
-			bottom:-5vh;
-			right:1vh;
-		}
-
-		.time {
-			background: rgb(228, 21, 26, 0.416);
-		}
-
-		.talk {
-			background: rgb(228, 21, 26, 0.3185);
-		}
-
-		.logo {
-			position: relative;
-			height:100%;
-			overflow-y:hidden;
-			overflow-x:hidden;
-			background-image: url(assets/logo.png);
-			background-repeat: no-repeat;
-			background-size: cover;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			-o-transition: opacity 0.5s ease-in-out;
-			-ms-transition: opacity 0.5s ease-in-out;
-			-moz-transition: opacity 0.5s ease-in-out;
-			-webkit-transition: opacity 0.5s ease-in-out;
-			transition: opacity 0.5s ease-in-out;
-		}
-
-		.logo:hover {
-			position: relative;
-			height:100%;
-			overflow-y:hidden;
-			overflow-x:hidden;
-			background-image: url(assets/logo-hover.png);
-			background-repeat: no-repeat;
-			background-size: cover;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			-o-transition: opacity 0.5s ease-in-out;
-			-ms-transition: opacity 0.5s ease-in-out;
-			-moz-transition: opacity 0.5s ease-in-out;
-			-webkit-transition: opacity 0.5s ease-in-out;
-			transition: opacity 0.5s ease-in-out;
-		}
-
-		.tickets {
-			position: relative;
-			height:100%;
-			overflow-y:hidden;
-			overflow-x:hidden;
-			background-image: url(assets/tickets.svg);
-			background-repeat: no-repeat;
-			background-size: cover;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			border-style: solid;
-			border-color: rgb(228, 21, 26, 0.84);
-			border-width: 7px;
-			-o-transition: opacity 0.5s ease-in-out;
-			-ms-transition: opacity 0.5s ease-in-out;
-			-moz-transition: opacity 0.5s ease-in-out;
-			-webkit-transition: opacity 0.5s ease-in-out;
-			transition: opacity 0.5s ease-in-out;
-		}
-
-		.tickets:hover {
-			border-style: solid;
-			border-color: rgb(255, 255, 255, 0.9);
-			border-width: 7px;
-			-o-transition: opacity 0.5s ease-in-out;
-			-ms-transition: opacity 0.5s ease-in-out;
-			-moz-transition: opacity 0.5s ease-in-out;
-			-webkit-transition: opacity 0.5s ease-in-out;
-			transition: opacity 0.5s ease-in-out;
-		}
-
-		.hover {
-			height:100%;
-			width:100%;
-			z-index:1;
-			opacity: 0;
-			-o-transition: opacity 0.5s ease-in-out;
-			-ms-transition: opacity 0.5s ease-in-out;
-			-moz-transition: opacity 0.5s ease-in-out;
-			-webkit-transition: opacity 0.5s ease-in-out;
-			transition: opacity 0.5s ease-in-out;
-		}
-
-		.hover:hover {
-			opacity: 1.0;
-			-o-transition: opacity 0.5s ease-in-out;
-			-ms-transition: opacity 0.5s ease-in-out;
-			-moz-transition: opacity 0.5s ease-in-out;
-			-webkit-transition: opacity 0.5s ease-in-out;
-			transition: opacity 0.5s ease-in-out;
-		}
-
-		.img-fluid {
-			width:100%;
-		}
-
-		#about {
-			background-color:#0d2034;
-			padding-top:5vh;
-		}
-
-		#keynote {
-			height:50vh;
-		}
-
-		.menu {
-			background-color:rgb(255, 255, 255, 0.11);
-			background-image:none;
-			border:0px;
-			height:100%;
-			position:fixed;
-			top:0;
-			left:0;
-			margin:0;
-			overflow-x:hidden;
-			width: 40px;
-			z-index:1;
-		}
-
-		p {
-			font-family:Open Sans;
-			padding-top:3vh;
-			line-height:1.6;
-		}
-
-		.white {
-			color:#fff;
-		}
-
-		h1 {
-			font-family: Roboto;
-			font-weight:800;
-		}
-
-		.keynote-background {
-			position: relative;
-			width:100%;
-			overflow-y:hidden;
-			overflow-x:hidden;
-			background-image: url(assets/keynote.png);
-			background-position: top;
-			background-size: 100%;
-			background-repeat:no-repeat;
-		}
-
-		.keynote-speaker {
-			font-family:Roboto;
-			font-weight:800;
-			color:#fff;
-			
-		}
-
-		@media (max-width:768px) {
-			p {
-				font-size:16px;
-			}
-
-			h1 {
-				font-size:20;
-			}
-
-			.squares {
-				padding-top:60vh;
-				z-index:1;
-			}
-
-			.empty {
-				width:10px;
-				height:110px;
-			}
-
-			.square {
-				width:110px;
-				height:110px;
-			}
-
-			.background {
-				min-height: 550px;
-			}
-
-			.overlay {
-				min-height:550px;
-			}
-
-			.keynote-background {
-				height:65vw;
-			}
-
-			.keynote-speaker {
-				padding-top:500px;
-				font-size:30px;
-				letter-spacing:2px;
-			}
-		}
-
-		@media (min-width:768px) and (max-width:992px) {
-			p {
-				font-size:18px;
-			}
-
-			h1 {
-				font-size:22;
-			}
-
-			.squares {
-				padding-top:50vh;
-				z-index:1;
-			}
-
-			.empty {
-				width:50px;
-				height:50px;
-			}
-
-			.square {
-				width:130px;
-				height:130px;
-			}
-
-			.background {
-				min-height: 550px;
-			}
-
-			.overlay {
-				min-height:550px;
-				margin-left:40px;
-			}
-
-			#about {
-				padding-left:40px;
-			}
-
-			#keynote {
-				padding-left:40px;
-			}
-
-			.keynote-background {
-				height:61vw;
-			}
-		}
-
-		@media (min-width:992px) and (max-width:1200px) {
-			p {
-				font-size:18px;
-			}
-
-			h1 {
-				font-size:24;
-			}
-
-			.squares {
-				padding-top:50vh;
-				z-index:1;
-			}
-
-			.empty {
-				width:80px;
-				height:150px;
-			}
-
-			.square {
-				width:150px;
-				height:150px;
-			}
-
-			.background {
-				min-height: 700px;
-			}
-
-			.overlay {
-				min-height:700px;
-				margin-left:40px;
-			}
-
-			#about {
-				padding-left:40px;
-			}
-
-			#keynote {
-				padding-left:40px;
-			}
-
-			.keynote-background {
-				height:61vw;
-			}
-		}
-
-		@media (min-width:1200px) {
-			p {
-				font-size:18px;
-			}
-
-			h1 {
-				font-size:24;
-			}
-
-			.squares {
-				padding-top:50vh;
-				z-index:1;
-			}
-
-			.empty {
-				width:150px;
-				height:150px;
-			}
-
-			.square {
-				width:150px;
-				height:150px;
-			}
-
-			.background {
-				min-height: 700px;
-			}
-
-			.overlay {
-				min-height:700px;
-				margin-left:40px;
-			}
-
-			#about {
-				padding-left:40px;
-			}
-
-			#keynote {
-				padding-left:40px;
-			}
-
-			.keynote-background {
-				height:61vw;
-			}
-		}
-	</style>
-
 </head>
 
 <body>
@@ -513,12 +107,84 @@
 
 	<!--Keynote-->
 	<div id="keynote">
+		<!--image-->
 		<div class="keynote-background">
-			<div class="row">
-				<div class="col-12">
-					<a class="keynote-speaker" href="https://sites.google.com/view/gottschlich"> JUSTIN GOTTSCHLICH, PH.D. </a>
+			<div class="container">
+				<div class="row">
+					<div class="col-1"></div>
+					<div class="col-10">
+						<div class="keynote-text">
+							<a class="keynote-speaker" href="https://sites.google.com/view/gottschlich"> JUSTIN GOTTSCHLICH, PH.D. </a>
+						</div>
+					</div>
 				</div>
 			</div>
+		</div>
+		<!-- main text-->
+		<div style="background-color:#fff">
+		<div class="container">
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-10">
+					<div class="keynote-text">
+						<a class="keynote-speaker" href="https://sites.google.com/view/gottschlich" target="_blank"> JUSTIN GOTTSCHLICH, PH.D. </a>
+						<h2 class="keynote-subtitle">Inventor, Leader, and Visionary in Machine Programming</h2>
+						<p> Justin Gottschlich, a Senior Staff Research Scientist at Intel Labs, is a prominent figure in artificial intelligence (AI) 
+							and machine learning (ML). His research in AI focuses on machine programming, anomaly detection, neural network verification, 
+							deep learning, and autonomous systems. Currently, he leads a team of AI researchers in the Programming Systems Research Group 
+							at Intel Labs, where he is the lead principal investigator and co-founder of the $6M Intel-NSF joint CAPA Research Center, 
+							which aims to simplify the programmability of heterogeneous computing. He also is responsible for directing Intel’s portfolio 
+							of intellectual property related to machine programming (MP).
+						</p>
+						<div id="collapse-speaker" style="display:none">
+							<p> Much research and engineering must be done before autonomous systems, like autonomous vehicles (AVs), can be fully realized. 
+								Contrary to some AV experts’ opinions, it is Gottschlich’s belief that anomaly detection must advance significantly before we 
+								will reach level 4+ autonomy. He believes that the current state of the art is not nearly advanced enough to be used reliably 
+								and a level 3-only AV can put human lives at unnecessary risk. Sadly, this is partially why we have seen a rising number of 
+								tragic AV fatalities.  
+							</p>
+							<p> To help address this problem, in December 2018, Gottschlich et al. published a paper at NeurIPS ’18, entitled 
+								<a href="http://papers.nips.cc/paper/7462-precision-and-recall-for-time-series.pdf" target="_blank">“Precision and Recall for Time Series”</a>
+								which re-defined the core mathematical foundation for the field of AD so the detection systems built using this new foundation 
+								could be more reliable, especially in the context of time series. To that end, Gottschlich’s hope is that this work could 
+								be used to improve the general robustness of new AD systems and eventually save human lives. To date, this model has already 
+								been adopted by BMW, Intel, and Stanford.
+							</p>
+							<p> In the same year, Gottschlich, along with his fellow collaborators at MIT, published 
+								<a href="https://drive.google.com/file/d/1FvztwHyfgmrPMdE0lkTLidnhjl2wHCrm/view" target="_blank">“The Three Pillars of Machine Programming (MP),”</a>
+								detailing the ground-breaking efforts that are leading to significant advancements in software development productivity by partially or fully-automating 
+								software development tasks that are currently performed manually.  They lay down a blueprint of how to fully unlock the power of MP and provide a 
+								roadmap for its future evolution. Gottschlich's work in this area is significant because it is key to the strategic vision of several industry 
+								leaders (e.g., BMW, Amazon, Facebook, Microsoft). In fact, Facebook's creation of an <a href="https://siliconangle.com/2018/09/13/facebook-created-ai-based-tool-automate-bug-fixes/" target="_blank">
+								AI-based tool to automate bug fixes in 2018</a> is an example of the “Adaptation Pillar” that Gottschlich wrote about in his paper.  
+							</p>
+							<p> Recent advancements in ML-centric computational hardware (e.g., GPUs, distributed computing, neural processors, etc.), key algorithmic discoveries and 
+								techniques, and the vast amount of learning data now available are some of the reasons why interest in MP has exploded and why Gottschlich is fascinated 
+								with this field of research.
+							</p>
+							<p> In 2016, he co-founded the ACM Machine Learning and Programming Languages (MAPL) workshop, and subsequently has been the chair and the program chair of MAPL and 
+								TRANSACT. Previously, Gottschlich was the vice-chair of the C++ Standard Transactional Memory Working Group (SG5) during 2012 to 2014. 
+							</p>
+							<p> Gottschlich has led major projects and collaboration initiatives at some of America's top corporations, startups, and research working groups. He oversees and guides several Intel-driven ML research 
+								projects at top universities such as Berkeley, Brown, MIT, Stanford, Texas A&M, and the University of Washington. He has mentored some of the smartest minds at America's top universities to solve 
+								the problem of how to effectively build software for diverse hardware architectures. 
+							</p>
+							<p> In the corporate realm, Gottschlich oversaw an industrial collaboration between Intel and BMW on anomaly detection for autonomous vehicles.  Gottschlich was previously the director of engineering at 
+								Machine Zone, where he oversaw the development of the popular video games, Mobile Strike and Game of War.  He is also the CEO of Nodeka, LLC, an online, multi-player software gaming company that he founded in 1999.
+							</p>
+							<p> On the research front, between 2015 and 2018, Gottschlich was awarded 20+ patents, with 50+ still pending. He also has 30+ peer-reviewed publications and has given 12+ presentations at conferences and 
+								seminars at BoostCon, BMW, IBM Research, Penn, VMWare Research, etc. He won the “Best Presentation” award at several conferences (Intel SWPC 2016, CGO 2010, and Raytheon ISaC 2009).
+							</p>
+							<p> Gottschlich received his Ph.D. from the University of Colorado in Boulder, where he occasionally teaches a graduate-level course on neural networks. Last fall, at the University of Pennsylvania, 
+								he co-lectured a graduate-level course on anomaly detection for safe autonomy.  </p>
+						</div>
+						<a href="#collapse-speaker" class="nav-toggle">READ MORE</a>
+						<p class="whitepaper" style="margin:-13px"><a href="#" target="_blank">GRAB THE WHITEPAPER</p>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="height:50px"></div>
+		</div>
 		</div>
 	</div>
 
@@ -528,6 +194,21 @@
 	
 
 	<!-- Custom JavaScript-->
-
+	<script>
+		// from https://bootsnipp.com/snippets/ZVKyx
+		$(document).ready(function () {
+			$('.nav-toggle').click(function () {
+				var collapse_content_selector = $(this).attr('href');
+				var toggle_switch = $(this);
+				$(collapse_content_selector).toggle(function () {
+					if ($(this).css('display') == 'none') {
+						toggle_switch.html('Read More');
+					} else {
+						toggle_switch.html('Read Less');
+					}
+				});
+			});
+		});
+	</script>
 </body>
 </html>
