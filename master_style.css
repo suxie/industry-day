@@ -240,8 +240,47 @@ a:focus {
 	font-family:Roboto;
 	font-weight:700;
 	letter-spacing:2px;
-	background-color: rgb(228, 21, 26, 0.5);
-	text-align:center !important;
+	background-color: rgb(0, 0, 0, 0.1);
+	margin-top:15px;
+	margin-bottom:0;
+	padding:5px;
+	color:#fff;
+}
+
+.expand {
+	font-family:Roboto;
+	background-color:rgb(13,32,52, 0.7);
+	position:relative;
+	height:100%;
+	width:100%;
+	padding:5px;
+}
+
+.arrow {
+	color:#fff;
+}
+
+.arrow:hover {
+	color:#868f99;
+}
+
+.precise-views {
+	background-color:rgb(13,32,52, 0.5);
+	padding-top:50px;
+}
+
+.precise-views-under {
+	position:absolute;
+	z-index:0;
+}
+
+.precise-views-over {
+	position:relative;
+	z-index:1;
+}
+
+.precise-views-overlay {
+	opacity:0.5;
 }
 
 @media (max-width:768px) {
@@ -297,12 +336,15 @@ a:focus {
 	.keynote-text {
 		text-align:center;
 		margin-top:-10vw;
-		padding:14px 14px 24px 14px;
 		-webkit-box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.2); 
 		box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.2);
 	}
 
-	.keynote-text p {
+	.keynote-text>.padded {
+		padding:14px 14px 5px 14px;
+	}
+
+	.keynote-text .main {
 		text-align:left;
 		padding:0 12px 0 12px;
 		font-size:14px;
@@ -320,6 +362,16 @@ a:focus {
 		font-size:22px;
 		letter-spacing:1px;
 		font-weight:900;
+	}
+
+	.precise-views-overlay {
+		width:250px;
+		margin-top:3px;
+	}
+
+	.precise-views-over {
+		margin-top:13px;
+		text-indent:206px;
 	}
 }
 
@@ -385,12 +437,15 @@ a:focus {
 	.keynote-text {
 		text-align:center;
 		margin-top:-10vw;
-		padding:14px 14px 24px 14px;
 		-webkit-box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.2); 
 		box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.2);
 	}
 
-	.keynote-text p {
+	.keynote-text>.padded {
+		padding:14px 14px 5px 14px;
+	}
+
+	.keynote-text .main {
 		text-align:left;
 		padding:0 12px 0 12px;
 		font-size:15px;
@@ -408,6 +463,16 @@ a:focus {
 		font-size:30px;
 		letter-spacing:2px;
 		font-weight:900;
+	}
+
+	.precise-views-overlay {
+		width:300px;
+		margin-top:5px;
+	}
+
+	.precise-views-over {
+		margin-top:20px;
+		text-indent:243px;
 	}
 }
 
@@ -473,12 +538,15 @@ a:focus {
 	.keynote-text {
 		text-align:center;
 		margin-top:-10vw;
-		padding:16px 16px 28px 16px;
 		-webkit-box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.2); 
 		box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.2);
 	}
 
-	.keynote-text p {
+	.keynote-text>.padded {
+		padding:16px 16px 10px 16px;
+	}
+
+	.keynote-text .main {
 		text-align:left;
 		padding:0 12px 0 12px;
 		font-size:16px;
@@ -496,6 +564,16 @@ a:focus {
 		font-size:40px;
 		letter-spacing:2px;
 		font-weight:900;
+	}
+
+	.precise-views-overlay {
+		margin-top:10px;
+		width:400px;
+	}
+
+	.precise-views-over {
+		margin-top:35px;
+		text-indent:330px;
 	}
 }
 
@@ -557,12 +635,15 @@ a:focus {
 	.keynote-text {
 		text-align:center;
 		margin-top:-10vw;
-		padding:24px 24px 36px 24px;
 		-webkit-box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.2); 
 		box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.2);
 	}
 
-	.keynote-text p {
+	.keynote-text>.padded {
+		padding:24px 24px 10px 24px;
+	}
+
+	.keynote-text .main {
 		text-align:left;
 		padding:0 12px 0 12px;
 		font-size:16px;
@@ -580,5 +661,14 @@ a:focus {
 		font-size:50px;
 		letter-spacing:2px;
 		font-weight:900;
+	}
+
+	.precise-views-overlay {
+		width:400px;
+	}
+
+	.precise-views-over {
+		margin-top:25px;
+		text-indent:330px;
 	}
 }
