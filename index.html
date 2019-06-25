@@ -89,16 +89,13 @@
 			<div class="row">
 				<div class="col-1"></div>
 				<div class="col-10">
-					<p class="white"> PRECISE’s Industry Day 2019 is an informal and engaging day-long symposium for leading executives and 
-						engineers involved in working towards the same goal of making the world a safer, better place through AI/ML.  
-						The event allows industry the opportunity to see first-hand, the latest, ground-breaking research being 
-						undertaken by PRECISE. Given its success year-after-year, PRECISE's Industry Day has grown to become one of 
-						Penn Engineering's signature events.
-					</p>
+					<h2 class="white about-text">
+						Let’s come together on Oct 25th to drive cross-industry discussion on "Safe AI" and enable an autonomous tomorrow.
+					</>
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row" style="margin-top:-5vh">
 			<div class="col-12">
 				<img class="img-fluid" src="assets/keynote_transition.png">
 			</div>
@@ -121,7 +118,7 @@
 			</div>
 		</div>
 		<!-- main text-->
-		<div style="background-color:#fff">
+		<div class="keynote-backdrop">
 		<div class="container">
 			<div class="row">
 				<div class="col-1"></div>
@@ -137,6 +134,7 @@
 								which aims to simplify the programmability of heterogeneous computing. He also is responsible for directing Intel’s portfolio 
 								of intellectual property related to machine programming (MP).
 							</p>
+							<!--Read More-->
 							<div id="collapse-speaker" style="display:none">
 								<p class="main"> Much research and engineering must be done before autonomous systems, like autonomous vehicles (AVs), can be fully realized. 
 									Contrary to some AV experts’ opinions, it is Gottschlich’s belief that anomaly detection must advance significantly before we 
@@ -181,7 +179,9 @@
 							</div>
 							<a href="#collapse-speaker" class="nav-toggle-read">READ MORE</a>
 						</div>
+						<!--Whitepaper link-->
 						<p class="whitepaper"><a href="#" target="_blank">GRAB THE WHITEPAPER</a></p>
+						<!--PRECISE views-->
 						<div class="precise-views padded" style="position:relative">
 							<p class="main precise-views-under"><img class="precise-views-overlay" src="assets/precise-views.svg"></p>
 							<p class="main white precise-views-over">
@@ -205,14 +205,78 @@
 								</p>
 							</div>
 						</div>
+						<!--Read more-->
 						<div class="expand">
 							<a href="#collapse-precise" class="nav-toggle-expand arrow">&darr; EXPAND &darr;</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row" style="height:50px"></div>
 		</div>
+		</div>
+
+		<!--Speakers-->
+		<div id="speakers">
+			<div class="container">
+				<div class="row">
+					<div class="col-6 col-md-4 col-lg-3 speaker-rows">
+						<div class="card">
+							<img class="card-img-top img-fluid" src="assets/aiman-abdel-malek.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-primary">Go somewhere</a>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-6 col-md-4 col-lg-3 speaker-rows">
+						<img class="img-fluid" src="assets/anand-gopalan.jpg">
+					</div>
+					<div class="col-6 col-md-4 col-lg-3 speaker-rows">
+						<img class="img-fluid" src="assets/byron-byron.jpg">
+					</div>
+					<div class="col-6 col-md-4 col-lg-3 speaker-rows">
+						<img class="img-fluid" src="assets/christina-werner.jpg">
+					</div>
+					<div class="col-6 col-md-4 col-lg-3 speaker-rows">
+						<img class="img-fluid" src="assets/cofer-darren.jpg">
+					</div>
+					<div class="col-6 col-md-4 col-lg-3 speaker-rows">
+						<img class="img-fluid" src="assets/david-rhew.jpg">
+					</div>
+					<div class="col-6 col-md-4 col-lg-3 speaker-rows">
+						<img class="img-fluid" src="assets/jack-weast.jpg">
+					</div>
+					<div class="col-6 col-md-4 col-lg-3 speaker-rows">
+						<img class="img-fluid" src="assets/jian-chang.jpeg">
+					</div>
+					<div class="col-6 col-md-4 col-lg-3 speaker-rows">
+						<img class="img-fluid" src="assets/justinian-rosca.jpg">
+					</div>
+					<div class="col-6 col-md-4 col-lg-3 speaker-rows">
+						<img class="img-fluid" src="assets/mauricio-castillo-effen.png">
+					</div>
+					<div class="col-6 col-md-4 col-lg-3 speaker-rows">
+						<img class="img-fluid" src="assets/rance-cleaveland.jpg">
+					</div>
+					<div class="col-6 col-md-4 col-lg-3 speaker-rows">
+						<img class="img-fluid" src="assets/robie-i-samanta-roy.jpg">
+					</div>
+					<div class="col-6 col-md-4 col-lg-3 speaker-rows">
+						<img class="img-fluid" src="assets/sandhya-pillalamarri.jpg">
+					</div>
+					<div class="col-6 col-md-4 col-lg-3 speaker-rows">
+						<img class="img-fluid" src="assets/sanjian-chen.PNG">
+					</div>
+					<div class="col-6 col-md-4 col-lg-3 speaker-rows">
+						<img class="img-fluid" src="assets/steve-lemke.jpg">
+					</div>
+					<div class="col-6 col-md-4 col-lg-3 speaker-rows">
+						<img class="img-fluid" src="assets/vinod-grover.jpg">
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -248,6 +312,83 @@
 				});
 			});
 		});
+
+		// from ianclark001 at http://jsfiddle.net/ianclark001/rkocah23/
+		(function(document, history, location) {
+		  var HISTORY_SUPPORT = !!(history && history.pushState);
+
+		  var anchorScrolls = {
+			ANCHOR_REGEX: /^#[^ ]+$/,
+			OFFSET_HEIGHT_PX: 50,
+
+			/**
+			 * Establish events, and fix initial scroll position if a hash is provided.
+			 */
+			init: function() {
+			  this.scrollToCurrent();
+			  $(window).on('hashchange', $.proxy(this, 'scrollToCurrent'));
+			  $('body').on('click', 'a', $.proxy(this, 'delegateAnchors'));
+			},
+
+			/**
+			 * Return the offset amount to deduct from the normal scroll position.
+			 * Modify as appropriate to allow for dynamic calculations
+			 */
+			getFixedOffset: function() {
+			  return this.OFFSET_HEIGHT_PX;
+			},
+
+			/**
+			 * If the provided href is an anchor which resolves to an element on the
+			 * page, scroll to it.
+			 * @param  {String} href
+			 * @return {Boolean} - Was the href an anchor.
+			 */
+			scrollIfAnchor: function(href, pushToHistory) {
+			  var match, anchorOffset;
+
+			  if(!this.ANCHOR_REGEX.test(href)) {
+				return false;
+			  }
+
+			  match = document.getElementById(href.slice(1));
+
+			  if(match) {
+				anchorOffset = $(match).offset().top - this.getFixedOffset();
+				$('html, body').animate({ scrollTop: anchorOffset});
+
+				// Add the state to history as-per normal anchor links
+				if(HISTORY_SUPPORT && pushToHistory) {
+				  history.pushState({}, document.title, location.pathname + href);
+				}
+			  }
+
+			  return !!match;
+			},
+
+			/**
+			 * Attempt to scroll to the current location's hash.
+			 */
+			scrollToCurrent: function(e) {
+			  if(this.scrollIfAnchor(window.location.hash) && e) {
+      			e.preventDefault();
+			  }
+			},
+
+			/**
+			 * If the click event's target was an anchor, fix the scroll position.
+			 */
+			delegateAnchors: function(e) {
+			  var elem = e.target;
+
+			  if(this.scrollIfAnchor(elem.getAttribute('href'), true)) {
+				e.preventDefault();
+			  }
+			}
+		  };
+
+			$(document).ready($.proxy(anchorScrolls, 'init'));
+		})(window.document, window.history, window.location);
 	</script>
 </body>
 </html>

@@ -67,6 +67,11 @@
 	background: rgb(228, 21, 26, 0.3185);
 }
 
+.talk:hover {
+	background: rgb(228, 21, 26, 1.0);
+	pointer:cursor;
+}
+
 .logo {
 	position: relative;
 	height:100%;
@@ -186,6 +191,12 @@
 	z-index:1;
 }
 
+.about-text {
+	padding-top:5vh;
+	line-height:1.5;
+	text-align:center;
+}
+
 p {
 	font-family:Open Sans;
 	padding-top:3vh;
@@ -253,7 +264,7 @@ a:focus {
 	position:relative;
 	height:100%;
 	width:100%;
-	padding:5px;
+	padding:10px;
 }
 
 .arrow {
@@ -283,17 +294,36 @@ a:focus {
 	opacity:0.5;
 }
 
+.keynote-backdrop {
+	position: relative;
+	width:100%;
+	background-image: url(assets/speaker_transition.jpg);
+	background-repeat: repeat-y;
+	background-position: top right;
+	background-size: 100%;
+	padding-bottom:10vh;
+}
+
+#speakers {
+	background-color:#fff;
+	padding-top:15px;
+}
+
+.speaker-rows {
+	padding-top:15px;
+}
+
 @media (max-width:768px) {
 	p {
 		font-size:16px;
 	}
 
 	h1 {
-		font-size:20;
+		font-size:20px;
 	}
 
 	h2 {
-		font-size:18;
+		font-size:18px;
 	}
 
 	.squares {
@@ -334,6 +364,7 @@ a:focus {
 	}
 
 	.keynote-text {
+		background-color:#fff;
 		text-align:center;
 		margin-top:-10vw;
 		-webkit-box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.2); 
@@ -373,6 +404,10 @@ a:focus {
 		margin-top:13px;
 		text-indent:206px;
 	}
+
+	.about-text {
+		font-size:22px;
+	}
 }
 
 @media (min-width:768px) and (max-width:992px) {
@@ -381,11 +416,11 @@ a:focus {
 	}
 
 	h1 {
-		font-size:22;
+		font-size:22px;
 	}
 
 	h2 {
-		font-size:20;
+		font-size:20px;
 	}
 
 	.squares {
@@ -416,6 +451,10 @@ a:focus {
 		padding-left:40px;
 	}
 
+	.about-text {
+		font-size:28px;
+	}
+
 	#keynote {
 		padding-left:40px;
 	}
@@ -435,6 +474,7 @@ a:focus {
 	}
 
 	.keynote-text {
+		background-color:#fff;
 		text-align:center;
 		margin-top:-10vw;
 		-webkit-box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.2); 
@@ -482,11 +522,11 @@ a:focus {
 	}
 
 	h1 {
-		font-size:24;
+		font-size:24px;
 	}
 	
 	h2 {
-		font-size:22;
+		font-size:22px;
 	}
 
 	.squares {
@@ -517,18 +557,22 @@ a:focus {
 		padding-left:40px;
 	}
 
+	.about-text {
+		font-size:30px;
+	}
+
 	#keynote {
 		padding-left:40px;
 	}
 
 	.keynote-background {
-		height:61vw;
+		height:50vw;
 	}
 
 	.keynote-background .keynote-text {
 		background-color:rgba(255, 255, 255);
 		text-align:center;
-		margin-top:51vw;
+		margin-top:40vw;
 		padding:16px;
 		height:10vw;
 		-webkit-box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.7); 
@@ -536,6 +580,7 @@ a:focus {
 	}
 
 	.keynote-text {
+		background-color:#fff;
 		text-align:center;
 		margin-top:-10vw;
 		-webkit-box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.2); 
@@ -583,9 +628,12 @@ a:focus {
 	}
 
 	h1 {
-		font-size:24;
+		font-size:24px;
 	}
 
+	h2 {
+		font-size:22px;
+	}
 	.squares {
 		padding-top:50vh;
 		z-index:1;
@@ -614,18 +662,22 @@ a:focus {
 		padding-left:40px;
 	}
 
+	.about-text {
+		font-size:40px;
+	}
+
 	#keynote {
 		padding-left:40px;
 	}
 
 	.keynote-background {
-		height:61vw;
+		height:51vw;
 	}
 
 	.keynote-background .keynote-text {
 		background-color:rgba(255, 255, 255);
 		text-align:center;
-		margin-top:51vw;
+		margin-top:41vw;
 		padding:24px;
 		height:10vw;
 		-webkit-box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.7); 
@@ -634,6 +686,7 @@ a:focus {
 
 	.keynote-text {
 		text-align:center;
+		background-color:#fff;
 		margin-top:-10vw;
 		-webkit-box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.2); 
 		box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.2);
