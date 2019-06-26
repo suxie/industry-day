@@ -275,6 +275,10 @@ a:focus {
 	color:#868f99;
 }
 
+.arrow:focus {
+	color:#868f99;
+}
+
 .precise-views {
 	background-color:rgb(13,32,52, 0.5);
 	padding-top:50px;
@@ -301,16 +305,122 @@ a:focus {
 	background-repeat: repeat-y;
 	background-position: top right;
 	background-size: 100%;
-	padding-bottom:10vh;
+	padding-bottom:30vh;
 }
 
 #speakers {
 	background-color:#fff;
 	padding-top:15px;
+	margin-bottom:10vh;
 }
 
 .speaker-rows {
-	padding-top:15px;
+	margin-top:35px;
+}
+
+.card {
+	margin-top:10px;
+	height:100%;
+	border:0px;
+	-webkit-box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.1); 
+	box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+	margin:-0.2vh -0.2vw 0vh -0.2vw;
+	height:100%;
+	border:0px;
+	-webkit-box-shadow: 5px 5px 10px 5px rgba(13,32,52,0.2); 
+	box-shadow: 5px 5px 10px 5px rgba(13,32,52,0.2);
+	cursor:pointer;
+	-o-transition: opacity 0.5s ease-in-out;
+	-ms-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.card:hover .card-body {
+	padding:22px;
+}
+
+.card-img-top {
+	opacity:0.9;
+}
+
+.card:hover .card-img-top {
+	opacity:1;
+}
+
+.card:hover .card-text {
+	color:#a34659;
+}
+
+.card-body {
+	padding:20px;
+	text-align:center;
+}
+
+.card-text {
+	padding-top:0;
+	line-height:1.3;
+	padding-bottom:5px;
+}
+
+.card .company {
+	font-weight:900;
+	text-transform:uppercase;
+	margin-bottom:0;
+	padding-bottom:6px;
+	padding-top:6px;
+	color:rgba(0, 0, 0, 0.5);
+}
+
+.modal .company {
+	font-weight:900;
+	margin:0;
+	color:rgb(13,32,52, 0.7);
+	padding:0;
+	font-size:15px;
+}
+
+.modal p {
+	padding:5px 20px 0px 20px;
+	font-size:16px;
+}
+
+.speaker-talk {
+	font-weight:300;
+}
+
+.card-title {
+	margin-bottom:0;
+}
+
+.modal {
+	font-family:Open Sans;
+}
+
+.modal-title {
+	font-weight:300;
+}
+
+.modal-header {
+	background-color:rgb(13,32,52, 0.1);
+
+}
+
+button {
+	font-family:Roboto;
+}
+
+button:hover {
+	cursor:pointer;
+	font-family:Roboto;
+}
+
+ul {
+	margin-top:15px;
 }
 
 @media (max-width:768px) {
@@ -407,6 +517,22 @@ a:focus {
 
 	.about-text {
 		font-size:22px;
+	}
+
+	.company {
+		font-size:13px;
+	}
+
+	.speaker-talk {
+		padding-top:0px;
+		font-size:12px;
+	}
+
+	.agenda-transition {
+		background-image:url(assets/transition-agenda-med.svg);
+		background-repeat:no-repeat;
+		background-position:bottom;
+		background-size:100% auto;
 	}
 }
 
@@ -514,6 +640,18 @@ a:focus {
 		margin-top:20px;
 		text-indent:243px;
 	}
+
+	.card-text {
+		font-size:14px;
+	}
+
+	.agenda-transition {
+		background-image:url(assets/transition-agenda-med.svg);
+		background-repeat:no-repeat;
+		background-position:bottom;
+		background-size:contain;
+		width:100%;
+	}
 }
 
 @media (min-width:992px) and (max-width:1200px) {
@@ -620,6 +758,18 @@ a:focus {
 		margin-top:35px;
 		text-indent:330px;
 	}
+
+	.card-text {
+		font-size:14px;
+	}
+
+	.agenda-transition {
+		background-image:url(assets/transition-agenda-med.svg);
+		background-repeat:no-repeat;
+		background-position:bottom;
+		background-size:contain;
+		width:100%;
+	}
 }
 
 @media (min-width:1200px) {
@@ -659,7 +809,7 @@ a:focus {
 	}
 
 	#about {
-		padding-left:40px;
+		margin-left:40px;
 	}
 
 	.about-text {
@@ -669,6 +819,8 @@ a:focus {
 	#keynote {
 		padding-left:40px;
 	}
+
+
 
 	.keynote-background {
 		height:51vw;
@@ -723,5 +875,17 @@ a:focus {
 	.precise-views-over {
 		margin-top:25px;
 		text-indent:330px;
+	}
+
+	.card-text {
+		font-size:15px;
+	}
+
+	.agenda-transition {
+		background-image:url(assets/transition-agenda-large.svg);
+		background-repeat:no-repeat;
+		background-position:bottom;
+		background-size:contain;
+		width:100%;
 	}
 }
