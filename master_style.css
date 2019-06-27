@@ -604,6 +604,10 @@ ul {
 	.about-text {
 		font-size:22px;
 	}
+	
+	.particles {
+		display:none;
+	} 
 
 	.company {
 		font-size:13px;
@@ -732,6 +736,10 @@ ul {
 		text-indent:243px;
 	}
 
+	.particles {
+		display:none;
+	}
+
 	.card-text {
 		font-size:14px;
 	}
@@ -855,6 +863,10 @@ ul {
 		text-indent:330px;
 	}
 
+	.particles {
+		display:block;
+	}
+
 	.card-text {
 		font-size:14px;
 	}
@@ -885,6 +897,7 @@ ul {
 	h2 {
 		font-size:22px;
 	}
+
 	.squares {
 		padding-top:50vh;
 		z-index:1;
@@ -920,8 +933,6 @@ ul {
 	#keynote {
 		padding-left:40px;
 	}
-
-
 
 	.keynote-background {
 		height:51vw;
@@ -976,6 +987,10 @@ ul {
 	.precise-views-over {
 		margin-top:25px;
 		text-indent:330px;
+	}
+
+	.particles {
+		display:block;
 	}
 
 	.card-text {

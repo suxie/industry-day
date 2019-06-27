@@ -20,6 +20,7 @@
 	<!--JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="processing.js"></script>
 </head>
 
 <body>
@@ -36,6 +37,7 @@
 		<div class="overlay">
 
 		<div class="cover container-fluid">
+			<!--<canvas class="particles" data-processing-sources="assets/title_particles.pde"></canvas>-->
 			<h1 class="year">19 </h1>
 			<div class="squares">
 				<div class="d-flex flex-row-reverse">
@@ -1112,7 +1114,8 @@
 				scrollTop: $($(this).attr('href')).offset().top
 			}, 300, 'linear');
 		});
-
+
+
 		// from https://bootsnipp.com/snippets/ZVKyx
 		$(document).ready(function () {
 			$('.nav-toggle-read').click(function () {
