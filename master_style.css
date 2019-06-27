@@ -408,6 +408,10 @@ a:focus {
 	.about-text {
 		font-size:22px;
 	}
+	
+	.particles {
+		display:none;
+	}
 }
 
 @media (min-width:768px) and (max-width:992px) {
@@ -513,6 +517,10 @@ a:focus {
 	.precise-views-over {
 		margin-top:20px;
 		text-indent:243px;
+	}
+
+	.particles {
+		display:none;
 	}
 }
 
@@ -620,6 +628,11 @@ a:focus {
 		margin-top:35px;
 		text-indent:330px;
 	}
+
+	.particles {
+		display:block;
+		
+	}
 }
 
 @media (min-width:1200px) {
@@ -723,5 +736,9 @@ a:focus {
 	.precise-views-over {
 		margin-top:25px;
 		text-indent:330px;
+	}
+
+	.particles {
+		display:block;
 	}
 }
