@@ -238,6 +238,19 @@ a:focus {
 	color:#a34659;
 }
 
+.spotlight {
+	font-family:Roboto;
+	font-weight:800;
+	margin:0;
+}
+
+.spotlight-box {
+	position:absolute;
+	bottom:-8px;
+	right:40%;
+	margin:0;
+}
+
 .keynote-background {
 	position: relative;
 	width:100%;
@@ -586,6 +599,12 @@ ul {
 	}
 
 	.title {
+		font-size:22px;
+		letter-spacing:1px;
+		font-weight:900;
+	}
+
+	.spotlight {
 		font-size:22px;
 		letter-spacing:1px;
 		font-weight:900;
