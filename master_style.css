@@ -525,7 +525,7 @@ ul {
 
 .events-text h1 {
 	color:white;
-	font-size: 70px;
+	font-size: 50px;
 	display: inline;
 	line-height: 2;
 }
@@ -534,6 +534,20 @@ ul {
 	color:white;
 	font-size: 30px;
 	display: inline;
+}
+
+#past-events {
+	position: relative;
+	overflow-y:hidden;
+	overflow-x:hidden;
+	background-image: url(assets/penn-stock-cropped.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: contain;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 @media (max-width:768px) {
