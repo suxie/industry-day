@@ -470,6 +470,7 @@ ul {
 
 .schedule:hover {
 	background-color:rgb(228, 21, 26, 0.4);
+	color:#fff;
 }
 
 .schedule-text {
@@ -559,6 +560,14 @@ ul {
 	right: 0;
 	bottom: 0;
 	left: 0;
+}
+
+.schedule-talk {
+	color:rgb(200, 200, 200);
+}
+
+.schedule-talk:hover {
+	color:rgb(255, 255, 255);
 }
 
 .spotlight-highlight {
