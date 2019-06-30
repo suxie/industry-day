@@ -522,29 +522,22 @@ ul {
 	background-color:rgba(255, 255, 255);
 }
 
-.events {
-	background-color: inherit;
-	padding-top: 60%;
-	height: 0;
+.events-text a {
+	color:#4659a3;
+	text-decoration: underline;
 }
 
-.events-img {
-	position: absolute;
-	height: 100%;
-	top: 0;
-	left: -50%;
+.events-text a:hover {
+	color:#a34659;
+	text-decoration: underline;
 }
 
 .events-text h1 {
 	color:white;
-	font-size: 50px;
-	display: inline;
-	line-height: 2;
 }
 
 .events-text p {
 	color:white;
-	font-size: 30px;
 	display: inline;
 }
 
@@ -552,10 +545,8 @@ ul {
 	position: relative;
 	overflow-y:hidden;
 	overflow-x:hidden;
-	background-image: url(assets/penn-stock-cropped.png);
+	background-image: url(assets/past-events-cropped.png);
 	background-repeat: no-repeat;
-	background-position: left;
-	background-size: contain;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -715,6 +706,46 @@ ul {
 	.modal-lg {
 		max-width:100%;
 	}
+
+	#past-events {
+		height: 335px;
+		background-size: 345px;
+		background-position: left;
+	}
+
+	.events-title {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.events-text {
+		text-align: center;
+	}
+
+	.events-text h1 {
+		font-size: 23px;
+		line-height: 2;
+		display: inline;
+	}
+	
+	.event-1 {
+	}
+	
+	.event-2 {
+		margin-left: 0;
+	}
+	
+	.event-3 {
+		margin-left: 0;
+	}
+	
+	.event-4 {
+		margin-left: 0;
+	}
+	
+	.event-5 {
+		margin-left: 0;
+	}
 }
 
 @media (min-width:576px) and (max-width:768px) {
@@ -848,6 +879,52 @@ ul {
 	.button {
 		font-size:18px;
 		padding:10px;
+	}
+
+	#past-events {
+		height: 270px;
+		background-size: 320px;
+		background-position: left;
+	}
+
+	.events-br {
+		display: none;
+	}
+
+	.events-title {
+		position:absolute;
+		top: 0;
+		left: 6%;
+	}
+
+	.events-text h1 {
+		font-size: 25px;
+		line-height: 2;
+	}
+	
+	.event-1 {
+		margin-left: 200px;
+		display: inline;
+	}
+	
+	.event-2 {
+		margin-left: 175px;
+		display: inline;
+	}
+	
+	.event-3 {
+		margin-left: 150px;
+		display: inline;
+	}
+	
+	.event-4 {
+		margin-left: 125px;
+		display: inline;
+	}
+	
+	.event-5 {
+		margin-left: 100px;
+		display: inline;
 	}
 }
 
@@ -988,6 +1065,56 @@ ul {
 		font-size:20px;
 		padding:12px;
 	}
+
+	#past-events {
+		height: 420px;
+		background-size: 430px;
+		background-position: left;
+	}
+
+	.events-br {
+		display: none;
+	}
+
+	.events-title {
+		position:absolute;
+		top: 0;
+		left: 6%;
+	}
+
+	.events-text h1 {
+		font-size: 40px;
+		line-height: 2;
+	}
+	
+	.events-text p {
+		font-size: 20px;
+	}
+	
+	.event-1 {
+		margin-left: 295px;
+		display: inline;
+	}
+	
+	.event-2 {
+		margin-left: 260px;
+		display: inline;
+	}
+	
+	.event-3 {
+		margin-left: 225px;
+		display: inline;
+	}
+	
+	.event-4 {
+		margin-left: 190px;
+		display: inline;
+	}
+	
+	.event-5 {
+		margin-left: 155px;
+		display: inline;
+	}
 }
 
 @media (min-width:992px) and (max-width:1200px) {
@@ -1126,6 +1253,56 @@ ul {
 		font-size:22px;
 		padding:15px;
 	}
+
+	#past-events {
+		height: 470px;
+		background-size: 550px;
+		background-position: left;
+	}
+
+	.events-br {
+		display: none;
+	}
+
+	.events-title {
+		position:absolute;
+		top: 0;
+		left: 10%;
+	}
+
+	.events-text h1 {
+		font-size: 45px;
+		line-height: 2;
+	}
+	
+	.events-text p {
+		font-size: 25px;
+	}
+	
+	.event-1 {
+		margin-left: 395px;
+		display: inline;
+	}
+	
+	.event-2 {
+		margin-left: 360px;
+		display: inline;
+	}
+	
+	.event-3 {
+		margin-left: 325px;
+		display: inline;
+	}
+	
+	.event-4 {
+		margin-left: 290px;
+		display: inline;
+	}
+	
+	.event-5 {
+		margin-left: 255px;
+		display: inline;
+	}
 }
 
 @media (min-width:1200px) {
@@ -1262,5 +1439,55 @@ ul {
 	.button {
 		font-size:30px;
 		padding:18px;
+	}
+
+	#past-events {
+		height: 520px;
+		background-size: 650px;
+		background-position: left;
+	}
+
+	.events-br {
+		display: none;
+	}
+
+	.events-title {
+		position:absolute;
+		top: 0;
+		left: 10%;
+	}
+
+	.events-text h1 {
+		font-size: 50px;
+		line-height: 2;
+	}
+	
+	.events-text p {
+		font-size: 30px;
+	}
+	
+	.event-1 {
+		margin-left: 470px;
+		display: inline;
+	}
+	
+	.event-2 {
+		margin-left: 435px;
+		display: inline;
+	}
+	
+	.event-3 {
+		margin-left: 400px;
+		display: inline;
+	}
+	
+	.event-4 {
+		margin-left: 365px;
+		display: inline;
+	}
+	
+	.event-5 {
+		margin-left: 330px;
+		display: inline;
 	}
 }
