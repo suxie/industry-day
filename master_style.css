@@ -205,7 +205,7 @@
 	text-align:center;
 }
 
-p {
+p, ul {
 	font-family:Open Sans;
 	padding-top:3vh;
 	line-height:1.6;
@@ -461,6 +461,10 @@ ul {
 	margin-top:15px;
 }
 
+li {
+	padding: 2px 0px;
+}
+
 .schedule {
 	padding:1px 5px;
 	border-top:1px solid rgba(255, 255, 255, 0.3);
@@ -470,13 +474,17 @@ ul {
 	border-bottom:1px solid rgba(255, 255, 255, 0.3);
 }
 
-.schedule:hover {
+.blue:hover {
+	background-color:rgb(255,255,255, 0.1);
+	color:#fff;
+}
+
+a>.schedule:hover {
 	background-color:rgb(228, 21, 26, 0.4);
 	color:#fff;
 }
 
 .schedule-text {
-	color:#fff;
 	padding:3px;
 	margin:5px;
 }
@@ -555,24 +563,31 @@ ul {
 	left: 0;
 }
 
-.schedule-talk {
-	color:rgb(200, 200, 200);
-}
-
-.schedule-talk:hover {
-	color:rgb(255, 255, 255);
-}
-
 .spotlight-highlight {
 	background-color:rgba(255, 255, 255, 0.8);
 }
 
 .highlights {
-	background-color:rgb(0, 0, 0, 0.5);
+	margin-left:20px;
+	padding-left:15px;
+	border-left:solid;
+	border-color:rgb(0, 0, 0, 0.3);
+	border-width:3px;
+	color:rgb(0, 0, 0, 0.8);
+}
+
+#agenda a {
+	color:rgb(255, 255, 255, 0.75);
+}
+
+#agenda a:hover {
+	color:rgb(255, 255, 255);
+	font-weight:900;
+	cursor:pointer;
 }
 
 @media (max-width:576px) {
-	p {
+	p, ul {
 		font-size:14px;
 	}
 
@@ -705,6 +720,15 @@ ul {
 		max-width:100%;
 	}
 
+	.schedule-text {
+		font-size:14px;
+	}
+
+	.schedule .col-md-4 {
+		padding:0;
+		padding-left:10%;
+	}
+
 	#past-events {
 		height: 335px;
 		background-size: 345px;
@@ -748,7 +772,7 @@ ul {
 }
 
 @media (min-width:576px) and (max-width:768px) {
-	p {
+	p, ul {
 		font-size:16px;
 	}
 
@@ -860,11 +884,20 @@ ul {
 		font-size:12px;
 	}
 
+	.schedule-text {
+		font-size:14px;
+	}
+
 	.agenda-transition {
 		background-image:url(assets/transition-agenda-med.svg);
 		background-repeat:no-repeat;
 		background-position:bottom;
 		background-size:100% auto;
+	}
+
+	.schedule .col-md-4 {
+		padding-top:0;
+		padding-left:11%;
 	}
 
 	.button {
@@ -927,7 +960,7 @@ ul {
 }
 
 @media (min-width:768px) and (max-width:992px) {
-	p {
+	p, ul {
 		font-size:18px;
 	}
 
@@ -942,6 +975,10 @@ ul {
 	.squares {
 		padding-top:50vh;
 		z-index:1;
+	}
+
+	.schedule-text {
+		font-size:15px;
 	}
 
 	.empty {
@@ -1051,6 +1088,10 @@ ul {
 		width:100%;
 	}
 
+	.schedule .col-md-4 {
+		text-align:right;
+	}
+
 	.button {
 		font-size:20px;
 		padding:12px;
@@ -1106,7 +1147,7 @@ ul {
 }
 
 @media (min-width:992px) and (max-width:1200px) {
-	p {
+	p, ul {
 		font-size:18px;
 	}
 
@@ -1234,6 +1275,10 @@ ul {
 		padding:15px;
 	}
 
+	.schedule .col-md-4 {
+		text-align:right;
+	}
+
 	#past-events {
 		height: 470px;
 		background-size: 550px;
@@ -1288,7 +1333,7 @@ ul {
 }
 
 @media (min-width:1200px) {
-	p {
+	p, ul{
 		font-size:18px;
 	}
 
@@ -1408,6 +1453,10 @@ ul {
 		background-position:bottom;
 		background-size:contain;
 		width:100%;
+	}
+
+	.schedule .col-md-4 {
+		text-align:right;
 	}
 
 	.button {
