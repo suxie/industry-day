@@ -179,6 +179,7 @@
 #about {
 	background-color:#fff;
 	padding-top:5vh;
+	padding-bottom:15vh;
 }
 
 #keynote {
@@ -412,11 +413,6 @@ a:focus {
 	font-size:15px;
 }
 
-.modal p {
-	padding:5px 20px 0px 20px;
-	font-size:16px;
-}
-
 .speaker-talk {
 	font-weight:300;
 }
@@ -514,9 +510,8 @@ a>.schedule:hover {
 
 .button:hover {
 	cursor:pointer;
-	background-color: rgb(228, 21, 26, 0.84);
-	opacity:0.75;
-	color:#000;
+	background-color: rgb(255, 101, 106);
+	color:#fff;
 	moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
@@ -528,8 +523,22 @@ a>.schedule:hover {
 }
 
 #travel {
-	padding:5vh 0;
+	padding-top:5vh;
 	background-color:rgba(255, 255, 255);
+}
+
+#travel p {
+	padding:0;
+	margin:0;
+}
+
+.padded {
+	padding-top:5vh;
+}
+
+.venue {
+	text-align:center;
+	padding-bottom:5vh;
 }
 
 .events-text a {
@@ -655,7 +664,7 @@ a>.schedule:hover {
 	}
 
 	.title {
-		font-size:17px;
+		font-size:24px;
 		letter-spacing:1px;
 		font-weight:900;
 	}
@@ -727,6 +736,20 @@ a>.schedule:hover {
 	.schedule .col-md-4 {
 		padding:0;
 		padding-left:10%;
+	}
+
+	.modal ul {
+		font-size:13px;
+		padding-top:0;
+	}
+
+	.modal p {
+		padding:5px 20px 0px 20px;
+		font-size:13px;
+	}
+
+	.modal-title {
+		font-size:16px;
 	}
 
 	#past-events {
@@ -840,7 +863,7 @@ a>.schedule:hover {
 	}
 
 	.title {
-		font-size:22px;
+		font-size:26px;
 		letter-spacing:1px;
 		font-weight:900;
 	}
@@ -903,6 +926,20 @@ a>.schedule:hover {
 	.button {
 		font-size:18px;
 		padding:10px;
+	}
+
+	.modal ul {
+		font-size:13px;
+		padding-top:0;
+	}
+
+	.modal p {
+		padding:5px 20px 0px 20px;
+		font-size:13px;
+	}
+
+	.modal-title {
+		font-size:16px;
 	}
 
 	#past-events {
@@ -1093,8 +1130,22 @@ a>.schedule:hover {
 	}
 
 	.button {
-		font-size:20px;
+		font-size:16px;
 		padding:12px;
+	}
+
+	.modal ul {
+		font-size:13px;
+		padding-top:0;
+	}
+
+	.modal p {
+		padding:5px 20px 0px 20px;
+		font-size:13px;
+	}
+
+	.modal-title {
+		font-size:16px;
 	}
 
 	#past-events {
@@ -1277,6 +1328,16 @@ a>.schedule:hover {
 
 	.schedule .col-md-4 {
 		text-align:right;
+	}
+
+	.modal ul {
+		font-size:16px;
+		padding-top:0;
+	}
+
+	.modal p {
+		padding:5px 20px 0px 20px;
+		font-size:16px;
 	}
 
 	#past-events {
@@ -1462,6 +1523,16 @@ a>.schedule:hover {
 	.button {
 		font-size:30px;
 		padding:18px;
+	}
+
+	.modal ul {
+		font-size:16px;
+		padding-top:0;
+	}
+
+	.modal p {
+		padding:5px 20px 0px 20px;
+		font-size:16px;
 	}
 
 	#past-events {
