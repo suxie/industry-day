@@ -24,7 +24,7 @@
 	<script type="text/javascript" src="processing.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myNavbar">
 
 	<!--Menu-->
 	<div class="d-none d-md-block">
@@ -139,14 +139,11 @@
 		<!--image-->
 		<div class="keynote-background">
 			<div class="container">
-				<div class="d-block d-lg-none spotlight-box">
-					<p class="spotlight"> <span class="spotlight-highlight">&nbsp;KEYNOTE&nbsp;</span>
+				<div class="spotlight-box">
+					<p class="spotlight"> <span class="spotlight-highlight">&nbsp;KEYNOTE&nbsp;</span><br/>
 						<span class="spotlight-highlight">&nbsp;SPOTLIGHT&nbsp;</span></p>
 				</div>
-				<div class="d-none d-lg-block spotlight-box">
-					<p class="spotlight"> <span class="spotlight-highlight">&nbsp;KEYNOTE
-							SPOTLIGHT&nbsp;</span></p>
-				</div>
+				
 				<div class="row">
 					<div class="col-1"></div>
 					<div class="col-10">
@@ -168,8 +165,9 @@
 							<div class="padded">
 								<a class="title" href="https://sites.google.com/view/gottschlich" target="_blank">
 									JUSTIN GOTTSCHLICH, PH.D. </a>
-								<h2>Inventor, Leader, and Visionary in Machine Programming</h2>
-								<p class="main"> Justin Gottschlich, a Senior Staff Research Scientist at Intel Labs, is
+								<h2 style="margin:0">Inventor, Leader, and Visionary in Machine Programming</h2>
+								<p class="main author" style="text-align:center">Author: Wai-Ping Ng (Assistant Director, PRECISE)</p>
+								<p class="main">Justin Gottschlich, a Senior Staff Research Scientist at Intel Labs, is
 									a prominent figure in artificial intelligence (AI)
 									and machine learning (ML). His research in AI focuses on machine programming,
 									anomaly detection, neural network verification,
@@ -1069,57 +1067,37 @@
 			</div>
 			<div class="row" style="position:relative; z-index:2">
 				<div class="col-12 col-md-6 col-xl-7">
-					<h2 class="padded">Accomodation:</h2>
-					<p> PRECISE has negotiated bedrooms with AKA University City at a discounted rate of $____ +
-						taxes per night.
-						The negotiated rates are available for 15 July to 15 August 2019. Delegates can book hotel
-						online at _________
+					<h2 class="padded">Accommodation:</h2>
+					<p> Our discounted rate at AKA University City will be available from 15 July to 15 August 2019.  
+						Please contact Ralhan Patel at <a href="mailto:rpatel@stayaka.com" target="_blank">rpatel@stayaka.com</a> 
+						with reservation.</p>
+					<ul>
+						<li>Studio Suites - $246.00 plus tax per night</li>
+						<li>One Bedroom Premium Suites - $246.00 plus tax per night</li>
+					</ul>
+					<p> This conference is non-residential and delegates are requested to make their own accommodation bookings. 
 					</p>
-					<p style="padding-top:10px"> This conference is non-residential and delegates are requested to make their own
-						accommodation bookings.</p>
 				</div>
 				<div class="col-12 col-md-6 col-xl-5">
 					<div class="d-none d-md-inline">
-						<h2 class="padded"></h2>
-						<p style="padding-top:20px"> Other hotels near the venue:</p>
+						<h2 class="padded">&nbsp;</h2>
+						<p> Other hotels near the venue:</p>
 					</div>
 					<div class="d-inline d-md-none">
-						<p style="padding-top:10px;"> Other hotels near the venue:</p>
-						<p> <a href="https://www.thestudyatuniversitycity.com/" target="_blank">
-							The Study at University City</a> || (215) 387-1400
-						</p>
-						<p> <a href="https://www.marriott.com/hotels/travel/phlus-sheraton-philadelphia-university-city-hotel/"
-							target="_blank">Sheraton, University City</a> || (215) 387-8000
-						</p>
-						<p> <a href="https://www3.hilton.com/en/hotels/pennsylvania/the-inn-at-penn-a-hilton-hotel-PHLIDHH/index.html"
-							target="_blank">Inn at Penn</a> || (215) 222-0200
-						</p>
+						<p style="padding-top:20px"> Other hotels near the venue:</p>
 					</div>
-					<div class="d-none d-xl-inline">
-						<p style="padding-top:10px"> <a href="https://www.thestudyatuniversitycity.com/" target="_blank">
-							The Study at University City</a> || (215) 387-1400
-						</p>
-						<p style="padding-top:10px"> <a href="https://www.marriott.com/hotels/travel/phlus-sheraton-philadelphia-university-city-hotel/"
-								target="_blank">Sheraton, University City</a> || (215) 387-8000
-						</p>
-						<p style="padding-top:10px"> <a href="https://www3.hilton.com/en/hotels/pennsylvania/the-inn-at-penn-a-hilton-hotel-PHLIDHH/index.html"
-								target="_blank">Inn at Penn</a> || (215) 222-0200
-						</p>
-					</div>
-					<div class="d-none d-md-inline d-xl-none">
-						<p style="padding-top:10px"> <a href="https://www.thestudyatuniversitycity.com/" target="_blank">
-							The Study at University City</a><br/>
-							(215) 387-1400
-						</p>
-						<p style="padding-top:10px"> <a href="https://www.marriott.com/hotels/travel/phlus-sheraton-philadelphia-university-city-hotel/"
-							target="_blank">Sheraton, University City</a><br/>
-							(215) 387-8000
-						</p>
-						<p style="padding-top:10px"> <a href="https://www3.hilton.com/en/hotels/pennsylvania/the-inn-at-penn-a-hilton-hotel-PHLIDHH/index.html"
-							target="_blank">Inn at Penn</a><br/>
-							(215) 222-0200
-						</p>
-					</div>
+					<p style="padding-top:10px"> <a href="https://www.thestudyatuniversitycity.com/" target="_blank">
+						The Study at University City</a><br/>
+						(215) 387-1400
+					</p>
+					<p style="padding-top:10px"> <a href="https://www.marriott.com/hotels/travel/phlus-sheraton-philadelphia-university-city-hotel/"
+						target="_blank">Sheraton, University City</a><br/>
+						(215) 387-8000
+					</p>
+					<p style="padding-top:10px"> <a href="https://www3.hilton.com/en/hotels/pennsylvania/the-inn-at-penn-a-hilton-hotel-PHLIDHH/index.html"
+						target="_blank">Inn at Penn</a><br/>
+						(215) 222-0200
+					</p>
 				</div>
 			</div>
 		</div>
@@ -2211,6 +2189,7 @@
 	</div>
 		<!-- Custom JavaScript-->
 		<script>
+			$('body').scrollspy({target: '#myNavbar'});
 			$('a[href*="#"]').on('click', function (e) {
 				e.preventDefault();
 				$('html, body').animate({

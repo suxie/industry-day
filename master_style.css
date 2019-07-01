@@ -296,6 +296,13 @@ a:focus {
 	padding:10px;
 }
 
+.author {
+	font-weight:900;
+	color:rgb(13,32,52,0.5);
+	text-align:center;
+	padding-top:0px;
+}
+
 .arrow {
 	color:#fff;
 }
@@ -532,6 +539,10 @@ a>.schedule:hover {
 	margin:0;
 }
 
+#travel ul {
+	padding-top:0;
+}
+
 .padded {
 	padding-top:5vh;
 }
@@ -676,7 +687,7 @@ a>.schedule:hover {
 	}
 
 	.spotlight {
-		font-size:20px;
+		font-size:35px;
 		letter-spacing:1px;
 		font-weight:900;
 	}
@@ -875,7 +886,7 @@ a>.schedule:hover {
 	}
 
 	.spotlight {
-		font-size:28px;
+		font-size:40px;
 		letter-spacing:1px;
 		font-weight:900;
 	}
@@ -1038,7 +1049,7 @@ a>.schedule:hover {
 	}
 
 	#about {
-		padding-left:40px;
+		margin-left:40px;
 	}
 
 	.about-text {
@@ -1094,7 +1105,7 @@ a>.schedule:hover {
 	}
 
 	.spotlight {
-		font-size:40px;
+		font-size:50px;
 		letter-spacing:1px;
 		font-weight:900;
 	}
@@ -1235,7 +1246,7 @@ a>.schedule:hover {
 	}
 	
 	#about {
-		padding-left:40px;
+		margin-left:40px;
 	}
 
 	.about-text {
@@ -1284,7 +1295,7 @@ a>.schedule:hover {
 	}
 
 	.spotlight {
-		font-size:40px;
+		font-size:60px;
 		letter-spacing:1px;
 		font-weight:900;
 	}
@@ -1476,11 +1487,10 @@ a>.schedule:hover {
 
 	.spotlight-box {
 		top:4vh;
-		left:3%;
 	}
 
 	.spotlight {
-		font-size:50px;
+		font-size:500%;
 		letter-spacing:1px;
 		font-weight:900;
 	}
