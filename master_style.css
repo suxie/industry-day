@@ -40,6 +40,7 @@
 	background-repeat: no-repeat;
 	background-position: bottom right;
 	background-size: cover;
+	background-attachment:fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -176,7 +177,7 @@
 }
 
 #about {
-	background-color:#0d2034;
+	background-color:#fff;
 	padding-top:5vh;
 }
 
@@ -280,8 +281,9 @@ a:focus {
 	background-color: rgb(0, 0, 0, 0.1);
 	margin-top:15px;
 	margin-bottom:0;
-	padding:5px;
-	color:#fff;
+	padding:8px;
+	color:#4659a3;
+	text-transform:uppercase;
 }
 
 .expand {
@@ -321,7 +323,7 @@ a:focus {
 }
 
 .precise-views-overlay {
-	opacity:0.5;
+	opacity:0.4;
 }
 
 .keynote-backdrop {
@@ -565,6 +567,10 @@ ul {
 	background-color:rgba(255, 255, 255, 0.8);
 }
 
+.highlights {
+	background-color:rgb(0, 0, 0, 0.5);
+}
+
 @media (max-width:576px) {
 	p {
 		font-size:14px;
@@ -633,14 +639,6 @@ ul {
 		font-size:12px;
 	}
 
-	.keynote-subtitle {
-		font-size:15px;
-		font-family:Roboto;
-		font-weight:400;
-		color:#000;
-		padding-bottom:20px;
-	}
-
 	.title {
 		font-size:17px;
 		letter-spacing:1px;
@@ -669,7 +667,7 @@ ul {
 	}
 
 	.about-text {
-		font-size:15px;
+		font-size:18px;
 	}
 	
 	.particles {
@@ -711,6 +709,7 @@ ul {
 		height: 335px;
 		background-size: 345px;
 		background-position: left;
+		padding-top:20px;
 	}
 
 	.events-title {
@@ -816,14 +815,6 @@ ul {
 		font-size:14px;
 	}
 
-	.keynote-subtitle {
-		font-size:19px;
-		font-family:Roboto;
-		font-weight:400;
-		color:#000;
-		padding-bottom:20px;
-	}
-
 	.title {
 		font-size:22px;
 		letter-spacing:1px;
@@ -885,6 +876,7 @@ ul {
 		height: 270px;
 		background-size: 320px;
 		background-position: left;
+		padding-top:10px;
 	}
 
 	.events-br {
@@ -900,30 +892,36 @@ ul {
 	.events-text h1 {
 		font-size: 25px;
 		line-height: 2;
+		display:inline;
+		vertical-align:middle;
+	}
+
+	.events-text p {
+		font-size:15px;
 	}
 	
 	.event-1 {
-		margin-left: 200px;
+		margin-left: 260px;
 		display: inline;
 	}
 	
 	.event-2 {
-		margin-left: 175px;
+		margin-left: 235px;
 		display: inline;
 	}
 	
 	.event-3 {
-		margin-left: 150px;
+		margin-left: 210px;
 		display: inline;
 	}
 	
 	.event-4 {
-		margin-left: 125px;
+		margin-left: 185px;
 		display: inline;
 	}
 	
 	.event-5 {
-		margin-left: 100px;
+		margin-left: 160px;
 		display: inline;
 	}
 }
@@ -1009,14 +1007,6 @@ ul {
 		font-size:15px;
 	}
 
-	.keynote-subtitle {
-		font-size:20px;
-		font-family:Roboto;
-		font-weight:400;
-		color:#000;
-		padding-bottom:20px;
-	}
-
 	.title {
 		font-size:30px;
 		letter-spacing:2px;
@@ -1072,10 +1062,6 @@ ul {
 		background-position: left;
 	}
 
-	.events-br {
-		display: none;
-	}
-
 	.events-title {
 		position:absolute;
 		top: 0;
@@ -1085,34 +1071,36 @@ ul {
 	.events-text h1 {
 		font-size: 40px;
 		line-height: 2;
+		vertical-align:middle;
 	}
 	
 	.events-text p {
-		font-size: 20px;
+		font-size: 17px;
+		padding-left:5px;
 	}
 	
 	.event-1 {
-		margin-left: 295px;
+		margin-left: 355px;
 		display: inline;
 	}
 	
 	.event-2 {
-		margin-left: 260px;
+		margin-left: 320px;
 		display: inline;
 	}
 	
 	.event-3 {
-		margin-left: 225px;
+		margin-left: 285px;
 		display: inline;
 	}
 	
 	.event-4 {
-		margin-left: 190px;
+		margin-left: 250px;
 		display: inline;
 	}
 	
 	.event-5 {
-		margin-left: 155px;
+		margin-left: 215px;
 		display: inline;
 	}
 }
@@ -1198,14 +1186,6 @@ ul {
 		font-size:16px;
 	}
 
-	.keynote-subtitle {
-		font-size:35px;
-		font-family:Roboto;
-		font-weight:400;
-		color:#000;
-		padding-bottom:20px;
-	}
-
 	.spotlight-box {
 		top:3vh;
 		left:3%;
@@ -1260,10 +1240,6 @@ ul {
 		background-position: left;
 	}
 
-	.events-br {
-		display: none;
-	}
-
 	.events-title {
 		position:absolute;
 		top: 0;
@@ -1273,34 +1249,40 @@ ul {
 	.events-text h1 {
 		font-size: 45px;
 		line-height: 2;
+		vertical-align:middle;
 	}
 	
 	.events-text p {
-		font-size: 25px;
+		font-size: 20px;
+		padding-left:5px;
+		padding-top:0px;
+		vertical-align:middle;
 	}
 	
 	.event-1 {
-		margin-left: 395px;
+		margin-left: 455px;
 		display: inline;
 	}
 	
 	.event-2 {
-		margin-left: 360px;
+		margin-left: 420px;
 		display: inline;
+		vertical-align:middle;
 	}
 	
 	.event-3 {
-		margin-left: 325px;
+		margin-left: 385px;
 		display: inline;
 	}
 	
 	.event-4 {
-		margin-left: 290px;
+		margin-left: 350px;
 		display: inline;
+		vertical-align:middle;
 	}
 	
 	.event-5 {
-		margin-left: 255px;
+		margin-left: 315px;
 		display: inline;
 	}
 }
@@ -1386,14 +1368,6 @@ ul {
 		font-size:16px;
 	}
 
-	.keynote-subtitle {
-		font-size:40px;
-		font-family:Roboto;
-		font-weight:400;
-		color:#000;
-		padding-bottom:20px;
-	}
-
 	.spotlight-box {
 		top:4vh;
 		left:3%;
@@ -1460,34 +1434,36 @@ ul {
 	.events-text h1 {
 		font-size: 50px;
 		line-height: 2;
+		vertical-align:middle;
 	}
 	
 	.events-text p {
-		font-size: 30px;
+		font-size: 25px;
+		padding-left:5px;
 	}
 	
 	.event-1 {
-		margin-left: 470px;
+		margin-left: 500px;
 		display: inline;
 	}
 	
 	.event-2 {
-		margin-left: 435px;
+		margin-left: 465px;
 		display: inline;
 	}
 	
 	.event-3 {
-		margin-left: 400px;
+		margin-left: 430px;
 		display: inline;
 	}
 	
 	.event-4 {
-		margin-left: 365px;
+		margin-left: 395px;
 		display: inline;
 	}
 	
 	.event-5 {
-		margin-left: 330px;
+		margin-left: 360px;
 		display: inline;
 	}
 }
