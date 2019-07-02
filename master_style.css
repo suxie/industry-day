@@ -31,8 +31,13 @@
 	left: 0;
 }
 
+#landing {
+	background-color:#000;
+}
+
 .background {
 	position: relative;
+	opacity:0;
 	height:100%;
 	overflow-y:hidden;
 	overflow-x:hidden;
@@ -62,16 +67,26 @@
 	z-index:0;
 }
 
+.particles {
+	opacity:0;
+}
+
 .squares {
 	z-index:1; 
 	position:relative;
 }
 
+.date {
+	opacity:0;
+}
+
 .time {
+	opacity:0;
 	background: rgb(228, 21, 26, 0.416);
 }
 
 .talk {
+	opacity:0;
 	background: rgb(228, 21, 26, 0.3185);
 }
 
@@ -81,6 +96,7 @@
 }
 
 .logo {
+	opacity:0;
 	position: relative;
 	height:100%;
 	overflow-y:hidden;
@@ -119,6 +135,7 @@
 }
 
 .tickets {
+	opacity:0;
 	position: relative;
 	height:100%;
 	overflow-y:hidden;
@@ -179,6 +196,7 @@
 #about {
 	background-color:#fff;
 	padding-top:5vh;
+	padding-bottom:15vh;
 }
 
 #keynote {
@@ -293,6 +311,16 @@ a:focus {
 	height:100%;
 	width:100%;
 	padding:10px;
+}
+
+.author {
+	font-weight:900;
+	color:rgb(255, 255, 255);
+	background-color:rgb(13,32,52, 0.3);
+	text-align:center;
+	padding-top:0px;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 .arrow {
@@ -412,11 +440,6 @@ a:focus {
 	font-size:15px;
 }
 
-.modal p {
-	padding:5px 20px 0px 20px;
-	font-size:16px;
-}
-
 .speaker-talk {
 	font-weight:300;
 }
@@ -514,9 +537,8 @@ a>.schedule:hover {
 
 .button:hover {
 	cursor:pointer;
-	background-color: rgb(228, 21, 26, 0.84);
-	opacity:0.75;
-	color:#000;
+	background-color: rgb(255, 101, 106);
+	color:#fff;
 	moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
@@ -528,8 +550,26 @@ a>.schedule:hover {
 }
 
 #travel {
-	padding:5vh 0;
+	padding-top:5vh;
 	background-color:rgba(255, 255, 255);
+}
+
+#travel p {
+	padding:0;
+	margin:0;
+}
+
+#travel ul {
+	padding-top:0;
+}
+
+.padded {
+	padding-top:5vh;
+}
+
+.venue {
+	text-align:center;
+	padding-bottom:5vh;
 }
 
 .events-text a {
@@ -599,8 +639,12 @@ a>.schedule:hover {
 		font-size:16px;
 	}
 
+	.min-padding {
+		height:60vh;
+		min-height:310px;
+	}
+
 	.squares {
-		padding-top:60vh;
 		z-index:1;
 	}
 
@@ -655,9 +699,13 @@ a>.schedule:hover {
 	}
 
 	.title {
-		font-size:17px;
+		font-size:24px;
 		letter-spacing:1px;
 		font-weight:900;
+	}
+
+	.author {
+		max-width:300px;
 	}
 
 	.spotlight-box {
@@ -667,7 +715,7 @@ a>.schedule:hover {
 	}
 
 	.spotlight {
-		font-size:20px;
+		font-size:35px;
 		letter-spacing:1px;
 		font-weight:900;
 	}
@@ -686,7 +734,10 @@ a>.schedule:hover {
 	}
 	
 	.particles {
-		display:none;
+		position:absolute;
+		width:100vw;
+		top:10px;
+		left:20px;
 	} 
 
 	.company {
@@ -727,6 +778,20 @@ a>.schedule:hover {
 	.schedule .col-md-4 {
 		padding:0;
 		padding-left:10%;
+	}
+
+	.modal ul {
+		font-size:13px;
+		padding-top:0;
+	}
+
+	.modal p {
+		padding:5px 20px 0px 20px;
+		font-size:13px;
+	}
+
+	.modal-title {
+		font-size:16px;
 	}
 
 	#past-events {
@@ -784,8 +849,12 @@ a>.schedule:hover {
 		font-size:18px;
 	}
 
+	.min-padding {
+		height:60vh;
+		min-height:350px;
+	}
+
 	.squares {
-		padding-top:60vh;
 		z-index:1;
 	}
 
@@ -840,9 +909,13 @@ a>.schedule:hover {
 	}
 
 	.title {
-		font-size:22px;
+		font-size:26px;
 		letter-spacing:1px;
 		font-weight:900;
+	}
+
+	.author {
+		max-width:350px;
 	}
 
 	.spotlight-box {
@@ -852,7 +925,7 @@ a>.schedule:hover {
 	}
 
 	.spotlight {
-		font-size:28px;
+		font-size:40px;
 		letter-spacing:1px;
 		font-weight:900;
 	}
@@ -872,7 +945,10 @@ a>.schedule:hover {
 	}
 	
 	.particles {
-		display:none;
+		position:absolute;
+		width:100vw;
+		top:-50px;
+		left:20px;
 	} 
 
 	.company {
@@ -903,6 +979,20 @@ a>.schedule:hover {
 	.button {
 		font-size:18px;
 		padding:10px;
+	}
+
+	.modal ul {
+		font-size:13px;
+		padding-top:0;
+	}
+
+	.modal p {
+		padding:5px 20px 0px 20px;
+		font-size:13px;
+	}
+
+	.modal-title {
+		font-size:16px;
 	}
 
 	#past-events {
@@ -972,8 +1062,12 @@ a>.schedule:hover {
 		font-size:20px;
 	}
 
+	.min-padding {
+		height:50vh;
+		min-height:350px;
+	}
+
 	.squares {
-		padding-top:50vh;
 		z-index:1;
 	}
 
@@ -1001,7 +1095,7 @@ a>.schedule:hover {
 	}
 
 	#about {
-		padding-left:40px;
+		margin-left:40px;
 	}
 
 	.about-text {
@@ -1050,6 +1144,10 @@ a>.schedule:hover {
 		font-weight:900;
 	}
 
+	.author {
+		max-width:400px;
+	}
+
 	.spotlight-box {
 		top:2vh;
 		left:2.5%;
@@ -1057,7 +1155,7 @@ a>.schedule:hover {
 	}
 
 	.spotlight {
-		font-size:40px;
+		font-size:50px;
 		letter-spacing:1px;
 		font-weight:900;
 	}
@@ -1073,7 +1171,10 @@ a>.schedule:hover {
 	}
 
 	.particles {
-		display:none;
+		position:absolute;
+		width:85vw;
+		top:-90px;
+		left:20px;
 	}
 
 	.card-text {
@@ -1093,8 +1194,22 @@ a>.schedule:hover {
 	}
 
 	.button {
-		font-size:20px;
+		font-size:16px;
 		padding:12px;
+	}
+
+	.modal ul {
+		font-size:13px;
+		padding-top:0;
+	}
+
+	.modal p {
+		padding:5px 20px 0px 20px;
+		font-size:13px;
+	}
+
+	.modal-title {
+		font-size:16px;
 	}
 
 	#past-events {
@@ -1159,8 +1274,12 @@ a>.schedule:hover {
 		font-size:22px;
 	}
 
+	.min-padding {
+		height:50vh;
+		min-height:360px;
+	}
+
 	.squares {
-		padding-top:50vh;
 		z-index:1;
 	}
 
@@ -1184,7 +1303,7 @@ a>.schedule:hover {
 	}
 	
 	#about {
-		padding-left:40px;
+		margin-left:40px;
 	}
 
 	.about-text {
@@ -1233,7 +1352,7 @@ a>.schedule:hover {
 	}
 
 	.spotlight {
-		font-size:40px;
+		font-size:60px;
 		letter-spacing:1px;
 		font-weight:900;
 	}
@@ -1242,6 +1361,10 @@ a>.schedule:hover {
 		font-size:40px;
 		letter-spacing:2px;
 		font-weight:900;
+	}
+
+	.author {
+		max-width:400px;
 	}
 
 	.precise-views-overlay {
@@ -1255,7 +1378,10 @@ a>.schedule:hover {
 	}
 
 	.particles {
-		display:block;
+		position:absolute;
+		width:80%;
+		top:-100px;
+		left:80px;
 	}
 
 	.card-text {
@@ -1277,6 +1403,16 @@ a>.schedule:hover {
 
 	.schedule .col-md-4 {
 		text-align:right;
+	}
+
+	.modal ul {
+		font-size:16px;
+		padding-top:0;
+	}
+
+	.modal p {
+		padding:5px 20px 0px 20px;
+		font-size:16px;
 	}
 
 	#past-events {
@@ -1345,8 +1481,12 @@ a>.schedule:hover {
 		font-size:22px;
 	}
 
+	.min-padding {
+		height:50vh;
+		min-height:360px;
+	}
+
 	.squares {
-		padding-top:50vh;
 		z-index:1;
 	}
 
@@ -1415,11 +1555,10 @@ a>.schedule:hover {
 
 	.spotlight-box {
 		top:4vh;
-		left:3%;
 	}
 
 	.spotlight {
-		font-size:50px;
+		font-size:500%;
 		letter-spacing:1px;
 		font-weight:900;
 	}
@@ -1428,6 +1567,10 @@ a>.schedule:hover {
 		font-size:50px;
 		letter-spacing:2px;
 		font-weight:900;
+	}
+
+	.author {
+		max-width:400px;
 	}
 
 	.precise-views-overlay {
@@ -1440,7 +1583,11 @@ a>.schedule:hover {
 	}
 
 	.particles {
-		display:block;
+		position:absolute;
+		max-width:1000px;
+		width:70%;
+		top:-100px;
+		left:80px;
 	}
 
 	.card-text {
@@ -1462,6 +1609,16 @@ a>.schedule:hover {
 	.button {
 		font-size:30px;
 		padding:18px;
+	}
+
+	.modal ul {
+		font-size:16px;
+		padding-top:0;
+	}
+
+	.modal p {
+		padding:5px 20px 0px 20px;
+		font-size:16px;
 	}
 
 	#past-events {
@@ -1515,4 +1672,17 @@ a>.schedule:hover {
 		margin-left: 360px;
 		display: inline;
 	}
+}
+
+::-webkit-scrollbar {
+	width:6px;
+}
+
+::-webkit-scrollbar-thumb {
+	background:rgb(255, 255, 255, 0.5);
+	border-radius:2px;
+}
+
+::-webkit-scrollbar-track {
+	background:rgb(13,32,52, 0.7);
 }
