@@ -31,8 +31,13 @@
 	left: 0;
 }
 
+#landing {
+	background-color:#000;
+}
+
 .background {
 	position: relative;
+	opacity:0;
 	height:100%;
 	overflow-y:hidden;
 	overflow-x:hidden;
@@ -62,16 +67,26 @@
 	z-index:0;
 }
 
+.particles {
+	opacity:0;
+}
+
 .squares {
 	z-index:1; 
 	position:relative;
 }
 
+.date {
+	opacity:0;
+}
+
 .time {
+	opacity:0;
 	background: rgb(228, 21, 26, 0.416);
 }
 
 .talk {
+	opacity:0;
 	background: rgb(228, 21, 26, 0.3185);
 }
 
@@ -81,6 +96,7 @@
 }
 
 .logo {
+	opacity:0;
 	position: relative;
 	height:100%;
 	overflow-y:hidden;
@@ -119,6 +135,7 @@
 }
 
 .tickets {
+	opacity:0;
 	position: relative;
 	height:100%;
 	overflow-y:hidden;

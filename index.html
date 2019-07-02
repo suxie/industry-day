@@ -34,7 +34,8 @@
 	</div>
 
 	<!-- Landing -->
-	<div class="background" id="landing">
+	<div id="landing">
+	<div class="background">
 		<div class="overlay">
 
 			<div class="cover container-fluid">
@@ -50,7 +51,7 @@
 							<img class="img-fluid" src="assets/time.svg">
 						</div>
 						<!--date-->
-						<div class="p-2 square">
+						<div class="p-2 square date">
 							<img class="img-fluid" src="assets/date.svg">
 						</div>
 					</div>
@@ -79,6 +80,7 @@
 			</div>
 
 		</div>
+	</div>
 	</div>
 
 	<!--About-->
@@ -2180,6 +2182,19 @@
 		<!-- Custom JavaScript-->
 		<script>
 			$('body').scrollspy({target: '#myNavbar'});
+
+			$('.particles').delay(0).animate({
+				opacity: 1.0}, 3000
+			);			$('.background').delay(0).animate({
+				opacity: 1.0}, 1000
+			);			$('.date').delay(700).animate({
+				opacity: 1.0}, 200
+			);			$('.time').delay(800).animate({				opacity: 1.0}, 200
+			);			$('.tickets').delay(900).animate({				opacity: 1.0}, 200
+			);			$('.talk').delay(1000).animate({				opacity: 1.0}, 200
+			);			$('.logo').delay(1100).animate({				opacity: 1.0}, 200
+			);
+
 			$('a[href*="#"]').on('click', function (e) {
 				e.preventDefault();
 				$('html, body').animate({
