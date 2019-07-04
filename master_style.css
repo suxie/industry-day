@@ -82,16 +82,16 @@
 
 .time {
 	opacity:0;
-	background: rgb(228, 21, 26, 0.416);
+	background: rgba(228, 21, 26, 0.416);
 }
 
 .talk {
 	opacity:0;
-	background: rgb(228, 21, 26, 0.3185);
+	background: rgba(228, 21, 26, 0.3185);
 }
 
 .talk:hover {
-	background: rgb(228, 21, 26, 0.75);
+	background: rgba(228, 21, 26, 0.75);
 	pointer:cursor;
 }
 
@@ -148,7 +148,7 @@
 	bottom: 0;
 	left: 0;
 	border-style: solid;
-	border-color: rgb(228, 21, 26, 0.84);
+	border-color: rgba(228, 21, 26, 0.84);
 	border-width: 7px;
 	-o-transition: opacity 0.5s ease-in-out;
 	-ms-transition: opacity 0.5s ease-in-out;
@@ -159,7 +159,7 @@
 
 .tickets:hover {
 	border-style: solid;
-	border-color: rgb(255, 255, 255, 0.9);
+	border-color: rgba(255, 255, 255, 0.9);
 	border-width: 7px;
 	-o-transition: opacity 0.5s ease-in-out;
 	-ms-transition: opacity 0.5s ease-in-out;
@@ -204,7 +204,7 @@
 }
 
 .menu {
-	background-color:rgb(255, 255, 255, 0.11);
+	background-color:rgba(255, 255, 255, 0.11);
 	background-image:none;
 	border:0px;
 	height:100%;
@@ -296,7 +296,7 @@ a:focus {
 	font-family:Roboto;
 	font-weight:700;
 	letter-spacing:2px;
-	background-color: rgb(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.1);
 	margin-top:15px;
 	margin-bottom:0;
 	padding:8px;
@@ -306,7 +306,7 @@ a:focus {
 
 .expand {
 	font-family:Roboto;
-	background-color:rgb(13,32,52, 0.7);
+	background-color:rgba(13,32,52, 0.7);
 	position:relative;
 	height:100%;
 	width:100%;
@@ -315,8 +315,8 @@ a:focus {
 
 .author {
 	font-weight:400;
-	color:rgb(255, 255, 255, 0.6);
-	background-color:rgb(13,32,52, 0.3);
+	color:rgba(255, 255, 255, 0.6);
+	background-color:rgba(13,32,52, 0.3);
 	padding-top:0px;
 }
 
@@ -333,7 +333,7 @@ a:focus {
 }
 
 .precise-views {
-	background-color:rgb(13,32,52, 0.5);
+	background-color:rgba(13,32,52, 0.5);
 	padding-top:50px;
 }
 
@@ -432,7 +432,7 @@ a:focus {
 .modal .company {
 	font-weight:900;
 	margin:0;
-	color:rgb(13,32,52, 0.7);
+	color:rgba(13,32,52, 0.7);
 	padding:0 20px;
 	font-size:15px;
 }
@@ -455,7 +455,7 @@ a:focus {
 }
 
 .modal-header {
-	background-color:rgb(13,32,52, 0.1);
+	background-color:rgba(13,32,52, 0.1);
 }
 
 .modal-footer {
@@ -495,12 +495,12 @@ li {
 }
 
 .blue:hover {
-	background-color:rgb(255,255,255, 0.1);
+	background-color:rgba(255,255,255, 0.1);
 	color:#fff;
 }
 
 a>.schedule:hover {
-	background-color:rgb(228, 21, 26, 0.4);
+	background-color:rgba(228, 21, 26, 0.4);
 	color:#fff;
 }
 
@@ -520,7 +520,7 @@ a>.schedule:hover {
 	border-radius: 6px; 
 	text-align:center;
 	color:#fff;
-	background-color:rgb(228, 21, 26);
+	background-color:rgba(228, 21, 26);
 	border-width: 0px;
 	font-family: Roboto;
 	font-weight:900;
@@ -534,7 +534,7 @@ a>.schedule:hover {
 
 .button:hover {
 	cursor:pointer;
-	background-color: rgb(255, 101, 106);
+	background-color: rgba(255, 101, 106);
 	color:#fff;
 	moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -548,7 +548,7 @@ a>.schedule:hover {
 
 #travel {
 	padding-top:5vh;
-	background-color:rgba(255, 255, 255);
+	background-color:rgbaa(255, 255, 255);
 }
 
 #travel p {
@@ -618,17 +618,17 @@ a>.schedule:hover {
 	margin-left:20px;
 	padding-left:15px;
 	border-left:solid;
-	border-color:rgb(0, 0, 0, 0.3);
+	border-color:rgba(0, 0, 0, 0.3);
 	border-width:3px;
-	color:rgb(0, 0, 0, 0.8);
+	color:rgba(0, 0, 0, 0.8);
 }
 
 #agenda a {
-	color:rgb(255, 255, 255, 0.75);
+	color:rgba(255, 255, 255, 0.75);
 }
 
 #agenda a:hover {
-	color:rgb(255, 255, 255);
+	color:rgba(255, 255, 255);
 	font-weight:900;
 	cursor:pointer;
 }
@@ -1756,10 +1756,10 @@ a>.schedule:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-	background:rgb(255, 255, 255, 0.5);
+	background:rgba(255, 255, 255, 0.5);
 	border-radius:2px;
 }
 
 ::-webkit-scrollbar-track {
-	background:rgb(13,32,52, 0.7);
+	background:rgba(13,32,52, 0.7);
 }
