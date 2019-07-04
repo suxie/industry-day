@@ -196,7 +196,7 @@
 #about {
 	background-color:#fff;
 	padding-top:5vh;
-	padding-bottom:15vh;
+	padding-bottom:5vh;
 }
 
 #keynote {
@@ -218,7 +218,6 @@
 }
 
 .about-text {
-	padding-top:5vh;
 	line-height:1.5;
 	text-align:center;
 }
@@ -261,6 +260,7 @@ a:focus {
 	font-family:Roboto;
 	font-weight:800;
 	margin:0;
+	line-height:1.2;
 }
 
 .spotlight-box {
@@ -314,13 +314,10 @@ a:focus {
 }
 
 .author {
-	font-weight:900;
-	color:rgb(255, 255, 255);
+	font-weight:400;
+	color:rgb(255, 255, 255, 0.6);
 	background-color:rgb(13,32,52, 0.3);
-	text-align:center;
 	padding-top:0px;
-	margin-left:auto;
-	margin-right:auto;
 }
 
 .arrow {
@@ -508,8 +505,8 @@ a>.schedule:hover {
 }
 
 .schedule-text {
-	padding:3px;
-	margin:5px;
+	padding:2px;
+	margin:2px;
 }
 
 #agenda {
@@ -563,8 +560,8 @@ a>.schedule:hover {
 	padding-top:0;
 }
 
-.padded {
-	padding-top:5vh;
+#travel .padded {
+	margin-top:5vh;
 }
 
 .venue {
@@ -605,6 +602,16 @@ a>.schedule:hover {
 
 .spotlight-highlight {
 	background-color:rgba(255, 255, 255, 0.8);
+	margin:0;
+	padding:0;
+	line-height:0.7;
+}
+
+.travel-highlight {
+	background-color:rgba(13,32,52, 0.8);
+	padding:5px;
+	color:#fff;
+	padding-right:auto;
 }
 
 .highlights {
@@ -628,7 +635,7 @@ a>.schedule:hover {
 
 @media (max-width:576px) {
 	p, ul {
-		font-size:14px;
+		font-size:12px;
 	}
 
 	h1 {
@@ -681,6 +688,9 @@ a>.schedule:hover {
 	}
 
 	.keynote-text {
+		max-width:90%;
+		margin-left:auto;
+		margin-right:auto;
 		background-color:#fff;
 		text-align:center;
 		margin-top:-10vw;
@@ -695,7 +705,6 @@ a>.schedule:hover {
 	.keynote-text .main {
 		text-align:left;
 		padding:0 12px 0 12px;
-		font-size:12px;
 	}
 
 	.title {
@@ -705,13 +714,12 @@ a>.schedule:hover {
 	}
 
 	.author {
-		max-width:300px;
+		font-size:10px;
 	}
 
 	.spotlight-box {
 		top:1vh;
 		left:5%;
-		max-width:30vw;
 	}
 
 	.spotlight {
@@ -731,6 +739,16 @@ a>.schedule:hover {
 
 	.about-text {
 		font-size:18px;
+	}
+
+	#about p {
+		padding-top:6px;
+		margin-bottom:0;
+	}
+
+	#about ul {
+		padding-top:0;
+		margin-top:5px;
 	}
 	
 	.particles {
@@ -838,7 +856,7 @@ a>.schedule:hover {
 
 @media (min-width:576px) and (max-width:768px) {
 	p, ul {
-		font-size:16px;
+		font-size:14px;
 	}
 
 	h1 {
@@ -880,6 +898,16 @@ a>.schedule:hover {
 		height:65vw;
 	}
 
+	#about p {
+		padding-top:6px;
+		margin-bottom:0;
+	}
+
+	#about ul {
+		padding-top:0;
+		margin-top:5px;
+	}
+
 	.keynote-background .keynote-text {
 		background-color:rgba(255, 255, 255);
 		text-align:center;
@@ -891,6 +919,9 @@ a>.schedule:hover {
 	}
 
 	.keynote-text {
+		max-width:90%;
+		margin-left:auto;
+		margin-right:auto;
 		background-color:#fff;
 		text-align:center;
 		margin-top:-10vw;
@@ -905,7 +936,6 @@ a>.schedule:hover {
 	.keynote-text .main {
 		text-align:left;
 		padding:0 12px 0 12px;
-		font-size:14px;
 	}
 
 	.title {
@@ -915,13 +945,15 @@ a>.schedule:hover {
 	}
 
 	.author {
+		font-size:12px;
 		max-width:350px;
+		margin-left:auto;
+		margin-right:auto;
 	}
 
 	.spotlight-box {
 		top:2vh;
 		left:3%;
-		max-width:30vw;
 	}
 
 	.spotlight {
@@ -1051,7 +1083,7 @@ a>.schedule:hover {
 
 @media (min-width:768px) and (max-width:992px) {
 	p, ul {
-		font-size:18px;
+		font-size:14px;
 	}
 
 	h1 {
@@ -1098,6 +1130,16 @@ a>.schedule:hover {
 		margin-left:40px;
 	}
 
+	#about p {
+		padding-top:8px;
+		margin-bottom:0;
+	}
+
+	#about ul {
+		padding-top:0;
+		margin-top:5px;
+	}
+
 	.about-text {
 		font-size:28px;
 	}
@@ -1121,6 +1163,9 @@ a>.schedule:hover {
 	}
 
 	.keynote-text {
+		max-width:90%;
+		margin-left:auto;
+		margin-right:auto;
 		background-color:#fff;
 		text-align:center;
 		margin-top:-10vw;
@@ -1135,7 +1180,6 @@ a>.schedule:hover {
 	.keynote-text .main {
 		text-align:left;
 		padding:0 12px 0 12px;
-		font-size:15px;
 	}
 
 	.title {
@@ -1145,13 +1189,14 @@ a>.schedule:hover {
 	}
 
 	.author {
-		max-width:400px;
+		font-size:13px;
+		margin-left:auto;
+		margin-right:auto;
 	}
 
 	.spotlight-box {
 		top:2vh;
 		left:2.5%;
-		max-width:300px;
 	}
 
 	.spotlight {
@@ -1263,7 +1308,7 @@ a>.schedule:hover {
 
 @media (min-width:992px) and (max-width:1200px) {
 	p, ul {
-		font-size:18px;
+		font-size:15px;
 	}
 
 	h1 {
@@ -1306,8 +1351,18 @@ a>.schedule:hover {
 		margin-left:40px;
 	}
 
+	#about p {
+		padding-top:8px;
+		margin-bottom:0;
+	}
+
+	#about ul {
+		padding-top:0;
+		margin-top:8px;
+	}
+
 	.about-text {
-		font-size:30px;
+		font-size:28px;
 	}
 
 	#keynote {
@@ -1329,6 +1384,9 @@ a>.schedule:hover {
 	}
 
 	.keynote-text {
+		max-width:90%;
+		margin-left:auto;
+		margin-right:auto;
 		background-color:#fff;
 		text-align:center;
 		margin-top:-10vw;
@@ -1343,7 +1401,6 @@ a>.schedule:hover {
 	.keynote-text .main {
 		text-align:left;
 		padding:0 12px 0 12px;
-		font-size:16px;
 	}
 
 	.spotlight-box {
@@ -1364,7 +1421,9 @@ a>.schedule:hover {
 	}
 
 	.author {
-		max-width:400px;
+		font-size:15px;
+		margin-left:auto;
+		margin-right:auto;
 	}
 
 	.precise-views-overlay {
@@ -1470,7 +1529,7 @@ a>.schedule:hover {
 
 @media (min-width:1200px) {
 	p, ul{
-		font-size:18px;
+		font-size:16px;
 	}
 
 	h1 {
@@ -1513,8 +1572,18 @@ a>.schedule:hover {
 		margin-left:40px;
 	}
 
+	#about p {
+		padding-top:8px;
+		margin-bottom:0;
+	}
+
+	#about ul {
+		padding-top:0;
+		margin-top:8px;
+	}
+
 	.about-text {
-		font-size:40px;
+		font-size:30px;
 	}
 
 	#keynote {
@@ -1536,6 +1605,9 @@ a>.schedule:hover {
 	}
 
 	.keynote-text {
+		max-width:90%;
+		margin-left:auto;
+		margin-right:auto;
 		text-align:center;
 		background-color:#fff;
 		margin-top:-10vw;
@@ -1550,7 +1622,6 @@ a>.schedule:hover {
 	.keynote-text .main {
 		text-align:left;
 		padding:0 12px 0 12px;
-		font-size:16px;
 	}
 
 	.spotlight-box {
@@ -1570,7 +1641,9 @@ a>.schedule:hover {
 	}
 
 	.author {
-		max-width:400px;
+		font-size:15px;
+		margin-left:auto;
+		margin-right:auto;
 	}
 
 	.precise-views-overlay {
@@ -1619,6 +1692,10 @@ a>.schedule:hover {
 	.modal p {
 		padding:5px 20px 0px 20px;
 		font-size:16px;
+	}
+
+	.parking {
+		max-width:112px;
 	}
 
 	#past-events {
