@@ -548,7 +548,7 @@ a>.schedule:hover {
 
 #travel {
 	padding-top:5vh;
-	background-color:rgbaa(255, 255, 255);
+	background-color:rgba(255, 255, 255);
 }
 
 #travel p {
@@ -562,6 +562,14 @@ a>.schedule:hover {
 
 #travel .padded {
 	margin-top:5vh;
+}
+
+.google_map{
+    width:100%;
+    margin-right:2%;
+    float: left;
+	height:100%;
+	margin-bottom:20px;
 }
 
 .venue {
@@ -592,7 +600,6 @@ a>.schedule:hover {
 	position: relative;
 	overflow-y:hidden;
 	overflow-x:hidden;
-	background-image: url(assets/past-events-cropped.png);
 	background-repeat: no-repeat;
 	top: 0;
 	right: 0;
@@ -814,12 +821,14 @@ a>.schedule:hover {
 
 	#past-events {
 		height: 335px;
-		background-size: 345px;
-		background-position: left;
+		background-size: 450px;
+		background-position: center;
 		padding-top:20px;
+		background-image: url(assets/past-events-large.png);
 	}
 
 	.events-title {
+		letter-spacing:2px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -832,25 +841,6 @@ a>.schedule:hover {
 		font-size: 23px;
 		line-height: 2;
 		display: inline;
-	}
-	
-	.event-1 {
-	}
-	
-	.event-2 {
-		margin-left: 0;
-	}
-	
-	.event-3 {
-		margin-left: 0;
-	}
-	
-	.event-4 {
-		margin-left: 0;
-	}
-	
-	.event-5 {
-		margin-left: 0;
 	}
 }
 
@@ -887,11 +877,11 @@ a>.schedule:hover {
 	}
 
 	.background {
-		min-height: 550px;
+		min-height: 600px;
 	}
 
 	.overlay {
-		min-height:550px;
+		min-height:600px;
 	}
 
 	.keynote-background {
@@ -1032,6 +1022,7 @@ a>.schedule:hover {
 		background-size: 320px;
 		background-position: left;
 		padding-top:10px;
+		background-image: url(assets/past-events-cropped.png);
 	}
 
 	.events-br {
@@ -1039,6 +1030,7 @@ a>.schedule:hover {
 	}
 
 	.events-title {
+		letter-spacing:2px;
 		position:absolute;
 		top: 0;
 		left: 6%;
@@ -1118,11 +1110,11 @@ a>.schedule:hover {
 	}
 
 	.background {
-		min-height: 550px;
+		min-height: 650px;
 	}
 
 	.overlay {
-		min-height:550px;
+		min-height:650px;
 		margin-left:40px;
 	}
 
@@ -1261,9 +1253,11 @@ a>.schedule:hover {
 		height: 420px;
 		background-size: 430px;
 		background-position: left;
+		background-image: url(assets/past-events-cropped.png);
 	}
 
 	.events-title {
+		letter-spacing:2px;
 		position:absolute;
 		top: 0;
 		left: 6%;
@@ -1478,9 +1472,11 @@ a>.schedule:hover {
 		height: 470px;
 		background-size: 550px;
 		background-position: left;
+		background-image: url(assets/past-events-cropped.png);
 	}
 
 	.events-title {
+		letter-spacing:2px;
 		position:absolute;
 		top: 0;
 		left: 10%;
@@ -1700,18 +1696,22 @@ a>.schedule:hover {
 
 	#past-events {
 		height: 520px;
-		background-size: 650px;
-		background-position: left;
+		background-size: 1100px;
+		background-position: center;
+		background-image: url(assets/past-events-large.png);
+		padding-top:15px;
 	}
 
 	.events-br {
 		display: none;
 	}
 
-	.events-title {
+	.events-title {	
+		letter-spacing:2px;
 		position:absolute;
 		top: 0;
 		left: 10%;
+
 	}
 
 	.events-text h1 {
@@ -1726,27 +1726,27 @@ a>.schedule:hover {
 	}
 	
 	.event-1 {
-		margin-left: 500px;
+		margin-left: 50%;
 		display: inline;
 	}
 	
 	.event-2 {
-		margin-left: 465px;
+		margin-left: 47%;
 		display: inline;
 	}
 	
 	.event-3 {
-		margin-left: 430px;
+		margin-left: 43%;
 		display: inline;
 	}
 	
 	.event-4 {
-		margin-left: 395px;
+		margin-left: 40%;
 		display: inline;
 	}
 	
 	.event-5 {
-		margin-left: 360px;
+		margin-left: 37%;
 		display: inline;
 	}
 }
