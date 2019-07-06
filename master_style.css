@@ -196,11 +196,21 @@
 #about {
 	background-color:#fff;
 	padding-top:5vh;
-	padding-bottom:5vh;
+	padding-bottom:15vh;
 }
 
 #keynote {
 	height:50vh;
+}
+
+nav {
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	overflow-x:hidden;
+	z-index:1;
+	width:200px;
 }
 
 .menu {
@@ -211,7 +221,6 @@
 	position:fixed;
 	top:0;
 	left:0;
-	margin:0;
 	overflow-x:hidden;
 	width: 40px;
 	z-index:1;
@@ -365,6 +374,8 @@ a:focus {
 	background-color:#fff;
 	padding-top:15px;
 	margin-bottom:15vh;
+	z-index:2;
+	position:relative;
 }
 
 .speaker-rows {
@@ -511,6 +522,8 @@ a>.schedule:hover {
 
 #agenda {
 	padding-bottom:15vh;
+	z-index:2;
+	position:relative;
 }
 
 .button {
@@ -549,6 +562,8 @@ a>.schedule:hover {
 #travel {
 	padding-top:5vh;
 	background-color:rgba(255, 255, 255);
+	z-index:2;
+	position:relative;
 }
 
 #travel p {
@@ -628,6 +643,15 @@ a>.schedule:hover {
 	border-color:rgba(0, 0, 0, 0.3);
 	border-width:3px;
 	color:rgba(0, 0, 0, 0.8);
+}
+
+.highlights ul {
+	list-style: square inside url(
+	'data:image/gif;base64,R0lGODlhBQAKAIABAAAAAP///yH5BAEAAAEALAAAAAAFAAoAAAIIjI+ZwKwPUQEAOw==');
+}
+
+.highlights li {
+	text-indent:-11px;
 }
 
 #agenda a {
@@ -802,7 +826,6 @@ a>.schedule:hover {
 
 	.schedule .col-md-4 {
 		padding:0;
-		padding-left:10%;
 	}
 
 	.modal ul {
@@ -995,7 +1018,6 @@ a>.schedule:hover {
 
 	.schedule .col-md-4 {
 		padding-top:0;
-		padding-left:11%;
 	}
 
 	.button {
@@ -1116,6 +1138,53 @@ a>.schedule:hover {
 	.overlay {
 		min-height:650px;
 		margin-left:40px;
+	}
+
+	nav {
+		padding-top:20vh;
+	}
+
+	nav ul {
+		margin:0;
+	}
+
+	.navbar-brand {
+		padding-left:8px;
+		padding-bottom:0;
+	}
+
+	.nav-pills {
+		display:block;
+		width:20px;
+	}
+
+	.nav-pills .nav-link {
+		border-radius:10px;
+	}
+
+	.nav-link {
+		padding:7px;
+		margin-left:12px;
+		margin-top:5px;
+		margin-bottom:5px;
+		background-color:rgba(255, 255, 255, 0.5);
+	}
+
+	.nav-pills .nav-link:hover {
+		background-color:#fff;
+	}
+
+	.nav-pills .nav-link.active {
+		background-color:#fff;
+		border-style:solid;
+		border-color:rgba(13,32,52, 0.4);
+		margin-left:10px;
+		margin-top:3px;
+		margin-bottom:3px;
+	}
+
+	.nav-pills .nav-link.active:hover {
+		cursor:pointer;
 	}
 
 	#about {
@@ -1340,6 +1409,53 @@ a>.schedule:hover {
 		min-height:700px;
 		margin-left:40px;
 	}
+
+	nav {
+		padding-top:20vh;
+	}
+
+	nav ul {
+		margin:0;
+	}
+
+	.navbar-brand {
+		padding-left:8px;
+		padding-bottom:0;
+	}
+
+	.nav-pills {
+		display:block;
+		width:20px;
+	}
+
+	.nav-pills .nav-link {
+		border-radius:10px;
+	}
+
+	.nav-link {
+		padding:7px;
+		margin-left:12px;
+		margin-top:5px;
+		margin-bottom:5px;
+		background-color:rgba(255, 255, 255, 0.5);
+	}
+
+	.nav-pills .nav-link:hover {
+		background-color:#fff;
+	}
+
+	.nav-pills .nav-link.active {
+		background-color:#fff;
+		border-style:solid;
+		border-color:rgba(13,32,52, 0.4);
+		margin-left:10px;
+		margin-top:3px;
+		margin-bottom:3px;
+	}
+
+	.nav-pills .nav-link.active:hover {
+		cursor:pointer;
+	}
 	
 	#about {
 		margin-left:40px;
@@ -1562,6 +1678,53 @@ a>.schedule:hover {
 	.overlay {
 		min-height:700px;
 		margin-left:40px;
+	}
+
+	nav {
+		padding-top:20vh;
+	}
+
+	nav ul {
+		margin:0;
+	}
+
+	.navbar-brand {
+		padding-left:8px;
+		padding-bottom:0;
+	}
+
+	.nav-pills {
+		display:block;
+		width:20px;
+	}
+
+	.nav-pills .nav-link {
+		border-radius:10px;
+	}
+
+	.nav-link {
+		padding:7px;
+		margin-left:12px;
+		margin-top:5px;
+		margin-bottom:5px;
+		background-color:rgba(255, 255, 255, 0.5);
+	}
+
+	.nav-pills .nav-link:hover {
+		background-color:#fff;
+	}
+
+	.nav-pills .nav-link.active {
+		background-color:#fff;
+		border-style:solid;
+		border-color:rgba(13,32,52, 0.4);
+		margin-left:10px;
+		margin-top:3px;
+		margin-bottom:3px;
+	}
+
+	.nav-pills .nav-link.active:hover {
+		cursor:pointer;
 	}
 
 	#about {

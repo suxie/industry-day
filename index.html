@@ -8,8 +8,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!--Bootstrap-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-		integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 
 	<!--Custom-->
 	<link rel="stylesheet" href="master_style.css">
@@ -19,22 +20,46 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700,900&display=swap" rel="stylesheet">
 
 	<!--JavaScript-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="processing.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	</script>
 </head>
 
-<body data-spy="scroll" data-target="#myNavbar">
+<body data-spy="scroll" data-target="#nav" data-offset="400">
 
 	<!--Menu-->
-	<div class="d-none d-md-block">
-		<div class="menu">
 
-		</div>
+	<!-- Sidebar Navigation -->
+	<div class="d-none d-md-block">
+		<div class="menu"></div>
+		<nav class="d-none d-md-block">
+			<a class="navbar-brand" href="#landing" id="return">
+				<img src="assets/home.png" width="24px"/>
+			</a>
+			<ul id="nav" class="nav flex-column nav-pills">
+				<li class="nav-item"> <a class="nav-link" href="#about" id="nav-about" data-toggle="popover" 
+					data-trigger="hover" data-placement="left" data-content="About"> </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#keynote" id="nav-keynote" data-toggle="popover" 
+					data-trigger="hover" data-placement="left" data-content="Keynote"> </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#speakers" id="nav-speakers" data-toggle="popover" 
+					data-trigger="hover" data-placement="left" data-content="Speakers"> </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#agenda" id="nav-agenda" data-toggle="popover" 
+					data-trigger="hover" data-placement="left" data-content="Agenda"> </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#travel" id="nav-travel" data-toggle="popover" 
+					data-trigger="hover" data-placement="left" data-content="Travel"> </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#past-events" id="nav-past" data-toggle="popover" 
+					data-trigger="hover" data-placement="left" data-content="Past Events"> </a> </li>
+			</ul>
+		</nav>
 	</div>
 
 	<!-- Landing -->
 	<div id="landing">
+	
 	<div class="background">
 		<div class="overlay">
 
@@ -85,6 +110,7 @@
 
 	<!--About-->
 	<div id="about">
+	
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 d-none d-md-block">
@@ -103,13 +129,13 @@
 					</h2>
 					<p>
 						PRECISE’s Industry Day 2019 is an informal and engaging day-long symposium for leading executives and engineers involved 
-						in working towards the same goal of making the world a safer, better place through AI/ML.  This event allows industry 
+						in working towards the same goal of making the world a safer, better place through AI/ML. This event allows industry 
 						the opportunity to also see first-hand, the latest, ground-breaking research being undertaken by PRECISE. Given its success 
 						year-after-year, PRECISE's Industry Day has grown to become one of Penn Engineering's signature events.
 					</p>
 					<p>
 						In the past, the presentations, given by our Industry Day speakers, covered several areas, such as designing and developing 
-						Cyber-Physical Systems, Embedded Systems, Hybrid Control Systems, and IoT.  However, in 2019, PRECISE has shifted its focus 
+						Cyber-Physical Systems, Embedded Systems, Hybrid Control Systems, and IoT. However, in 2019, PRECISE has shifted its focus 
 						to developing cutting-edge approaches, algorithms, tools and technologies for "Safe AI" - ensuring the safety of autonomous 
 						systems across various industries (e.g., automotive, medical, etc.)
 					</p>
@@ -162,28 +188,25 @@
 									JUSTIN GOTTSCHLICH </a>
 								<h2>Inventor, Leader, and Visionary in Machine Programming</h2>
 								<p class="main">Dr. Justin Gottschlich, a Senior Staff Research Scientist at Intel Labs, is
-									a prominent figure in artificial intelligence (AI)
-									and machine learning (ML). His research in AI focuses on machine programming,
-									anomaly detection, neural network verification,
-									deep learning, and autonomous systems. Currently, he leads a team of AI researchers
-									in the Programming Systems Research Group
-									at Intel Labs, where he is the lead principal investigator and co-founder of the $6M
-									Intel-NSF joint CAPA Research Center,
-									which aims to simplify the programmability of heterogeneous computing. He also is
-									responsible for directing Intel’s portfolio
-									of intellectual property related to machine programming (MP).
+									a prominent figure in artificial intelligence (AI) and machine learning (ML). His 
+									research in AI focuses on machine programming, anomaly detection, neural network 
+									verification, deep learning, and autonomous systems. Currently, he leads a team of 
+									AI researchers in the Programming Systems Research Group at Intel Labs, where he is 
+									the lead principal investigator and co-founder of the $6M Intel-NSF joint CAPA 
+									Research Center, which aims to simplify the programmability of heterogeneous 
+									computing. He also is responsible for directing Intel’s portfolio of intellectual 
+									property related to machine programming (MP).
 								</p>
 								<!--Read More-->
 								<div id="collapse-speaker" style="display:none">
 									<p class="main"> Much research and engineering must be done before autonomous
-										systems, like autonomous vehicles (AVs), can be fully realized.
-										Contrary to some AV experts’ opinions, it is Gottschlich’s belief that anomaly
-										detection must advance significantly before we
-										will reach level 4+ autonomy. He believes that the current state of the art is
-										not nearly advanced enough to be used reliably
-										and a level 3-only AV can put human lives at unnecessary risk. Sadly, this is
-										partially why we have seen a rising number of
-										tragic AV fatalities.
+										systems, like autonomous vehicles (AVs), can be fully realized. Contrary to 
+										some AV experts’ opinions, it is Gottschlich’s belief that anomaly detection 
+										must advance significantly before we will reach level 4+ autonomy. He 
+										believes that the current state of the art is not nearly advanced enough to 
+										be used reliably and a level 3-only AV can put human lives at unnecessary 
+										risk. Sadly, this is partially why we have seen a rising number of tragic 
+										AV fatalities.
 									</p>
 									<p class="main"> To help address this problem, in December 2018, Gottschlich et al.
 										published a paper at NeurIPS ’18, entitled
@@ -209,33 +232,29 @@
 										roadmap for its future evolution. Gottschlich's work in this area is significant
 										because it is key to the strategic vision of several industry
 										leaders (e.g., BMW, Amazon, Facebook, Microsoft). In fact, Facebook's creation
-										of an <a
+										of an <a 
 											href="https://siliconangle.com/2018/09/13/facebook-created-ai-based-tool-automate-bug-fixes/"
-											target="_blank">
-											AI-based tool to automate bug fixes in 2018</a> is an example of the
+											target="_blank">AI-based tool to automate bug fixes in 2018</a> is an example of the
 										“Adaptation Pillar” that Gottschlich wrote about in his paper.
 									</p>
 									<p class="main"> Recent advancements in ML-centric computational hardware (e.g.,
 										GPUs, distributed computing, neural processors, etc.), key algorithmic
-										discoveries and
-										techniques, and the vast amount of learning data now available are some of the
-										reasons why interest in MP has exploded and why Gottschlich is fascinated
-										with this field of research.
+										discoveries and techniques, and the vast amount of learning data now 
+										available are some of the reasons why interest in MP has exploded and 
+										why Gottschlich is fascinated with this field of research.
 									</p>
 									<p class="main"> In 2016, he co-founded the ACM Machine Learning and Programming
 										Languages (MAPL) workshop, and subsequently has been the chair and the program
-										chair of MAPL and
-										TRANSACT. Previously, Gottschlich was the vice-chair of the C++ Standard
-										Transactional Memory Working Group (SG5) during 2012 to 2014.
+										chair of MAPL and TRANSACT. Previously, Gottschlich was the vice-chair of the 
+										C++ Standard Transactional Memory Working Group (SG5) during 2012 to 2014.
 									</p>
 									<p class="main"> Gottschlich has led major projects and collaboration initiatives at
 										some of America's top corporations, startups, and research working groups. He
-										oversees and guides several Intel-driven ML research
-										projects at top universities such as Berkeley, Brown, MIT, Stanford, Texas A&M,
-										and the University of Washington. He has mentored some of the smartest minds at
-										America's top universities to solve
-										the problem of how to effectively build software for diverse hardware
-										architectures.
+										oversees and guides several Intel-driven ML research projects at top 
+										universities such as Berkeley, Brown, MIT, Stanford, Texas A&M, and the 
+										University of Washington. He has mentored some of the smartest minds at 
+										America's top universities to solve the problem of how to effectively build 
+										software for diverse hardware architectures.
 									</p>
 									<p class="main"> In the corporate realm, Gottschlich oversaw an industrial
 										collaboration between Intel and BMW on anomaly detection for autonomous
@@ -251,11 +270,9 @@
 										“Best Presentation” award at several conferences (Intel SWPC 2016, CGO 2010, and
 										Raytheon ISaC 2009).
 										<p class="main"> Gottschlich received his Ph.D. from the University of Colorado
-											in
-											Boulder, where he occasionally teaches a graduate-level course on neural
-											networks. Last fall, at the University of Pennsylvania,
-											he co-lectured a graduate-level course on anomaly detection for safe
-											autonomy.
+											in Boulder, where he occasionally teaches a graduate-level course on neural
+											networks. Last fall, at the University of Pennsylvania, he co-lectured a 
+											graduate-level course on anomaly detection for safe autonomy.
 										</p>
 								</div>
 								<a href="#collapse-speaker" class="nav-toggle-read">READ MORE</a>
@@ -279,28 +296,25 @@
 								<div id="collapse-precise" style="display:none">
 									<p class="main white">
 										Gottschlich is a spearpoint when it comes to intelligent,
-										safety-critical systems. His early work focused on algorithms, parallel and
+										safety-critical systems. His early work focused on algorithms, parallel and
 										distributed computing, computer architecture, embedded systems,
-										software/hardware efficiency,
-										C/C++ systems optimization, software programability and productivity. Since
-										then, Gottschlich's focus has shifted, and his more recent contributions are
-										centered around intelligent, autonomous systems, with a strong emphasis on
-										anomaly 
-										detection. His work in this area of research is considered, by many, to be the
-										defacto standard in the industry, due to his expansive knowledge of the
-										implementation of physical systems, and the significant impact of his
-										innovations in the field.
+										software/hardware efficiency, C/C++ systems optimization, software 
+										programability and productivity. Since then, Gottschlich's focus has shifted, 
+										and his more recent contributions are centered around intelligent, 
+										autonomous systems, with a strong emphasis on anomaly detection. His work 
+										in this area of research is considered, by many, to be the defacto standard 
+										in the industry, due to his expansive knowledge of the implementation of 
+										physical systems, and the significant impact of his innovations in the field.
 									</p>
 									<p class="main white">
 										Gottschlich constantly strives to leverage AI for the advancement and benefit of
-										people and society.  He represents a rare breed of researcher whose full-stack
-										experience enables him to see problems in 
-										unique ways that elude other researchers. Leveraging this foresight, Gottschlich
-										has become a force multiplier in the Assured Machine Learning community by
-										coordinating with Intel to fund and actively participate in foundational and
-										translative research focused on real-world problems plaguing AI systems.  We
-										believe their cutting-edge work will be critical to advancing the next
-										generation of safe, intelligent systems.
+										people and society. He represents a rare breed of researcher whose full-stack
+										experience enables him to see problems in unique ways that elude other 
+										researchers. Leveraging this foresight, Gottschlich has become a force multiplier 
+										in the Assured Machine Learning community by coordinating with Intel to fund and 
+										actively participate in foundational and translative research focused on 
+										real-world problems plaguing AI systems. We believe their cutting-edge work 
+										will be critical to advancing the next generation of safe, intelligent systems.
 									</p>
 									<p class="main white">
 										PRECISE is truly honored to host Dr. Justin Gottschlich as our Keynote
@@ -339,79 +353,14 @@
 							</a>
 						</div>
 						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
-							<a data-toggle="modal" data-target="#anand">
+							<a data-toggle="modal" data-target="#mauricio">
 								<div class="card">
-									<img class="card-img-top img-fluid" src="assets/anand-gopalan.jpg">
+									<img class="card-img-top img-fluid" src="assets/mauricio-castillo-effen.png">
 									<div class="card-body">
-										<h2 class="card-title">Anand Gopalan</h2>
-										<p class="card-text company">Velodyne Lidar</p>
-										<p class="card-text speaker-talk">Velodyne’s Next Generation of Sensors & True
-											Autonomy</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
-							<a data-toggle="modal" data-target="#byron">
-								<div class="card">
-									<img class="card-img-top img-fluid" src="assets/byron-byron.jpg">
-									<div class="card-body">
-										<h2 class="card-title">Byron Cook</h2>
-										<p class="card-text company">Amazon Web Services</p>
-										<p class="card-text speaker-talk">Reasoning about Security of Amazon Web
-											Services</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
-							<a data-toggle="modal" data-target="#christina">
-								<div class="card">
-									<img class="card-img-top img-fluid" src="assets/christina-werner.jpg">
-									<div class="card-body">
-										<h2 class="card-title">Christina Werner</h2>
-										<p class="card-text company">Daimler Trucks North America, LLC</p>
-										<p class="card-text speaker-talk">Automated Driving at Daimler Trucks</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
-							<a data-toggle="modal" data-target="#darren">
-								<div class="card">
-									<img class="card-img-top img-fluid" src="assets/cofer-darren.jpg">
-									<div class="card-body">
-										<h2 class="card-title">Darren Cofer</h2>
-										<p class="card-text company">Collins Aerospace</p>
-										<p class="card-text speaker-talk">Ready, Fire, Aim! AI for Safety-Critical
-											Systems</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
-							<a data-toggle="modal" data-target="#david">
-								<div class="card">
-									<img class="card-img-top img-fluid" src="assets/david-rhew.jpg">
-									<div class="card-body">
-										<h2 class="card-title">David Rhew</h2>
-										<p class="card-text company">Samsung Electronics</p>
-										<p class="card-text speaker-talk">Bridging the commercialization gap between
-											Safe AI technology solutions and
-											End-Users for Internet of Medical Things (IoMT)</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
-							<a data-toggle="modal" data-target="#jack">
-								<div class="card">
-									<img class="card-img-top img-fluid" src="assets/jack-weast.jpg">
-									<div class="card-body">
-										<h2 class="card-title">Jack Weast</h2>
-										<p class="card-text company">Mobileye</p>
-										<p class="card-text speaker-talk">An Open, Transparent, Industry-Driven Approach
-											to AV Safety</p>
+										<h2 class="card-title">Mauricio Castillo-Effen</h2>
+										<p class="card-text company">Lockheed Martin Advanced Technology Laboratories
+										</p>
+										<p class="card-text speaker-talk">Trustworthy Autonomous Systems</p>
 									</div>
 								</div>
 							</a>
@@ -430,27 +379,14 @@
 							</a>
 						</div>
 						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
-							<a data-toggle="modal" data-target="#justinian">
+							<a data-toggle="modal" data-target="#sanjian">
 								<div class="card">
-									<img class="card-img-top img-fluid" src="assets/justinian-rosca.jpg">
+									<img class="card-img-top img-fluid" src="assets/sanjian-chen.PNG">
 									<div class="card-body">
-										<h2 class="card-title">Justinian Rosca</h2>
-										<p class="card-text company">Siemens Corp</p>
-										<p class="card-text speaker-talk">Fail-Safe Architectures for Autonomous Guided
-											Vehicles</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
-							<a data-toggle="modal" data-target="#mauricio">
-								<div class="card">
-									<img class="card-img-top img-fluid" src="assets/mauricio-castillo-effen.png">
-									<div class="card-body">
-										<h2 class="card-title">Mauricio Castillo-Effen</h2>
-										<p class="card-text company">Lockheed Martin Advanced Technology Laboratories
-										</p>
-										<p class="card-text speaker-talk">Trustworthy Autonomous Systems</p>
+										<h2 class="card-title">Sanjian Chen</h2>
+										<p class="card-text company">Alibaba Group</p>
+										<p class="card-text speaker-talk">Building an AI Engine for Time Series Data
+											Analytics</p>
 									</div>
 								</div>
 							</a>
@@ -469,14 +405,66 @@
 							</a>
 						</div>
 						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
-							<a data-toggle="modal" data-target="#robie">
+							<a data-toggle="modal" data-target="#darren">
 								<div class="card">
-									<img class="card-img-top img-fluid" src="assets/robie-i-samanta-roy.jpg">
+									<img class="card-img-top img-fluid" src="assets/cofer-darren.jpg">
 									<div class="card-body">
-										<h2 class="card-title">Robie I. Samanta Roy</h2>
-										<p class="card-text company">Lockheed Martin</p>
-										<p class="card-text speaker-talk">Autonomous Systems in the Aerospace and
-											Defense Sector</p>
+										<h2 class="card-title">Darren Cofer</h2>
+										<p class="card-text company">Collins Aerospace</p>
+										<p class="card-text speaker-talk">Ready, Fire, Aim! AI for Safety-Critical
+											Systems</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
+							<a data-toggle="modal" data-target="#byron">
+								<div class="card">
+									<img class="card-img-top img-fluid" src="assets/byron-byron.jpg">
+									<div class="card-body">
+										<h2 class="card-title">Byron Cook</h2>
+										<p class="card-text company">Amazon Web Services</p>
+										<p class="card-text speaker-talk">Reasoning about Security of Amazon Web
+											Services</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
+							<a data-toggle="modal" data-target="#anand">
+								<div class="card">
+									<img class="card-img-top img-fluid" src="assets/anand-gopalan.jpg">
+									<div class="card-body">
+										<h2 class="card-title">Anand Gopalan</h2>
+										<p class="card-text company">Velodyne Lidar</p>
+										<p class="card-text speaker-talk">Velodyne’s Next Generation of Sensors & True
+											Autonomy</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
+							<a data-toggle="modal" data-target="#vinod">
+								<div class="card">
+									<img class="card-img-top img-fluid" src="assets/vinod-grover.jpg">
+									<div class="card-body">
+										<h2 class="card-title">Vinod Grover</h2>
+										<p class="card-text company">NVIDIA</p>
+										<p class="card-text speaker-talk">Improving Productivity and Performance for
+											writing ML models</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
+							<a data-toggle="modal" data-target="#steve">
+								<div class="card">
+									<img class="card-img-top img-fluid" src="assets/steve-lemke.jpg">
+									<div class="card-body">
+										<h2 class="card-title">Steve Lemke</h2>
+										<p class="card-text company">LG</p>
+										<p class="card-text speaker-talk">LG's Open Source Autonomous Driving Simulator
+										</p>
 									</div>
 								</div>
 							</a>
@@ -496,40 +484,66 @@
 							</a>
 						</div>
 						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
-							<a data-toggle="modal" data-target="#sanjian">
+							<a data-toggle="modal" data-target="#david">
 								<div class="card">
-									<img class="card-img-top img-fluid" src="assets/sanjian-chen.PNG">
+									<img class="card-img-top img-fluid" src="assets/david-rhew.jpg">
 									<div class="card-body">
-										<h2 class="card-title">Sanjian Chen</h2>
-										<p class="card-text company">Alibaba Group</p>
-										<p class="card-text speaker-talk">Building an AI Engine for Time Series Data
-											Analytics</p>
+										<h2 class="card-title">David Rhew</h2>
+										<p class="card-text company">Samsung Electronics</p>
+										<p class="card-text speaker-talk">Bridging the commercialization gap between
+											Safe AI technology solutions and
+											End-Users for Internet of Medical Things (IoMT)</p>
 									</div>
 								</div>
 							</a>
 						</div>
 						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
-							<a data-toggle="modal" data-target="#steve">
+							<a data-toggle="modal" data-target="#justinian">
 								<div class="card">
-									<img class="card-img-top img-fluid" src="assets/steve-lemke.jpg">
+									<img class="card-img-top img-fluid" src="assets/justinian-rosca.jpg">
 									<div class="card-body">
-										<h2 class="card-title">Steve Lemke</h2>
-										<p class="card-text company">LG</p>
-										<p class="card-text speaker-talk">LG's Open Source Autonomous Driving Simulator
-										</p>
+										<h2 class="card-title">Justinian Rosca</h2>
+										<p class="card-text company">Siemens Corp</p>
+										<p class="card-text speaker-talk">Fail-Safe Architectures for Autonomous Guided
+											Vehicles</p>
 									</div>
 								</div>
 							</a>
 						</div>
 						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
-							<a data-toggle="modal" data-target="#vinod">
+							<a data-toggle="modal" data-target="#robie">
 								<div class="card">
-									<img class="card-img-top img-fluid" src="assets/vinod-grover.jpg">
+									<img class="card-img-top img-fluid" src="assets/robie-i-samanta-roy.jpg">
 									<div class="card-body">
-										<h2 class="card-title">Vinod Grover</h2>
-										<p class="card-text company">NVIDIA</p>
-										<p class="card-text speaker-talk">Improving Productivity and Performance for
-											writing ML models</p>
+										<h2 class="card-title">Robie I. Samanta Roy</h2>
+										<p class="card-text company">Lockheed Martin</p>
+										<p class="card-text speaker-talk">Autonomous Systems in the Aerospace and
+											Defense Sector</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
+							<a data-toggle="modal" data-target="#jack">
+								<div class="card">
+									<img class="card-img-top img-fluid" src="assets/jack-weast.jpg">
+									<div class="card-body">
+										<h2 class="card-title">Jack Weast</h2>
+										<p class="card-text company">Mobileye</p>
+										<p class="card-text speaker-talk">An Open, Transparent, Industry-Driven Approach
+											to AV Safety</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
+							<a data-toggle="modal" data-target="#christina">
+								<div class="card">
+									<img class="card-img-top img-fluid" src="assets/christina-werner.jpg">
+									<div class="card-body">
+										<h2 class="card-title">Christina Werner</h2>
+										<p class="card-text company">Daimler Trucks North America, LLC</p>
+										<p class="card-text speaker-talk">Automated Driving at Daimler Trucks</p>
 									</div>
 								</div>
 							</a>
@@ -549,451 +563,403 @@
 				</div>
 			</div>
 			<div class="row schedule blue">
-				<div class="col-md-1 col-2">
-					<p class="schedule-text white">&nbsp;&nbsp;8:00</p>
+				<div class="col-md-2 col-3">
+					<p class="schedule-text white">&nbsp;&nbsp;8:00 AM</p>
 				</div>
-				<div class="col-lg-8 col-md-7 col-10">
+				<div class="col-lg-7 col-md-6 col-9">
 					<p class="schedule-text white">Breakfast and Registration</p>
 				</div>
 			</div>
 			<div class="row schedule blue">
-				<div class="col-md-1 col-2">
-					<p class="schedule-text white">&nbsp;&nbsp;8:45</p>
+				<div class="col-md-2 col-3">
+					<p class="schedule-text white">&nbsp;&nbsp;8:45 AM</p>
 				</div>
-				<div class="col-lg-8 col-md-7 col-10">
+				<div class="col-lg-7 col-md-6 col-9">
 					<p class="schedule-text white">Welcome and Introduction: PRECISE Overview </p>
 				</div>
 			</div>
 			<a data-toggle="modal" data-target="#darren">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;9:00</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;9:00 AM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">"Ready, Fire, Aim! AI for Safety-Critical Systems"</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Darren Cofer</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#robie">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;9:15</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;9:15 AM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">"Autonomous Systems in the Aerospace and Defense Sector"</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Robie I. Samanta Roy</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#mauricio">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;9:30</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;9:30 AM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">"Trustworthy Autonomous Systems"</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4  col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Mauricio Castillo-Effen</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#oleg">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;9:45</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;9:45 AM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-					<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Oleg Sokolsky</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;9:50</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;9:50 AM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">George Pappas</p>
 					</div>
 				</div>
 			</a>
 			<div class="row schedule blue">
-				<div class="col-md-1 col-2">
-					<p class="schedule-text white">&nbsp;&nbsp;9:55</p>
+				<div class="col-md-2 col-3">
+					<p class="schedule-text white">&nbsp;&nbsp;9:55 AM</p>
 				</div>
-				<div class="col-lg-8 col-md-7 col-10">
+				<div class="col-lg-7 col-md-6 col-9">
 					<p class="schedule-text white">Break</p>
 				</div>
 			</div>
 			<a data-toggle="modal" data-target="#fireside">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">10:00</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">10:00 AM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">Fireside Chat: "Bridging the commercialization gap between Safe AI technology solutions and
 							End-Users for Internet of Medical Things (IoMT)"</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">David Rhew<br/>Aiman Abdel-Malek<br/>Sandhya S. Pillalamarri</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#jim">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">10:25</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">10:25 AM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">James Weimer</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#alibaba">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">10:30</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">10:30 AM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">"Building an AI Engine for Time Series Data Analytics"</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Jian Chang<br/> Sanjian Chen</p>
 					</div>
 				</div>
 			</a>
 			<a href="#keynote">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">11:00</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">11:00 AM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">Keynote: "Anomalies and the Future of Autonomous Systems"</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Justin Gottschlich</p>
 					</div>
 				</div>
 			</a>
 			<div class="row schedule blue">
-				<div class="col-md-1 col-2">
-					<p class="schedule-text white">12:00</p>
+				<div class="col-md-2 col-3">
+					<p class="schedule-text white">12:00 PM</p>
 				</div>
-				<div class="col-lg-8 col-md-7 col-10">
+				<div class="col-lg-7 col-md-6 col-9">
 					<p class="schedule-text white">Lunch</p>
 				</div>
 			</div>
 			<a data-toggle="modal" data-target="#christina">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;1:00</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;1:00 PM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">"Automated Driving at Daimler Trucks"</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-				</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Christina Werner</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#justinian">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;1:15</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;1:15 PM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">"Fail-Safe Architectures for Autonomous Guided Vehicles"</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Justinian Rosca</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#steve">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;1:30</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;1:30 PM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">"LG's Open Source Autonomous Driving Simulator"</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Steve Lemke</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#anand">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;1:45</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;1:45 PM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">"Velodyne's Next Generation of Sensors & True Autonomy"</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Anand Gopalan</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#jack">
 				<div class="row schedule">
-						<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;2:00</p>
+						<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;2:00 PM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">"An Open, Transparent, Industry-Driven Approach to AV Safety"</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Jack Weast</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;2:15</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;2:15 PM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Rahul Mangharam</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;2:20</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;2:20 PM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Insup Lee</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;2:25</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;2:25 PM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Linh Thi Xuan Phan</p>
 					</div>
 				</div>
 			</a>
 			<div class="row schedule blue">
-				<div class="col-md-1 col-2">
-					<p class="schedule-text white">&nbsp;&nbsp;2:30</p>
+				<div class="col-md-2 col-3">
+					<p class="schedule-text white">&nbsp;&nbsp;2:30 PM</p>
 				</div>
-				<div class="col-lg-8 col-md-7 col-10">
+				<div class="col-lg-7 col-md-6 col-9">
 					<p class="schedule-text white">Break</p>
 				</div>
 			</div>
 			<a data-toggle="modal" data-target="">
 				<div class="row schedule">
-				<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;2:45</p>
+				<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;2:45 PM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Osbert Bastani</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;2:50</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;2:50 PM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Rajeev Alur</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;2:55</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;2:55 PM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Mayur Naik</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#joe">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;3:00</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;3:00 PM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Joe Devietti</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#byron">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;3:05</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;3:05 PM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">"Reasoning about Security of Amazon Web Services"</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Byron Cook</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#vinod">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;3:20</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;3:20 PM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">"Improving Productivity and Performance for Writing ML Models"</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-lg-3 col-md-4 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-lg-3 col-md-4 col-9">
 						<p class="schedule-text">Vinod Grover</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#rance">
 				<div class="row schedule">
-					<div class="col-md-1 col-2">
-						<p class="schedule-text">&nbsp;&nbsp;3:35</p>
+					<div class="col-md-2 col-3">
+						<p class="schedule-text">&nbsp;&nbsp;3:35 PM</p>
 					</div>
-					<div class="col-lg-8 col-md-7 col-10">
+					<div class="col-lg-7 col-md-6 col-9">
 						<p class="schedule-text">"Verification and Validation Issues in Machine-Learning and Control"</p>
 					</div>
-					<div class="d-inline-block d-sm-inline-block d-md-none">
-						<div class="col-2"><p class="schedule-text"></p></div>
-					</div>
-					<div class="col-md-4 col-lg-3 col-10">
+					<div class="d-inline d-md-none col-3"></div>
+					<div class="col-md-4 col-lg-3 col-9">
 						<p class="schedule-text">Rance Cleaveland</p>
 					</div>
 				</div>
 			</a>
 			<div class="row schedule blue">
-				<div class="col-md-1 col-2">
-					<p class="schedule-text white">&nbsp;&nbsp;3:50</p>
+				<div class="col-md-2 col-3">
+					<p class="schedule-text white">&nbsp;&nbsp;3:50 PM</p>
 				</div>
-				<div class="col-lg-8 col-md-7 col-10">
+				<div class="col-lg-7 col-md-6 col-9">
 					<p class="schedule-text white">PhDc Poster Overview</p>
 				</div>
 			</div>
 			<div class="row schedule blue">
-				<div class="col-md-1 col-2">
-					<p class="schedule-text white">&nbsp;&nbsp;4:25</p>
+				<div class="col-md-2 col-3">
+					<p class="schedule-text white">&nbsp;&nbsp;4:25 PM</p>
 				</div>
-				<div class="col-lg-8 col-md-7 col-10">
+				<div class="col-lg-7 col-md-6 col-9">
 					<p class="schedule-text white">Closing</p>
 				</div>
 			</div>
 			<div class="row schedule blue last">
-				<div class="col-md-1 col-2">
-					<p class="schedule-text white">&nbsp;&nbsp;4:30</p>
+				<div class="col-md-2 col-3">
+					<p class="schedule-text white">&nbsp;&nbsp;4:30 PM</p>
 				</div>
-				<div class="col-lg-8 col-md-7 col-10">
+				<div class="col-lg-7 col-md-6 col-9">
 					<p class="schedule-text white">Reception & Poster Session</p>
 				</div>
 			</div>
@@ -1025,19 +991,21 @@
 				<div class="col-12">
 					<div class="venue">
 						<h1>CONFERENCE VENUE: </h1>
-						<h2 style="font-family:Open Sans"> University of Pennsylvania (Wu & Chen Auditorium)</h2>
-						<h2 style="font-family:Open Sans">
-							Levine Hall Lobby Level, <br/>
-							3330 Walnut Street, <br/>
-							Philadelphia, PA 19104, USA 
-						</h2>
+						<h2 style="font-family:Open Sans"> University of Pennsylvania</h2>
+						<p><b>Wu & Chen Auditorium</b></p>
+						<p>
+							Levine Hall Lobby Level <br/>
+							3330 Walnut Street <br/>
+							Philadelphia, PA 19104<br/>
+							USA 
+						</p>
 					</div>
 				</div>
 			</div>
-			<div class="row"  style="position:relative; z-index:2">
+			<div class="row" style="position:relative; z-index:2">
 				<div class="col-12 col-md-6 col-xl-7">
 					<div class="google_map">
-						  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.515319793164!2d-75.19330184945797!3d39.95222989158165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c65a98142a23%3A0x8d43d5371b5e9781!2sLevine+Hall!5e0!3m2!1sen!2sus!4v1560788928958!5m2!1sen!2sus" 
+						 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.515319793164!2d-75.19330184945797!3d39.95222989158165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c65a98142a23%3A0x8d43d5371b5e9781!2sLevine+Hall!5e0!3m2!1sen!2sus!4v1560788928958!5m2!1sen!2sus" 
 							width=100% height=100% frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 				</div>
@@ -1062,15 +1030,15 @@
 					</p>
 				</div>
 			</div>
-			<div class="row"  style="position:relative; z-index:2">
+			<div class="row" style="position:relative; z-index:2">
 				<div class="col-12 col-md-6 col-xl-7">
 					<div class="d-flex">
 						<h2 class="padded travel-highlight">&nbsp;PARKING&nbsp;</h2>
 					</div>
 					<p> The closest garage, <a href="http://cms.business-services.upenn.edu/transportation/"
 						target="_blank">"Chestnut 34"</a>, is located at the northeast corner of 34th Street 
-						between Ludlow and Chestnut Streets.  Please enter off of 34th, north of Chestnut. This garage 
-						does not accept cash.  Credit and Debit cards are acceptable.  
+						between Ludlow and Chestnut Streets. Please enter off of 34th, north of Chestnut. This garage 
+						does not accept cash. Credit and Debit cards are acceptable. 
 					</p>
 				</div>
 				<div class="col-12 col-md-6 col-xl-5">
@@ -1080,8 +1048,9 @@
 					<div class="d-md-inline-block d-none d-md-flex">
 						<h2 class="padded travel-highlight transportation">&nbsp;TRANSPORTATION&nbsp;</h2>
 					</div>
-					<p style="padding-top:5px;"> <b>Airport:</b> The closest airport is PHL. </p>
-					<p style="padding-top:5px"> <b>Train:</b> The closest Amtrak station is 30th Street. </p>
+					<p> <b>Airport:</b> PHL </p>
+					<p> <b>Amtrak:</b> 30th Street </p>
+					<p> <b>SEPTA/Regional Rail:</b> University City </p>
 				</div>
 			</div>
 			<div class="row" style="position:relative; z-index:2">
@@ -1091,7 +1060,7 @@
 					</div>
 					<p> This conference is non-residential and delegates are requested to make their own accommodation bookings. 
 					</p>
-					<p style="margin-top:10px"> Our discounted rate at AKA University City will be available from 15 July to 15 August 2019.  
+					<p style="margin-top:10px"> Our discounted rate at AKA University City will be available from 15 July to 15 August 2019. 
 						Please contact <a href="mailto:rpatel@stayaka.com" target="_blank">Ralhan Patel</a>
 						with reservation.</p>
 					<ul>
@@ -1189,33 +1158,28 @@
 					<p class="company">Aiman Abdel-Malek, Insulet Corporation</p>
 					<p> Dr. Aiman Abdel-Malek served as the Executive Vice President and Chief Technology Officer at
 						Insulet Corporation (NASDAQ: PODD) since February 2018. From March 2016 to February 2018, he
-						was
-						Insulet's Senior Vice President, Advanced Technology and Engineering. At Insulet, Aiman’s
-						vision for a securely connected diabetes management system, controlled by users’
-						smartphones,
-						was realized. Under his leadership, Insulet developed, FDA cleared and market launched the
-						"DASH" digital products platform. This product was the first secure Bluetooth connected
-						diabetes management system platform, controlled by smartphone. DASH was also recognized
-						as the first Insulin pump to receive DTSec Cybersecurity Certification in diabetes.
+						was Insulet's Senior Vice President, Advanced Technology and Engineering. At Insulet, 
+						Aiman’s vision for a securely connected diabetes management system, controlled by users’
+						smartphones, was realized. Under his leadership, Insulet developed, FDA cleared and 
+						market launched the "DASH" digital products platform. This product was the first secure 
+						Bluetooth connected diabetes management system platform, controlled by smartphone. DASH 
+						was also recognized as the first Insulin pump to receive DTSec Cybersecurity Certification 
+						in diabetes.
 					</p>
 					<p> Prior to joining Insulet, Aiman served as President of Frictionless Life Analytics, Inc.,
 						a business development and healthcare technology advisory company which enables the growth
 						of start-up ventures focused on Internet of Things (IoT) platforms and solutions. From 2012
 						to 2015, Dr. Abdel-Malek served as Vice President of Engineering at Qualcomm Life, Inc., a
-						mobile
-						healthcare solutions Qualcomm company. From 1988 to 2012, he held various roles at General
-						Electric (GE), including General Manager - Global Services Technology at GE Healthcare where
-						he launched the first GE Healthcare predictive software services offerings. Dr. Abdel-Malek
-						brings over 20 years of experience as a senior executive, leading healthcare business teams
-						to develop breakthrough technology-based business solutions to many healthcare issues
-						globally.
-						He holds a Bachelor of Science in Systems and Biomedical Engineering from Cairo University
-						and
-						a Ph.D. in Biomedical Engineering from the University of Southern California. Dr.
-						Abdel-Malek
-						holds over 30 patents and publications and is a keynote speaker at various digital
-						healthcare,
-						secure IoT and mobile digital healthcare forums.
+						mobile healthcare solutions Qualcomm company. From 1988 to 2012, he held various roles at 
+						General Electric (GE), including General Manager - Global Services Technology at GE 
+						Healthcare where he launched the first GE Healthcare predictive software services 
+						offerings. Dr. Abdel-Malek brings over 20 years of experience as a senior executive, 
+						leading healthcare business teams to develop breakthrough technology-based business 
+						solutions to many healthcare issues globally. He holds a Bachelor of Science in Systems 
+						and Biomedical Engineering from Cairo University and a Ph.D. in Biomedical Engineering 
+						from the University of Southern California. Dr. Abdel-Malek holds over 30 patents and 
+						publications and is a keynote speaker at various digital healthcare, secure IoT and 
+						mobile digital healthcare forums.
 					</p>
 				</div>
 				<div class="modal-footer">
@@ -1229,40 +1193,56 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title" id="anand-title">Velodyne’s Next Generation of Sensors & True Autonomy
-					</h5>
+					</h5> 
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
 					<p class="company">Anand Gopalan, Velodyne Lidar</p>
-					<p> Anand Gopalan is Velodyne LiDAR's Chief Technology Officer. In this capacity he is
-						responsible
-						for the advanced product development and technology development that will power Velodyne's
-						next
-						generation LIDAR products.
+					<blockquote class="highlights">
+						<p> <u>ABSTRACT:</u> Gopalan will review the critical success factors 
+							Lidar technology must achieve for autonomous driving and advanced 
+							vehicle safety at highway speeds; and share insights on how their 
+							new thoroughly tested high-definition 3D Lidar provide millions 
+							more data points at highway speeds needed to enable advanced level 
+							4 and level 5 autonomous vehicles. In this formative stage when the 
+							industry is highly focused on proving the safety case for autonomous 
+							vehicles, automakers need to focus on a perception system that 
+							provides the maximum amount of clean, measured, data points for a 
+							car to make the best judgements. There are special safety concerns 
+							for exceptional accuracy and reliability in systems when driving 
+							at highway speeds. Gopalan will address how his team is addressing 
+							these key challenges. After delving into technological 
+							performance metrics (including range, accuracy, and resolution), 
+							he will also examine reliability and scalability metrics needed 
+							to ensure automotive-grade dependability at production volumes 
+							required by automakers as well as consumers.
+						</p>
+					</blockquote>
+					<p> Anand Gopalan is Velodyne LiDAR's Chief Technology Officer. In this 
+						capacity he is responsible for the advanced product development and 
+						technology development that will power Velodyne's next generation LIDAR 
+						products.
 					</p>
-					<p> Anand is a seasoned technology executive with experience building and leading world-wide
-						engineering
-						organizations for the development of products in consumer, networking and enterprise
-						domains. He has
-						grown and managed organizations through deep and dynamic business model transitions and
-						successfully
-						delivered on a wide array of high-speed mixed signal, optical and RF products.
+					<p> Gopalan is a seasoned technology executive with experience building and 
+						leading world-wide engineering organizations for the development of 
+						products in consumer, networking and enterprise domains. He has grown 
+						and managed organizations through deep and dynamic business model 
+						transitions and successfully delivered on a wide array of high-speed 
+						mixed signal, optical and RF products.
 					</p>
-					<p> Anand comes to Velodyne from Rambus where he was the VP of Engineering responsible for all
-						chip and IP
-						development activities for the Memory and Interfaced Division. In that capacity he was
-						responsible for
-						a global engineering team spread across multiple locations in North America and India that
-						developed a
-						variety of IP and products for Tier 1 ASIC and OEM customers. Prior to Rambus Anand
-						spear-headed world-wide
+					<p> Gopalan comes to Velodyne from Rambus where he was the VP of Engineering 
+						responsible for all chip and IP development activities for the Memory 
+						and Interfaced Division. In that capacity he was responsible for a 
+						global engineering team spread across multiple locations in North 
+						America and India that developed a variety of IP and products for Tier 1 
+						ASIC and OEM customers. Prior to Rambus Anand spear-headed world-wide 
 						analog/Mixed signal design at Megachips Inc.
 					</p>
-					<p> Anand holds a BE degree in Electronics from Mumbai University as well as MS and PhD from the
-						Rochester
-						Institute of Technology in Electrical engineering and Microsystems engineering.
+					<p> Gopalan holds a BE degree in Electronics from Mumbai University as well 
+						as MS and PhD from the Rochester Institute of Technology in Electrical 
+						engineering and Microsystems engineering.
 					</p>
 				</div>
 				<div class="modal-footer">
@@ -1282,14 +1262,11 @@
 				</div>
 				<div class="modal-body">
 					<p class="company">Byron Cook, Amazon Web Services</p>
-					<p> Byron Cook is Professor of Computer Science at University College London (UCL) and Senior
-						Principal
-						Applied Scientist at Amazon Web Services. Byron’s interests include computer/network
-						security,
-						program analysis/verification, programming languages, theorem proving, logic, hardware
-						design,
-						operating systems, and biological systems. Byron is the founder and leader of Amazon’s
-						Automated
+					<p> Byron Cook is Professor of Computer Science at University College London (UCL) 
+						and Senior Principal Applied Scientist at Amazon Web Services. Byron’s interests 
+						include computer/network security, program analysis/verification, programming 
+						languages, theorem proving, logic, hardware design, operating systems, and 
+						biological systems. Byron is the founder and leader of Amazon’s Automated 
 						Reasoning Group (ARG).
 					</p>
 				</div>
@@ -1312,15 +1289,13 @@
 				<div class="modal-body">
 					<p class="company">Christina Werner, Daimler Trucks North America, LLC</p>
 					<p> After receiving a Master’s degree in Information Systems from the Dresden University of
-						Technology in Germany, Christina Werner
-						joined Daimler AG and took over an assignment in developing the damage brake assist for
-						Mitsubishi Fuso in Japan. This is when
+						Technology in Germany, Christina Werner joined Daimler AG and took over an assignment 
+						in developing the damage brake assist for Mitsubishi Fuso in Japan. This is when
 						Christina discovered her passion for active safety systems, which can reduce traffic
-						accidents and save lives. After various
-						projects in the field of driver assistance systems, she is now a manager at the Daimler
-						Trucks Automated R&D Center in Portland, OR.
-						Christina and her team are engineering a vehicle platform, which is perfectly suited for
-						highly automated driving.
+						accidents and save lives. After various	projects in the field of driver assistance 
+						systems, she is now a manager at the Daimler Trucks Automated R&D Center in 
+						Portland, OR. Christina and her team are engineering a vehicle platform, which is 
+						perfectly suited for highly automated driving.
 					</p>
 				</div>
 				<div class="modal-footer">
@@ -1341,25 +1316,25 @@
 				<div class="modal-body">
 					<p class="company">Darren Cofer, Collins Aerospace</p>
 					<blockquote class="highlights">
-						<ul class="list-unstyled">
+						<ul>
 							<li>What are the challenges for use of AI/machine learning in safety-critical aerospace
 								applications?</li>
 							<li> What are the shortcomings of current development and verification methods?</li>
 							<li> How can formal methods, new testing techniques, and architectural mitigations address
 								these challenges?</li>
-					</ul>
-						<p> There has been much publicity surrounding the use of machine learning 
-							technologies in self-driving cars and the challenges this presents 
-							for guaranteeing safety. These technologies are also being 
-							investigated for use in manned and unmanned aircraft.  However, 
-							machine learning algorithms and their software implementations are 
-							not amenable to verification and certification using current methods. 
-							This limits the functionality that can realistically be fielded, 
-							and essentially precludes use of these technologies in 
-							safety-critical aerospace applications.  Our team is developing new 
-							technologies for analysis, testing, and architectural mitigation, 
-							with a goal of enabling autonomous systems to be safely deployed 
-							in critical environments.
+						</ul>
+						<p> <u>ABSTRACT:</u> There has been much publicity surrounding the use 
+							of machine learning technologies in self-driving cars and the 
+							challenges this presents for guaranteeing safety. These 
+							technologies are also being investigated for use in manned and 
+							unmanned aircraft. However, machine learning algorithms and 
+							their software implementations are not amenable to verification 
+							and certification using current methods. This limits the 
+							functionality that can realistically be fielded, and essentially 
+							precludes use of these technologies in safety-critical aerospace 
+							applications. Our team is developing new technologies for analysis, 
+							testing, and architectural mitigation, with a goal of enabling 
+							autonomous systems to be safely deployed in critical environments.
 						</p>
 					</blockquote>
 					<p> Dr. Darren Cofer is a Fellow in the Trusted Systems group at Collins
@@ -1406,33 +1381,26 @@
 				</div>
 				<div class="modal-body">
 					<p class="company">David Rhew, Samsung Electronics</p>
-					<p> Dr. David Rhew is the chief medical officer (CMO) and vice president (VP) and general
-						manager of Enterprise
-						(B2B) Healthcare for Samsung Electronics of America. David received his bachelor’s of
-						science degrees
-						in computer science and cellular molecular biology from the University of Michigan. He
-						received his M.D.
-						degree from Northwestern University and completed internal medicine residency at
-						Cedars–Sinai Medical Center.
-						He completed fellowships in health services research at Cedars–Sinai Medical Center and
-						infectious diseases
-						at the University of California, Los Angeles.
+					<p> Dr. David Rhew is the chief medical officer (CMO) and vice president (VP) and 
+						general manager of Enterprise (B2B) Healthcare for Samsung Electronics of America. 
+						David received his bachelor’s of science degrees in computer science and cellular 
+						molecular biology from the University of Michigan. He received his M.D. degree from 
+						Northwestern University and completed internal medicine residency at Cedars–Sinai 
+						Medical Center. He completed fellowships in health services research at Cedars–Sinai 
+						Medical Center and infectious diseases at the University of California, Los Angeles.
 					</p>
-					<p> Dr. Rhew has served as CMO and VP for Global Healthcare at Samsung SDS, senior VP and CMO at
-						Zynx Health Incorporated,
-						clinician/researcher in the Division of Infectious Diseases at the VA Greater Los Angeles
-						Healthcare System and associate
-						clinical professor of medicine at UCLA. Dr. Rhew has served on the National Quality Forum’s
-						(NQF) Steering Committee
-						for Pulmonary and Critical Care quality indicators and NQF Consensus Standards and Approval
-						Committee. He co–holds
-						six U.S. technology patents that enable the authoring, mapping and integration of clinical
-						decision support into
-						the electronic health record.
+					<p> Dr. Rhew has served as CMO and VP for Global Healthcare at Samsung SDS, senior VP 
+						and CMO at Zynx Health Incorporated, clinician/researcher in the Division of 
+						Infectious Diseases at the VA Greater Los Angeles Healthcare System and associate
+						clinical professor of medicine at UCLA. Dr. Rhew has served on the National 
+						Quality Forum’s (NQF) Steering Committee for Pulmonary and Critical Care quality 
+						indicators and NQF Consensus Standards and Approval Committee. He co–holds
+						six U.S. technology patents that enable the authoring, mapping and integration 
+						of clinical decision support into the electronic health record.
 					</p>
-					<p> Dr. Rhew’s interests include measurably improving the quality, safety, and efficiency of
-						patient care and
-						applying technology to engage patients and consumers in their health.
+					<p> Dr. Rhew’s interests include measurably improving the quality, safety, and 
+						efficiency of patient care and applying technology to engage patients and 
+						consumers in their health.
 					</p>
 				</div>
 				<div class="modal-footer">
@@ -1454,18 +1422,18 @@
 				<div class="modal-body">
 					<p class="company">Jack Weast, Intel</p>
 					<blockquote class="highlights"> 
-						<ul class="list-unstyled"> 
+						<ul> 
 							<li> How to formalize human concepts of safe driving to make a verifiable benchmark 
 								for AV safety? </li> 
 							<li> What are the challenges that come with regional differences in driving habits?
 							</li>
 						</ul>
-						<p> At Intel and Mobileye, saving lives drives us. But in the world of automated driving 
-							(AD), we believe safety is not merely an impact of AD, but the bedrock on which we 
-							all build this industry. And so we proposed Responsibility-Sensitive Safety (RSS), 
-							a formal (open/non-proprietary) model to define safe driving and what rules an 
-							automated vehicle, independent of brand or policy, should abide to always keep 
-							its passengers safe.
+						<p> <u>ABSTRACT:</u> At Intel and Mobileye, saving lives drives us. But in the world 
+							of automated driving (AD), we believe safety is not merely an impact of AD, but 
+							the bedrock on which we all build this industry. And so we proposed 
+							Responsibility-Sensitive Safety (RSS), a formal (open/non-proprietary) model to 
+							define safe driving and what rules an automated vehicle, independent of brand 
+							or policy, should abide to always keep its passengers safe.
 						</p>
 					</blockquote>
 					<p> Jack Weast is the VP Autonomous Vehicle Standards at Mobileye; he is also a Sr. Principal
@@ -1498,17 +1466,17 @@
 				<div class="modal-body">
 					<p class="company">Jian Chang, Alibaba Group</p>
 					<blockquote class="highlights">
-						<ul class="list-unstyled">
+						<ul>
 							<li>What are the state-of-the-art techniques for time-series data management?</li>
 							<li>How to apply cutting-edge modeling methods of time-series data to real-world 
 								application scenarios?</li>
 						</ul>
-						<p> Time series database is of great use for data management in IoT, retail, finance, 
-							and many other domains. Alibaba’s TSDB is a time series database that provides 
-							effective and economical services to business users. So far, we were able to 
-							scale our service to thousands of physical nodes and deliver peak performance 
-							at 80 million operations per second. Our experiences in building and operating 
-							TSDB significantly impact the industry best practice of time series data 
+						<p> <u>ABSTRACT:</u> Time series database is of great use for data management in IoT, 
+							retail, finance, and many other domains. Alibaba’s TSDB is a time series database 
+							that provides effective and economical services to business users. So far, we 
+							were able to scale our service to thousands of physical nodes and deliver peak 
+							performance at 80 million operations per second. Our experiences in building and 
+							operating TSDB significantly impact the industry best practice of time series data 
 							management. TSDB can empower companies across various industries to better 
 							understand data trends, discover anomalies, manage risks, and boost efficiency. 
 							We believe the audience can learn valuable experiences from our story to be prepared 
@@ -1564,33 +1532,25 @@
 					<p class="company">Justinian Rosca, Siemens Corp</p>
 					<p>Justinian Rosca is Senior Key Expert of Siemens Corp., Corporate Technology in Princeton NJ.
 						He holds Ph.D. and M.Sc. degrees Computer Science from the University of Rochester and a
-						Dipl.
-						Eng. Degree in Computer and Control Engineering from the Polytechnic University Bucharest.
-						Dr. Rosca is also an Affiliate Researcher at Princeton University, Electrical Engineering
-						Department and was Affiliate Professor at the University of Washington, Electrical
-						Engineering
-						Department, from 2008 to 2011. He obtained a certificate in executive management for
-						innovation,
-						from the University of Pennsylvania, Wharton School of Business. Dr. Rosca’s primary
-						research
-						interests span statistical signal processing, machine learning, probabilistic inference,
-						artificial intelligence, sensing and communication, with an emphasis on embedded
-						intelligence
-						in autonomous systems. Dr. Rosca holds over 60 patents, 100 publications in the areas of
-						signal processing, machine learning, communications, adaptive systems, and co-authored two
-						books in mathematics and signal processing. His scientific contributions were transferred
-						into a variety of products such as microphone array technologies for speech enhancement in
-						hearing aids and mobile phones, adaptive multimedia wireless network management, connected
-						and
-						autonomous vehicles, and run-time edge intelligence in industry. These contributions earned
-						him
-						multiple Siemens business awards. He served as program chair of the 6th Independent
-						Component
-						Analysis and Blind Signal Separation International Conference, chair of the Neural
-						Information
-						and Processing Systems workshop on Sparse Representations in Signal Processing, and recently
-						as chair of the Data Challenge 2015, 2016 and 2017 competitions of the Prognostics and
-						Health Management Society.
+						Dipl. Eng. Degree in Computer and Control Engineering from the Polytechnic University 
+						Bucharest. Dr. Rosca is also an Affiliate Researcher at Princeton University, Electrical 
+						Engineering Department and was Affiliate Professor at the University of Washington, 
+						Electrical Engineering Department, from 2008 to 2011. He obtained a certificate in 
+						executive management for innovation, from the University of Pennsylvania, Wharton School 
+						of Business. Dr. Rosca’s primary research interests span statistical signal processing, 
+						machine learning, probabilistic inference, artificial intelligence, sensing and 
+						communication, with an emphasis on embedded intelligence in autonomous systems. Dr. 
+						Rosca holds over 60 patents, 100 publications in the areas of signal processing, machine 
+						learning, communications, adaptive systems, and co-authored two books in mathematics and 
+						signal processing. His scientific contributions were transferred into a variety of 
+						products such as microphone array technologies for speech enhancement in hearing aids 
+						and mobile phones, adaptive multimedia wireless network management, connected and
+						autonomous vehicles, and run-time edge intelligence in industry. These contributions 
+						earned him multiple Siemens business awards. He served as program chair of the 6th 
+						Independent Component Analysis and Blind Signal Separation International Conference, 
+						chair of the Neural Information and Processing Systems workshop on Sparse 
+						Representations in Signal Processing, and recently as chair of the Data Challenge 
+						2015, 2016 and 2017 competitions of the Prognostics and Health Management Society.
 					</p>
 				</div>
 				<div class="modal-footer">
@@ -1611,35 +1571,26 @@
 				<div class="modal-body">
 					<p class="company">Mauricio Castillo-Effen, Lockheed Martin Advanced Technology Laboratories</p>
 					<p> Mauricio Castillo-Effen is a Senior Researcher with the Emergent Technologies Laboratory
-						(ETL), part
-						of Lockheed Martin Advanced Technology Laboratories (LM ATL). He leads the Trustworthy
-						Autonomous Systems
-						(TAS) Focus Area, whose primary objective is to endow autonomous systems with high assurance
-						qualities,
-						such as: correctness, safety, security, and resiliency. His team collaborates with multiple
-						Business Areas
-						across the company solving challenges related to Verification and Validation, Test and
-						Evaluation, and
+						(ETL), part of Lockheed Martin Advanced Technology Laboratories (LM ATL). He leads the 
+						Trustworthy Autonomous Systems (TAS) Focus Area, whose primary objective is to endow 
+						autonomous systems with high assurance qualities, such as: correctness, safety, security, 
+						and resiliency. His team collaborates with multiple Business Areas across the company 
+						solving challenges related to Verification and Validation, Test and Evaluation, and
 						certification of high criticality systems. He also collaborates externally with industrial
-						and academic
-						researchers developing methodology and tools that capture advances in high assurance cyber
-						physical
-						systems, robotics, and AI, making them accessible to practitioners and engineers.
+						and academic researchers developing methodology and tools that capture advances in high 
+						assurance cyber physical systems, robotics, and AI, making them accessible to 
+						practitioners and engineers.
 					</p>
 					<p> His background is in the areas of systems theory, control, and estimation applied to
-						robotics, unmanned systems,
-						and autonomy. His current research is centered on V&V, formal methods, and quantitative
-						approaches to certification
-						applied to high criticality software-intensive and AI-enabled systems. Aside from his daily
-						job as an industrial
+						robotics, unmanned systems, and autonomy. His current research is centered on V&V, formal 
+						methods, and quantitative approaches to certification applied to high criticality 
+						software-intensive and AI-enabled systems. Aside from his daily job as an industrial
 						researcher, Dr. Castillo-Effen has been an adjunct faculty member and a visiting
-						researcher/lecturer at multiple
-						academic institutions in the US and abroad. His work has been published in the form of
-						patents, academic publications
-						at conferences, journals, and books. He holds a Ph.D. from the University of South Florida,
-						a M.Sc. from the University
-						of San Simon/TU Delft, and a B.Sc. from the University of Applied Sciences of Hannover—all
-						in Electrical Engineering.
+						researcher/lecturer at multiple academic institutions in the US and abroad. His work has 
+						been published in the form of patents, academic publications at conferences, journals, 
+						and books. He holds a Ph.D. from the University of South Florida, a M.Sc. from the 
+						University of San Simon/TU Delft, and a B.Sc. from the University of Applied Sciences 
+						of Hannover—all in Electrical Engineering.
 					</p>
 				</div>
 				<div class="modal-footer">
@@ -1697,54 +1648,87 @@
 				</div>
 				<div class="modal-body">
 					<p class="company">Robie I. Samanta Roy, Lockheed Martin</p>
-					<p> Robie I. Samanta Roy is the Vice President for Technology at Lockheed Martin Government
-						Affairs
-						where he is responsible for supporting corporate engagements with the US Government S&T
-						community
-						across the United States. From 2014-2019, Dr. Samanta Roy was the corporate Vice President
-						for
-						Technology Strategy and Innovation under the Chief Technology Officer where he: 1) developed
-						and
-						provided technical intelligence and strategy for the corporation; 2) engaged the global S&T
-						ecosystem
-						outside the corporation – including government labs, universities, large and small
-						businesses, and
-						startups; and 3) fostered cross-enterprise innovation within the corporation as well as
-						external
-						innovation activities.
+					<blockquote class="highlights">
+						<ul>
+							<li> What are the challenges for use of AI/ML in safety-critical aerospace 
+								applications?</li>
+							<li> What are the shortcomings of current development and verification methods?
+								</li>
+							<li> How can formal methods, new testing techniques, and architectural 
+								mitigations address these challenges?
+							</li>
+						</ul>
+						<p> <u>ABSTRACT:</u> Autonomous systems in the Aerospace and Defense (A&D) 
+							sector cover a broad range of missions and domains from 
+							spacecraft-asteroid rendezvous where distances from earth are such 
+							that real-time communication is not possible to helicopter search and 
+							rescue (SAR) missions in harsh and challenging weather environments 
+							where pilots need to rely on autonomy to avoid fatal controlled 
+							flight into terrain. These autonomous systems compose, select and 
+							execute courses of action with varying levels of human interaction 
+							to ultimately aid humans to accomplish complex tasks and missions. 
+							Increasingly, Artificial Intelligence/Machine Learning (AI/ML) 
+							capabilities are being considered to address these complex missions 
+							as well as to evaluate collaboration between multiple systems. 
+							Across the spectrum of systems and missions, there is also a variable 
+							level of determinism to be considered. Systems can range from fully 
+							deterministic such as autopilot flight controls to highly 
+							non-deterministic such as command and control systems that learn and 
+							respond to dynamic environments and tasking.
+						</p>
+						<p> A key challenge in the A&D sector is for both operators and the test and 
+							evaluation (T&E) and safety communities to develop “trust” in these 
+							highly complex integrated hardware/software systems [of systems]. The 
+							A&D community approaches trust at both the individual human 
+							operator/partner level and at the organizational level. Both need to be 
+							able to assume an autonomous system will operate as expected. At the 
+							organizational level, the T&E community needs the appropriate 
+							verification and validation (V&V) methodologies and tools to certify and 
+							approve the system. Likewise, the safety community needs the system to 
+							work within an existing or evolving regulatory framework. In addition, 
+							these communities are facing pressures between maintaining high levels 
+							of safety within growing markets and technology developments on the 
+							international level.
+						</p>
+						<p> Today, the T&E and safety communities are focusing on fully 
+							deterministic systems, but are acutely aware of the need to address 
+							increasing non-determinism in the near future driven by the rapid 
+							expansion of applications of AI/ML and the supporting high performance 
+							computational (HPC) infrastructure. To increase the ability of these 
+							communities to accept and certify autonomous systems, current systems 
+							engineering approaches need to be bolstered with additional 
+							methodologies in the requirements and V&V phases. The complexity of the 
+							challenge requires context-specific integration of approaches ranging 
+							from formal methods to large scale synthetic simulation. Ultimately, as 
+							with any new technology, the regulatory community need to feel 
+							comfortable with the technologies and approval processes and it is 
+							incumbent on the developmental community to work hand in hand with them.
+						</p>
+					</blockquote>
+					<p> Robie I. Samanta Roy is the Vice President for Technology at Lockheed 
+						Martin Government Affairs where he is responsible for supporting 
+						corporate engagements with the US Government S&T community across the 
+						United States. From 2014-2019, Dr. Samanta Roy was the corporate Vice 
+						President for Technology Strategy and Innovation under the 
+						ChiefTechnology Officer. Prior to joining Lockheed Martin, Dr. Samanta 
+						Roy was a professional staff member with the Senate Armed Services 
+						Committee with the portfolio of the Department of Defense’s wide 
+						spectrum of science and technology-related activities including test and 
+						evaluation. He came to that position from the White House Office of 
+						Science and Technology Policy where he was the assistant director for 
+						Space and Aeronautics and was responsible for space and aeronautics 
+						activities ranging from human space flight to the Next Generation Air 
+						Transportation System.
 					</p>
-					<p> Prior to joining Lockheed Martin, Dr. Samanta Roy was a professional staff member with the
-						Senate
-						Armed Services Committee from 2010 to 2014 with the portfolio of the Department of Defense’s
-						wide
-						spectrum of science and technology-related activities including test and evaluation. He came
-						to that
-						position from the White House Office of Science and Technology Policy where he was the
-						assistant
-						director for Space and Aeronautics from 2005 to 2009 and was responsible for space and
-						aeronautics
-						activities ranging from human space flight to the Next Generation Air Transportation System.
-						Dr. Samanta Roy previously served as a Strategic Analyst at the Congressional Budget Office
-						and as
-						a Research Staff Member in the Systems Evaluation Division of the Institute for Defense
-						Analyses
-						in Alexandria, Virginia.
-					</p>
-					<p> Dr. Samanta Roy earned his Bachelor of Science, Master of Science and Ph.D. degrees in
-						aeronautics
-						and astronautics from MIT. He earned a master’s degree in space policy from George
-						Washington University
-						and diplomas from the International Space University and Institut d’Etudes Politiques de
-						Paris.
-					</p>
-					<p> Dr. Samanta Roy is a Fellow and member of the Board of Trustees of the American Institute of
-						Aeronautics
-						and Astronautics and a member of the National Research Council’s Aeronautics and Space
-						Engineering Board.
-						He also chairs the Industry Relations Committee of the International Astronautical
-						Federation and is on the
-						FAA’s Drone Advisory Committee. Dr. Samanta Roy continues to serve in the U.S. Air Force
-						Reserve.
+					<p> Dr. Samanta Roy earned his Bachelor of Science, Master of Science and 
+						Ph.D. degrees in aeronautics and astronautics from MIT. He earned a 
+						master’s degree in space policy from George Washington University and 
+						diplomas from the International Space University and Institut d’Etudes 
+						Politiques de Paris. Dr. Samanta Roy is a Fellow and member of the 
+						Board of Trustees of the American Institute of Aeronautics and 
+						Astronautics and a member of the National Research Council’s
+						Aeronautics and Space Engineering Board. He also is on the FAA’s Drone 
+						Advisory Committee and continues to serve in the U.S. Air Force Reserve.
 					</p>
 				</div>
 				<div class="modal-footer">
@@ -1768,34 +1752,28 @@
 					<p class="company">Sandhya S. Pillalamarri, Insulet Corporation</p>
 					<p> Sandhya Pillalamarri is an experienced leader in User Experience and Product Design of B2C
 						and B2B connected devices, IoT, enterprise and SaaS technology and responsive mobile
-						application
-						development. Sandhya specializes in human-computer interaction and user experience research
-						and
-						design with over 16 years spent leading creative teams on highly visible programs within
-						various industry verticals. She enjoys strategizing, managing and executing next-generation
-						products through to completion by working through the iterative lifecycle of user research,
-						ideation, design, usability analysis and implementation, to deliver product experiences that
-						are useful, usable, and delightful. Sandhya has written for and spoken at several trade
-						conferences, journals and other publications such as JDST, IA Summit, CHI, UXPA, ADA, HIMSS,
-						Stanford Radiology Symposium and Web 2.0 Expo. Sandhya has experience working for several
-						industry verticals such as medical devices, consumer devices, high-tech, education, emerging
-						markets and consumer lifestyle and service design. Most recently, Sandhya was the Senior
-						Director of User Experience COE at Insulet Corporation where she led a talented team of
-						designers, researchers, prototypes, technical writers, content strategists and other UX
+						application development. Sandhya specializes in human-computer interaction and user 
+						experience research and design with over 16 years spent leading creative teams on highly 
+						visible programs within various industry verticals. She enjoys strategizing, managing 
+						and executing next-generation products through to completion by working through the 
+						iterative lifecycle of user research, ideation, design, usability analysis and 
+						implementation, to deliver product experiences that are useful, usable, and delightful. 
+						Sandhya has written for and spoken at several trade conferences, journals and other 
+						publications such as JDST, IA Summit, CHI, UXPA, ADA, HIMSS, Stanford Radiology Symposium 
+						and Web 2.0 Expo. Sandhya has experience working for several industry verticals such as 
+						medical devices, consumer devices, high-tech, education, emerging markets and consumer 
+						lifestyle and service design. Most recently, Sandhya was the Senior Director of User 
+						Experience COE at Insulet Corporation where she led a talented team of designers, 
+						researchers, prototypes, technical writers, content strategists and other UX 
 						professionals delivering ubiquitous, cross-platform value to people and caregivers living
 						with diabetes. Prior to Insulet, she worked as the head of user experience at Dell Cloud
-						Manager,
-						director of user experience design at Pearson Education, director of enterprise user
-						experience
-						at Parametric Technology Corporation, senior design researcher at Philips Design, global
-						usability
-						lead at GE Healthcare, among others. Sandhya works to create new value for users by ensuring
-						that products deliver meaningful and valuable moments, build brand equity, and deliver
-						delightful
-						interactions thereby creating social good to the marketplace. Sandhya holds a Masters in
-						Management
-						in General Management, Operations, and Strategy from Harvard University, a Masters in
-						Human-Computer
+						Manager, director of user experience design at Pearson Education, director of enterprise 
+						user experience at Parametric Technology Corporation, senior design researcher at 
+						Philips Design, global usability lead at GE Healthcare, among others. Sandhya works 
+						to create new value for users by ensuring that products deliver meaningful and valuable 
+						moments, build brand equity, and deliver delightful interactions thereby creating 
+						social good to the marketplace. Sandhya holds a Masters in Management in General 
+						Management, Operations, and Strategy from Harvard University, a Masters in Human-Computer
 						Interaction from Carnegie Mellon University, and a Bachelor of Science in Computer Science
 						Engineering from Arizona State University.
 					</p>
@@ -1819,21 +1797,21 @@
 				<div class="modal-body">
 					<p class="company">Sanjian Chen, Alibaba Group</p>
 					<blockquote class="highlights">
-						<ul class="list-unstyled">
+						<ul>
 							<li>What are the state-of-the-art techniques for time-series data management?</li>
 							<li>How to apply cutting-edge modeling methods of time-series data to real-world 
 							application scenarios?</li>
 						</ul>
-						<p> Time series database is of great use for data management in IoT, retail, finance, 
-							and many other domains. Alibaba’s TSDB is a time series database that provides 
-							effective and economical services to business users. So far, we were able to 
-							scale our service to thousands of physical nodes and deliver peak performance 
-							at 80 million operations per second. Our experiences in building and operating 
-							TSDB significantly impact the industry best practice of time series data 
-							management. TSDB can empower companies across various industries to better 
+						<p> <u>ABSTRACT:</u> Time series database is of great use for data management in IoT, 
+							retail, finance, and many other domains. Alibaba’s TSDB is a time series database 
+							that provides effective and economical services to business users. So far, we 
+							were able to scale our service to thousands of physical nodes and deliver peak 
+							performance at 80 million operations per second. Our experiences in building 
+							and operating TSDB significantly impact the industry best practice of time series 
+							data management. TSDB can empower companies across various industries to better 
 							understand data trends, discover anomalies, manage risks, and boost efficiency. 
-							We believe the audience can learn valuable experiences from our story to be prepared 
-							for the zettabytes-scale IoT world in the years to come.
+							We believe the audience can learn valuable experiences from our story to be 
+							prepared for the zettabytes-scale IoT world in the years to come.
 						</p>
 						<p> Inside the Alibaba ecosystem, hundreds of petabytes of time-series data are 
 							generated each day. As the data grows rapidly, it becomes a challenge to query 
@@ -1884,23 +1862,17 @@
 				<div class="modal-body">
 					<p class="company">Vinod Grover, NVIDIA</p>
 					<p> Vinod Grover is a Director and Distinguished Engineer at NVIDIA. He has been with NVIDIA
-						since 2007
-						where he led a team that developed the CUDA C++ language and compiler for programing GPUs.
-						CUDA C++
-						has been a key catalyst in driving productivity, performance and innovation in many fields.
-						Since 2017,
-						Vinod has been focused on bringing the same productivity and performance to the problem of
-						accelerating
-						ML models by using important ideas from language design and compiler technology. He is
-						currently leading
-						a small group that is focused on problems of performance and productivity to the development
-						of ML models.
-						Previously Vinod held engineering, research and management positions at Sun Microsystems and
-						Microsoft.
+						since 2007 where he led a team that developed the CUDA C++ language and compiler for 
+						programing GPUs. CUDA C++ has been a key catalyst in driving productivity, performance 
+						and innovation in many fields. Since 2017, Vinod has been focused on bringing the same 
+						productivity and performance to the problem of accelerating ML models by using important 
+						ideas from language design and compiler technology. He is currently leading a small group 
+						that is focused on problems of performance and productivity to the development of ML 
+						models. Previously Vinod held engineering, research and management positions at Sun 
+						Microsystems and Microsoft.
 					</p>
 					<p> Vinod holds a Bachelor’s degree in Physics from IIT Delhi (1979) and a Master’s degree in
-						Computer Science
-						from Syracuse University (1982).
+						Computer Science from Syracuse University (1982).
 					</p>
 				</div>
 				<div class="modal-footer">
@@ -1921,20 +1893,20 @@
 				<div class="modal-body">
 					<p class="company">Steve Lemke, LG</p>
 					<blockquote class="highlights"> 
-						<ul class="list-unstyled"> 
+						<ul> 
 							<li> What are the challenges of building an autonomous simulator? </li> 
 							<li> How AV simulation on the desktop can provide 10-100x as much test coverage 
 								at a fraction of the cost of real world in-the-car testing?
 							</li>
 						</ul>
-						<p> Autonomous Vehicles are in the news every day but there is still a long road 
-							ahead for the companies working on them. Autonomous Vehicle (AV) simulation will 
-							play a huge role in the testing and certification of AV technology and is also 
-							a critical engineering tool used in the daily development and testing of AV 
-							technology. Professional but proprietary automotive simulation tools can cost 
-							$100,000 USD, and while open source simulators are also available, most have 
-							limited functionality and require a great deal of custom programming in order 
-							to integrate them with autonomous driving software.
+						<p> <u>ABSTRACT:</u>Autonomous Vehicles are in the news every day but there is still 
+							a long road ahead for the companies working on them. Autonomous Vehicle (AV) 
+							simulation will play a huge role in the testing and certification of AV 
+							technology and is also a critical engineering tool used in the daily development 
+							and testing of AV technology. Professional but proprietary automotive simulation 
+							tools can cost $100,000 USD, and while open source simulators are also available, 
+							most have limited functionality and require a great deal of custom programming 
+							in order to integrate them with autonomous driving software.
 						</p>
 						<p> The LGSVL Simulator (including the required 3D models, high definition maps, 
 							and photo-realistic digital environments) changes all of that. Designed and 
@@ -2005,7 +1977,7 @@
 						patient care and
 						applying technology to engage patients and consumers in their health.
 					</p>
-						<p class="company">Aiman Abdel-Malek, Insulet Corporation</p>
+					<p class="company">Aiman Abdel-Malek, Insulet Corporation</p>
 					<p> Dr. Aiman Abdel-Malek served as the Executive Vice President and Chief Technology Officer at
 						Insulet Corporation (NASDAQ: PODD) since February 2018. From March 2016 to February 2018, he
 						was
@@ -2036,7 +2008,7 @@
 						healthcare,
 						secure IoT and mobile digital healthcare forums.
 					</p>
-						<p class="company">Sandhya S. Pillalamarri, Insulet Corporation</p>
+					<p class="company">Sandhya S. Pillalamarri, Insulet Corporation</p>
 					<p> Sandhya Pillalamarri is an experienced leader in User Experience and Product Design of B2C
 						and B2B connected devices, IoT, enterprise and SaaS technology and responsive mobile
 						application
@@ -2088,7 +2060,7 @@
 				</div>
 				<div class="modal-body">
 					<p class="company">James Weimer</p>
-					<p> As AI is integrated into safety critical systems in medicine and autonomy, empirical 
+					<p> <u>ABSTRACT:</u>As AI is integrated into safety critical systems in medicine and autonomy, empirical 
 						training data used to build learning-enabled systems may not assure predictable 
 						performance and safety guarantees since the data can be limited, sparse, or “thin” 
 						due to small sample sizes, dataset shifts, anomalies, and a limited understanding of 
@@ -2116,12 +2088,12 @@
 				<div class="modal-body">
 					<p class="company">Jian Chang and Sanjian Chen, Alibaba Group</p>
 					<blockquote class="highlights">
-						<ul class="list-unstyled">
+						<ul>
 							<li>What are the state-of-the-art techniques for time-series data management?</li>
 							<li>How to apply cutting-edge modeling methods of time-series data to real-world 
 							application scenarios?</li>
 						</ul>
-						<p> Time series database is of great use for data management in IoT, retail, finance, 
+						<p><u>ABSTRACT:</u>Time series database is of great use for data management in IoT, retail, finance, 
 							and many other domains. Alibaba’s TSDB is a time series database that provides 
 							effective and economical services to business users. So far, we were able to 
 							scale our service to thousands of physical nodes and deliver peak performance 
@@ -2192,11 +2164,11 @@
 				</div>
 				<div class="modal-body">
 					<p class="company">Joe Devietti</p>
-					<p> As computer architectures become ever more complex and heterogenous, optimizing 
-						for each platform becomes increasingly difficult. Our "Feedback-Driven Processors",
-						which uses performance counter data from live executions to discover performance 
-						bugs and automatically repair them, will allow programs to adapt to their current 
-						platform and run-time conditions without needing programmer effort.
+					<p> <u>ABSTRACT:</u>As computer architectures become ever more complex and heterogenous, 
+						optimizing for each platform becomes increasingly difficult. Our "Feedback-Driven 
+						Processors", which uses performance counter data from live executions to discover 
+						performance bugs and automatically repair them, will allow programs to adapt to 
+						their current platform and run-time conditions without needing programmer effort.
 					</p>
 				</div>
 				<div class="modal-footer">
@@ -2216,10 +2188,10 @@
 				</div>
 				<div class="modal-body">
 					<p class="company">Oleg Sokolsky</p>
-					<p> In modern, highly complex system, design-time verification may not guarantee 
-						correct operation of the system.  Monitoring of system behavior can help detect 
-						unanticipated problems and recover from them.  Our tool for generation and 
-						deployment of monitors from formally specified requirements allows users to 
+					<p> <u>ABSTRACT:</u> In modern, highly complex system, design-time verification may 
+						not guarantee correct operation of the system. Monitoring of system behavior can 
+						help detect unanticipated problems and recover from them. Our tool for generation 
+						and deployment of monitors from formally specified requirements allows users to 
 						enact flexible and efficient monitor configurations.
 					</p>
 				</div>
@@ -2234,7 +2206,7 @@
 	</div>
 		<!-- Custom JavaScript-->
 		<script>
-			$('body').scrollspy({target: '#myNavbar'});
+			$('body').scrollspy({target: '#nav'});
 
 			$('.particles').delay(0).animate({
 				opacity: 1.0}, 3000
@@ -2265,23 +2237,62 @@
 			);
 
 
-			$('a[href*="#"]').on('click', function (e) {
-				e.preventDefault();
-				$('html, body').animate({
-					scrollTop: $($(this).attr('href')).offset().top
-				}, 300, 'linear');
+			$(function () {
+			  $('[data-toggle="popover"]').popover({
+				container: 'body'
+			  })
 			});
 
-			// from https://bootsnipp.com/snippets/ZVKyx
+			// Select all links with hashes
+			$('a[href*="#"]')
+			// Remove links that don't actually link to anything
+				.not('[href="#"]')
+				.not('[href="#0"]')
+				.click(function(event) {
+					// On-page links
+					if (
+					location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+					&& 
+					location.hostname == this.hostname
+					) {
+					// Figure out element to scroll to
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					// Does a scroll target exist?
+					if (target.length) {
+						// Only prevent default if animation is actually gonna happen
+						event.preventDefault();
+						setTimeout(function() {
+							$('html, body').animate({
+								scrollTop: target.offset().top
+							}, 1000, function() {
+								// Callback after animation
+								// Must change focus!
+								var $target = $(target);
+								$target.focus();
+								if ($target.is(":focus")) { // Checking if the target was focused
+									return false;
+								} else {
+									$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+									$target.focus(); // Set focus again
+								};
+							});
+						}, 10);
+						
+					}
+				}
+			});
+
+			  // from https://bootsnipp.com/snippets/ZVKyx
 			$(document).ready(function () {
 				$('.nav-toggle-read').click(function () {
 					var collapse_content_selector = $(this).attr('href');
 					var toggle_switch = $(this);
 					$(collapse_content_selector).toggle(function () {
 						if ($(this).css('display') == 'none') {
-							toggle_switch.html('Read More');
+							toggle_switch.html('READ MORE');
 						} else {
-							toggle_switch.html('Read Less');
+							toggle_switch.html('READ LESS');
 						}
 					});
 				});
@@ -2298,6 +2309,7 @@
 					});
 				});
 			});
+			
 		</script>
 </body>
 
