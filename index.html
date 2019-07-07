@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-
 	<!--Custom-->
 	<link rel="stylesheet" href="master_style.css">
 	<link rel="shortcut icon" href="logo.ico">
@@ -19,17 +18,10 @@
 	<!--Google Fonts:-->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700,900&display=swap" rel="stylesheet">
 
-	<!--JavaScript-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-	</script>
+	
 </head>
 
-<body data-spy="scroll" data-target="#nav" data-offset="400">
+<body data-spy="scroll" data-target="#nav">
 
 	<!--Menu-->
 
@@ -51,11 +43,38 @@
 					data-trigger="hover" data-placement="left" data-content="Agenda"> </a> </li>
 				<li class="nav-item"> <a class="nav-link" href="#travel" id="nav-travel" data-toggle="popover" 
 					data-trigger="hover" data-placement="left" data-content="Travel"> </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#contact" id="nav-past" data-toggle="popover" 
+					data-trigger="hover" data-placement="left" data-content="Event Contact"> </a> </li>
 				<li class="nav-item"> <a class="nav-link" href="#past-events" id="nav-past" data-toggle="popover" 
 					data-trigger="hover" data-placement="left" data-content="Past Events"> </a> </li>
 			</ul>
 		</nav>
 	</div>
+
+	<!--Collapsed Navbar-->
+	<div class="d-md-none d-block">
+		<nav class="menu-top navbar-collapse navbar-dark fixed-top">
+			<a class="navbar-brand" style="padding-top:6px; padding-left:12px" href="#landing">
+				<img src="assets/home.png" width="20px">
+			</a>
+			<button class="navbar-toggler" style="float:right" type="button" data-toggle="collapse" data-target="#dropdown" 
+				aria-controls="dropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="dropdown" style="z-index:11">
+				<ul class="navbar-collapse list-unstyled">
+					<li class="nav-item collapsed"> <a class="nav-link" href="#about"> ABOUT </a> </li>
+					<li class="nav-item collapsed"> <a class="nav-link" href="#keynote"> KEYNOTE </a> </li>
+					<li class="nav-item collapsed"> <a class="nav-link" href="#speakers"> SPEAKERS </a> </li>
+					<li class="nav-item collapsed"> <a class="nav-link" href="#agenda"> AGENDA </a> </li>
+					<li class="nav-item collapsed"> <a class="nav-link" href="#travel"> TRAVEL </a> </li>
+					<li class="nav-item collapsed"> <a class="nav-link" href="#contact" > EVENT CONTACT </a> </li>
+					<li class="nav-item collapsed"> <a class="nav-link" href="#past-events" > PAST EVENTS </a> </li>
+					</a> </li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 
 	<!-- Landing -->
 	<div id="landing">
@@ -143,20 +162,39 @@
 						"Safe autonomy" is currently one of the most critical and hard open problems in the autonomous systems space. Given our 
 						specific theme, some of the questions that our speakers will answer are listed below:
 					</p>
-					<ul>
-						<li>What are the challenges for use of AI/machine learning in safety-critical aerospace
-							applications?</li>
-						<li> What are the shortcomings of current development and verification methods?</li>
-						<li> How can formal methods, new testing techniques, and architectural mitigations address
-							these challenges?</li>
-						<li> How to formalize human concepts of safe driving to make a verifiable benchmark for AV safety?</li>
-						<li> What are the challenges that come with regional differences in driving habits?</li>
-						<li> What are the challenges of building an autonomous simulator? </li>
-						<li> How AV simulation on the desktop can provide 10-100x as much test coverage at a fraction of the cost of real world in-the-car testing?</li>
-						<li>What are the state-of-the-art techniques for time-series data management?</li>
-						<li>How to apply cutting-edge modeling methods of time-series data to real-world 
-							application scenarios?</li>
-					</ul>
+					<div id="carousel-about" class="carousel slide carousel-fade" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-about" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-about" data-slide-to="1"></li>
+							<li data-target="#carousel-about" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<ul>
+									<li>What are the challenges for use of AI/machine learning in safety-critical aerospace
+										applications?</li>
+									<li> What are the shortcomings of current development and verification methods?</li>
+									<li> How can formal methods, new testing techniques, and architectural mitigations address
+										these challenges?</li>
+								</ul>
+							</div>
+							<div class="carousel-item">
+								<ul>
+									<li> How to formalize human concepts of safe driving to make a verifiable benchmark for AV safety?</li>
+									<li> What are the challenges that come with regional differences in driving habits?</li>
+									<li> What are the challenges of building an autonomous simulator? </li>
+								</ul>
+							</div>
+							<div class="carousel-item">
+								<ul> 
+									<li> How AV simulation on the desktop can provide 10-100x as much test coverage at a fraction of the cost of real world in-the-car testing?</li>
+									<li>What are the state-of-the-art techniques for time-series data management?</li>
+									<li>How to apply cutting-edge modeling methods of time-series data to real-world 
+										application scenarios?</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -174,6 +212,7 @@
 					<div style="background-color:rgba(0,0,0,0);">
 						<p class="author">Written by: Wai-Ping Ng (Assistant Director, PRECISE)</p>
 					</div>
+					<h2><img src="assets/intel_ai.png"><img src="assets/intel_labs.png"></h2>
 				</div>
 			</div>
 		</div>
@@ -563,403 +602,403 @@
 				</div>
 			</div>
 			<div class="row schedule blue">
-				<div class="col-md-2 col-3">
+				<div class="col-md-2 col-sm-3 col-4">
 					<p class="schedule-text white">&nbsp;&nbsp;8:00 AM</p>
 				</div>
-				<div class="col-lg-7 col-md-6 col-9">
+				<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 					<p class="schedule-text white">Breakfast and Registration</p>
 				</div>
 			</div>
 			<div class="row schedule blue">
-				<div class="col-md-2 col-3">
+				<div class="col-md-2 col-sm-3 col-4">
 					<p class="schedule-text white">&nbsp;&nbsp;8:45 AM</p>
 				</div>
-				<div class="col-lg-7 col-md-6 col-9">
+				<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 					<p class="schedule-text white">Welcome and Introduction: PRECISE Overview </p>
 				</div>
 			</div>
 			<a data-toggle="modal" data-target="#darren">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;9:00 AM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"Ready, Fire, Aim! AI for Safety-Critical Systems"</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Darren Cofer</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#robie">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;9:15 AM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"Autonomous Systems in the Aerospace and Defense Sector"</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Robie I. Samanta Roy</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#mauricio">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;9:30 AM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"Trustworthy Autonomous Systems"</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Mauricio Castillo-Effen</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#oleg">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;9:45 AM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Oleg Sokolsky</p>
 					</div>
 				</div>
 			</a>
-			<a data-toggle="modal" data-target="#">
+			<a data-toggle="modal" data-target="#george">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;9:50 AM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">George Pappas</p>
 					</div>
 				</div>
 			</a>
 			<div class="row schedule blue">
-				<div class="col-md-2 col-3">
+				<div class="col-md-2 col-sm-3 col-4">
 					<p class="schedule-text white">&nbsp;&nbsp;9:55 AM</p>
 				</div>
-				<div class="col-lg-7 col-md-6 col-9">
+				<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 					<p class="schedule-text white">Break</p>
 				</div>
 			</div>
 			<a data-toggle="modal" data-target="#fireside">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">10:00 AM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">Fireside Chat: "Bridging the commercialization gap between Safe AI technology solutions and
 							End-Users for Internet of Medical Things (IoMT)"</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">David Rhew<br/>Aiman Abdel-Malek<br/>Sandhya S. Pillalamarri</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#jim">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">10:25 AM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">James Weimer</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#alibaba">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">10:30 AM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"Building an AI Engine for Time Series Data Analytics"</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Jian Chang<br/> Sanjian Chen</p>
 					</div>
 				</div>
 			</a>
 			<a href="#keynote">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">11:00 AM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">Keynote: "Anomalies and the Future of Autonomous Systems"</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Justin Gottschlich</p>
 					</div>
 				</div>
 			</a>
 			<div class="row schedule blue">
-				<div class="col-md-2 col-3">
+				<div class="col-md-2 col-sm-3 col-4">
 					<p class="schedule-text white">12:00 PM</p>
 				</div>
-				<div class="col-lg-7 col-md-6 col-9">
+				<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 					<p class="schedule-text white">Lunch</p>
 				</div>
 			</div>
 			<a data-toggle="modal" data-target="#christina">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;1:00 PM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"Automated Driving at Daimler Trucks"</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Christina Werner</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#justinian">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;1:15 PM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"Fail-Safe Architectures for Autonomous Guided Vehicles"</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Justinian Rosca</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#steve">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;1:30 PM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"LG's Open Source Autonomous Driving Simulator"</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Steve Lemke</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#anand">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;1:45 PM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"Velodyne's Next Generation of Sensors & True Autonomy"</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Anand Gopalan</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#jack">
 				<div class="row schedule">
-						<div class="col-md-2 col-3">
+						<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;2:00 PM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"An Open, Transparent, Industry-Driven Approach to AV Safety"</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Jack Weast</p>
 					</div>
 				</div>
 			</a>
-			<a data-toggle="modal" data-target="">
+			<a data-toggle="modal" data-target="#rahul">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;2:15 PM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Rahul Mangharam</p>
 					</div>
 				</div>
 			</a>
-			<a data-toggle="modal" data-target="">
+			<a data-toggle="modal" data-target="#insup">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;2:20 PM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Insup Lee</p>
 					</div>
 				</div>
 			</a>
-			<a data-toggle="modal" data-target="">
+			<a data-toggle="modal" data-target="#linh">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;2:25 PM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Linh Thi Xuan Phan</p>
 					</div>
 				</div>
 			</a>
 			<div class="row schedule blue">
-				<div class="col-md-2 col-3">
+				<div class="col-md-2 col-sm-3 col-4">
 					<p class="schedule-text white">&nbsp;&nbsp;2:30 PM</p>
 				</div>
-				<div class="col-lg-7 col-md-6 col-9">
+				<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 					<p class="schedule-text white">Break</p>
 				</div>
 			</div>
-			<a data-toggle="modal" data-target="">
+			<a data-toggle="modal" data-target="#osbert">
 				<div class="row schedule">
-				<div class="col-md-2 col-3">
+				<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;2:45 PM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Osbert Bastani</p>
 					</div>
 				</div>
 			</a>
-			<a data-toggle="modal" data-target="">
+			<a data-toggle="modal" data-target="#rajeev">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;2:50 PM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Rajeev Alur</p>
 					</div>
 				</div>
 			</a>
-			<a data-toggle="modal" data-target="">
+			<a data-toggle="modal" data-target="#mayur">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;2:55 PM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Mayur Naik</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#joe">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;3:00 PM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">PRECISE Presentation</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Joe Devietti</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#byron">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;3:05 PM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"Reasoning about Security of Amazon Web Services"</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Byron Cook</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#vinod">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;3:20 PM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"Improving Productivity and Performance for Writing ML Models"</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-lg-3 col-md-4 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
 						<p class="schedule-text">Vinod Grover</p>
 					</div>
 				</div>
 			</a>
 			<a data-toggle="modal" data-target="#rance">
 				<div class="row schedule">
-					<div class="col-md-2 col-3">
+					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text">&nbsp;&nbsp;3:35 PM</p>
 					</div>
-					<div class="col-lg-7 col-md-6 col-9">
+					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"Verification and Validation Issues in Machine-Learning and Control"</p>
 					</div>
-					<div class="d-inline d-md-none col-3"></div>
-					<div class="col-md-4 col-lg-3 col-9">
+					<div class="d-inline d-md-none col-sm-3 col-4"></div>
+					<div class="col-md-4 col-lg-3 col-sm-9 col-8">
 						<p class="schedule-text">Rance Cleaveland</p>
 					</div>
 				</div>
 			</a>
 			<div class="row schedule blue">
-				<div class="col-md-2 col-3">
+				<div class="col-md-2 col-sm-3 col-4">
 					<p class="schedule-text white">&nbsp;&nbsp;3:50 PM</p>
 				</div>
-				<div class="col-lg-7 col-md-6 col-9">
+				<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 					<p class="schedule-text white">PhDc Poster Overview</p>
 				</div>
 			</div>
 			<div class="row schedule blue">
-				<div class="col-md-2 col-3">
+				<div class="col-md-2 col-sm-3 col-4">
 					<p class="schedule-text white">&nbsp;&nbsp;4:25 PM</p>
 				</div>
-				<div class="col-lg-7 col-md-6 col-9">
+				<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 					<p class="schedule-text white">Closing</p>
 				</div>
 			</div>
 			<div class="row schedule blue last">
-				<div class="col-md-2 col-3">
+				<div class="col-md-2 col-sm-3 col-4">
 					<p class="schedule-text white">&nbsp;&nbsp;4:30 PM</p>
 				</div>
-				<div class="col-lg-7 col-md-6 col-9">
+				<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 					<p class="schedule-text white">Reception & Poster Session</p>
 				</div>
 			</div>
@@ -1098,6 +1137,45 @@
 		</div>
 	</div>
 
+	<!--Event Contact-->
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="title-box" style="margin-bottom:2vh">
+					<h1 class="title white travel-highlight"> &nbsp;EVENT CONTACT&nbsp;</h1>
+				</div>
+			</div>
+			<div class="d-block d-sm-none">
+				<div class="row" style="margin-left:auto; margin-right:auto;">
+					<img class="img-circle" src="assets/liz.jpg">
+				</div>
+				<div style="margin-left:auto; margin-right:auto; text-align:center;">
+					<h2 class="white" style="font-family:Open Sans"><b>(Liz) Wai-Ping Ng</b></h2>
+					<p class="white"> Assistant Director, PRECISE<br/>
+						Associate Director, Embedded Systems MSE<br/>
+						University of Pennsylvania<br/>
+						<a href="mailto:wng@cis.upenn.edu" target="_blank">wng@cis.upenn.edu</a>
+					</p>
+				</div>
+			</div>
+			<div class="d-none d-sm-flex">
+				<div class="row" style="margin-left:auto; margin-right:auto;">
+					<div class="col-flex">
+						<img class="img-circle" src="assets/liz.jpg">
+					</div>
+					<div class="col-flex">
+						<h2 class="white" style="font-family:Open Sans"><b>(Liz) Wai-Ping Ng</b></h2>
+						<p class="white"> Assistant Director, PRECISE<br/>
+							Associate Director, Embedded Systems MSE<br/>
+							University of Pennsylvania<br/>
+							<a href="mailto:wng@cis.upenn.edu" target="_blank">wng@cis.upenn.edu</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!--Past Events-->
 	<div id="past-events">
 		<div class="row">
@@ -1141,6 +1219,85 @@
 			</div>
 		</div>
 	</div>
+
+	<!--Footer-->
+	<div id="footer">
+		<div class="container">
+			<div class="d-block d-lg-none">
+				<div class="row">
+					<div class="col-11 col-sm-10">
+						<img src="assets/Penn-PreciseLogo.png" width=100%>
+					</div>
+				</div>
+			</div>
+			<div class="d-lg-block d-none">
+				<div class="row">
+					<img src="assets/Penn-PreciseLogo.png" style="max-width:600px;margin-left:20px">
+				</div>
+			</div>
+			<div class="d-md-none d-block">
+				<div class="footer-box">
+					<h2> Web Design & Development </h2>
+					<p><b>Susan Xie</b>, Principal Designer & Webmaster</p>
+					<p><b>Reshu Liang</b>, Animations</p>
+					<p><b>Anne Chen</b>, Mockups and Design</p>
+					
+					<h2> Logistics & Marketing </h2>
+					<p>(Liz) Wai-Ping Ng</p>
+					
+					<h2> PRECISE Staff </h2>
+					<p>FirstName LastName</p>
+					<p>FirstName LastName</p>
+					<p>FirstName LastName</p>
+				</div>
+			</div>
+			<div class="d-md-block d-none d-xl-none">
+				<div class="row footer-box">
+					<div class="col-md-6">
+						<h2> Web Design & Development </h2>
+						<p><b>Susan Xie</b>, Principal Designer & Webmaster</p>
+						<p><b>Reshu Liang</b>, Animations</p>
+						<p><b>Anne Chen</b>, Mockups and Design</p>
+						<h2> Logistics & Marketing </h2>
+						<p>(Liz) Wai-Ping Ng</p>
+					</div>
+					<div class="col-md-6">				
+						<h2> PRECISE Staff </h2>
+						<p>FirstName LastName</p>
+						<p>FirstName LastName</p>
+						<p>FirstName LastName</p>
+					</div>
+				</div>
+			</div>
+			<div class="d-xl-block d-none">
+				<div class="row footer-box">
+					<div class="col-md-6 col-xl-4">
+						<h2> Web Design & Development </h2>
+						<p><b>Susan Xie</b>, Principal Designer & Webmaster</p>
+						<p><b>Reshu Liang</b>, Animations</p>
+						<p><b>Anne Chen</b>, Mockups and Design</p>
+					</div>
+					<div class="col-xl-4" style="padding:0">
+						<div class="d-xl-inline d-none">
+							<h2> Logistics & Marketing </h2>
+							<p>(Liz) Wai-Ping Ng</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-xl-4">				
+						<h2> PRECISE Staff </h2>
+						<p>FirstName LastName</p>
+						<p>FirstName LastName</p>
+						<p>FirstName LastName</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="footer-copyright">
+			<p>Copyright ©2019 PRECISE<br/>
+			All rights reserved</p>
+		</div>
+	</div>
 	
 	<!--Speaker Modal Content-->
 	<div class="modal fade" id="aiman" tabindex="-1" role="dialog" aria-labelledby="aiman" aria-hidden="true">
@@ -1156,6 +1313,10 @@
 				</div>
 				<div class="modal-body">
 					<p class="company">Aiman Abdel-Malek, Insulet Corporation</p>
+					<blockquote class="highlights">
+						<ul></ul>
+						<p><u>ABSTRACT</u>: Pending</p>
+					</blockquote>
 					<p> Dr. Aiman Abdel-Malek served as the Executive Vice President and Chief Technology Officer at
 						Insulet Corporation (NASDAQ: PODD) since February 2018. From March 2016 to February 2018, he
 						was Insulet's Senior Vice President, Advanced Technology and Engineering. At Insulet, 
@@ -1201,7 +1362,8 @@
 				<div class="modal-body">
 					<p class="company">Anand Gopalan, Velodyne Lidar</p>
 					<blockquote class="highlights">
-						<p> <u>ABSTRACT:</u> Gopalan will review the critical success factors 
+						<ul></ul>
+						<p> <u>ABSTRACT</u>: Gopalan will review the critical success factors 
 							Lidar technology must achieve for autonomous driving and advanced 
 							vehicle safety at highway speeds; and share insights on how their 
 							new thoroughly tested high-definition 3D Lidar provide millions 
@@ -1262,6 +1424,10 @@
 				</div>
 				<div class="modal-body">
 					<p class="company">Byron Cook, Amazon Web Services</p>
+					<blockquote class="highlights">
+						<ul></ul>
+						<p><u>ABSTRACT</u>: Pending</p>
+					</blockquote>
 					<p> Byron Cook is Professor of Computer Science at University College London (UCL) 
 						and Senior Principal Applied Scientist at Amazon Web Services. Byron’s interests 
 						include computer/network security, program analysis/verification, programming 
@@ -1288,6 +1454,10 @@
 				</div>
 				<div class="modal-body">
 					<p class="company">Christina Werner, Daimler Trucks North America, LLC</p>
+					<blockquote class="highlights">
+						<ul></ul>
+						<p><u>ABSTRACT</u>: Pending</p>
+					</blockquote>
 					<p> After receiving a Master’s degree in Information Systems from the Dresden University of
 						Technology in Germany, Christina Werner joined Daimler AG and took over an assignment 
 						in developing the damage brake assist for Mitsubishi Fuso in Japan. This is when
@@ -1323,7 +1493,7 @@
 							<li> How can formal methods, new testing techniques, and architectural mitigations address
 								these challenges?</li>
 						</ul>
-						<p> <u>ABSTRACT:</u> There has been much publicity surrounding the use 
+						<p> <u>ABSTRACT</u>: There has been much publicity surrounding the use 
 							of machine learning technologies in self-driving cars and the 
 							challenges this presents for guaranteeing safety. These 
 							technologies are also being investigated for use in manned and 
@@ -1381,6 +1551,10 @@
 				</div>
 				<div class="modal-body">
 					<p class="company">David Rhew, Samsung Electronics</p>
+					<blockquote class="highlights">
+						<ul></ul>
+						<p><u>ABSTRACT</u>: Pending</p>
+					</blockquote>
 					<p> Dr. David Rhew is the chief medical officer (CMO) and vice president (VP) and 
 						general manager of Enterprise (B2B) Healthcare for Samsung Electronics of America. 
 						David received his bachelor’s of science degrees in computer science and cellular 
@@ -1428,7 +1602,7 @@
 							<li> What are the challenges that come with regional differences in driving habits?
 							</li>
 						</ul>
-						<p> <u>ABSTRACT:</u> At Intel and Mobileye, saving lives drives us. But in the world 
+						<p> <u>ABSTRACT</u>: At Intel and Mobileye, saving lives drives us. But in the world 
 							of automated driving (AD), we believe safety is not merely an impact of AD, but 
 							the bedrock on which we all build this industry. And so we proposed 
 							Responsibility-Sensitive Safety (RSS), a formal (open/non-proprietary) model to 
@@ -1471,7 +1645,7 @@
 							<li>How to apply cutting-edge modeling methods of time-series data to real-world 
 								application scenarios?</li>
 						</ul>
-						<p> <u>ABSTRACT:</u> Time series database is of great use for data management in IoT, 
+						<p> <u>ABSTRACT</u>: Time series database is of great use for data management in IoT, 
 							retail, finance, and many other domains. Alibaba’s TSDB is a time series database 
 							that provides effective and economical services to business users. So far, we 
 							were able to scale our service to thousands of physical nodes and deliver peak 
@@ -1530,6 +1704,10 @@
 				</div>
 				<div class="modal-body">
 					<p class="company">Justinian Rosca, Siemens Corp</p>
+					<blockquote class="highlights">
+						<ul></ul>
+						<p><u>ABSTRACT</u>: Pending</p>
+					</blockquote>
 					<p>Justinian Rosca is Senior Key Expert of Siemens Corp., Corporate Technology in Princeton NJ.
 						He holds Ph.D. and M.Sc. degrees Computer Science from the University of Rochester and a
 						Dipl. Eng. Degree in Computer and Control Engineering from the Polytechnic University 
@@ -1570,6 +1748,10 @@
 				</div>
 				<div class="modal-body">
 					<p class="company">Mauricio Castillo-Effen, Lockheed Martin Advanced Technology Laboratories</p>
+					<blockquote class="highlights">
+						<ul></ul>
+						<p><u>ABSTRACT</u>: Pending</p>
+					</blockquote>
 					<p> Mauricio Castillo-Effen is a Senior Researcher with the Emergent Technologies Laboratory
 						(ETL), part of Lockheed Martin Advanced Technology Laboratories (LM ATL). He leads the 
 						Trustworthy Autonomous Systems (TAS) Focus Area, whose primary objective is to endow 
@@ -1611,6 +1793,10 @@
 				</div>
 				<div class="modal-body">
 					<p class="company">Rance Cleaveland, National Science Foundation</p>
+					<blockquote class="highlights">
+						<ul></ul>
+						<p><u>ABSTRACT</u>: Pending</p>
+					</blockquote>
 					<p> Rance Cleaveland is the Director of the Computing and Communications Foundations
 						(CCF) division within the Computing and Information Science and Engineering (CISE)
 						directorate of the National Science Foundation. He is also a Professor of Computer
@@ -1658,7 +1844,7 @@
 								mitigations address these challenges?
 							</li>
 						</ul>
-						<p> <u>ABSTRACT:</u> Autonomous systems in the Aerospace and Defense (A&D) 
+						<p> <u>ABSTRACT</u>: Autonomous systems in the Aerospace and Defense (A&D) 
 							sector cover a broad range of missions and domains from 
 							spacecraft-asteroid rendezvous where distances from earth are such 
 							that real-time communication is not possible to helicopter search and 
@@ -1750,6 +1936,10 @@
 				</div>
 				<div class="modal-body">
 					<p class="company">Sandhya S. Pillalamarri, Insulet Corporation</p>
+					<blockquote class="highlights">
+						<ul></ul>
+						<p><u>ABSTRACT</u>: Pending</p>
+					</blockquote>
 					<p> Sandhya Pillalamarri is an experienced leader in User Experience and Product Design of B2C
 						and B2B connected devices, IoT, enterprise and SaaS technology and responsive mobile
 						application development. Sandhya specializes in human-computer interaction and user 
@@ -1802,7 +1992,7 @@
 							<li>How to apply cutting-edge modeling methods of time-series data to real-world 
 							application scenarios?</li>
 						</ul>
-						<p> <u>ABSTRACT:</u> Time series database is of great use for data management in IoT, 
+						<p> <u>ABSTRACT</u>: Time series database is of great use for data management in IoT, 
 							retail, finance, and many other domains. Alibaba’s TSDB is a time series database 
 							that provides effective and economical services to business users. So far, we 
 							were able to scale our service to thousands of physical nodes and deliver peak 
@@ -1861,6 +2051,10 @@
 				</div>
 				<div class="modal-body">
 					<p class="company">Vinod Grover, NVIDIA</p>
+					<blockquote class="highlights">
+						<ul></ul>
+						<p><u>ABSTRACT</u>: Pending</p>
+					</blockquote>
 					<p> Vinod Grover is a Director and Distinguished Engineer at NVIDIA. He has been with NVIDIA
 						since 2007 where he led a team that developed the CUDA C++ language and compiler for 
 						programing GPUs. CUDA C++ has been a key catalyst in driving productivity, performance 
@@ -1899,7 +2093,7 @@
 								at a fraction of the cost of real world in-the-car testing?
 							</li>
 						</ul>
-						<p> <u>ABSTRACT:</u> Autonomous Vehicles are in the news every day but there is still 
+						<p> <u>ABSTRACT</u>: Autonomous Vehicles are in the news every day but there is still 
 							a long road ahead for the companies working on them. Autonomous Vehicle (AV) 
 							simulation will play a huge role in the testing and certification of AV 
 							technology and is also a critical engineering tool used in the daily development 
@@ -1948,98 +2142,82 @@
 					</button>
 				</div>
 				<div class="modal-body">
+					<blockquote class="highlights">
+						<ul></ul>
+						<p><u>ABSTRACT</u>: Pending</p>
+					</blockquote>
 					<p class="company">David Rhew, Samsung Electronics</p>
 					<p> Dr. David Rhew is the chief medical officer (CMO) and vice president (VP) and general
-						manager of Enterprise
-						(B2B) Healthcare for Samsung Electronics of America. David received his bachelor’s of
-						science degrees
-						in computer science and cellular molecular biology from the University of Michigan. He
-						received his M.D.
-						degree from Northwestern University and completed internal medicine residency at
-						Cedars–Sinai Medical Center.
+						manager of Enterprise (B2B) Healthcare for Samsung Electronics of America. David 
+						received his bachelor’s of science degrees in computer science and cellular molecular 
+						biology from the University of Michigan. He received his M.D. degree from Northwestern 
+						University and completed internal medicine residency at Cedars–Sinai Medical Center.
 						He completed fellowships in health services research at Cedars–Sinai Medical Center and
-						infectious diseases
-						at the University of California, Los Angeles.
+						infectious diseases at the University of California, Los Angeles.
 					</p>
 					<p> Dr. Rhew has served as CMO and VP for Global Healthcare at Samsung SDS, senior VP and CMO at
-						Zynx Health Incorporated,
-						clinician/researcher in the Division of Infectious Diseases at the VA Greater Los Angeles
-						Healthcare System and associate
-						clinical professor of medicine at UCLA. Dr. Rhew has served on the National Quality Forum’s
-						(NQF) Steering Committee
+						Zynx Health Incorporated, clinician/researcher in the Division of Infectious Diseases at 
+						the VA Greater Los Angeles Healthcare System and associate clinical professor of medicine 
+						at UCLA. Dr. Rhew has served on the National Quality Forum’s (NQF) Steering Committee
 						for Pulmonary and Critical Care quality indicators and NQF Consensus Standards and Approval
-						Committee. He co–holds
-						six U.S. technology patents that enable the authoring, mapping and integration of clinical
-						decision support into
-						the electronic health record.
+						Committee. He co–holds six U.S. technology patents that enable the authoring, mapping and 
+						integration of clinical decision support into the electronic health record.
 					</p>
 					<p> Dr. Rhew’s interests include measurably improving the quality, safety, and efficiency of
-						patient care and
-						applying technology to engage patients and consumers in their health.
+						patient care and applying technology to engage patients and consumers in their health.
 					</p>
 					<p class="company">Aiman Abdel-Malek, Insulet Corporation</p>
 					<p> Dr. Aiman Abdel-Malek served as the Executive Vice President and Chief Technology Officer at
 						Insulet Corporation (NASDAQ: PODD) since February 2018. From March 2016 to February 2018, he
-						was
-						Insulet's Senior Vice President, Advanced Technology and Engineering. At Insulet, Aiman’s
-						vision for a securely connected diabetes management system, controlled by users’
-						smartphones,
-						was realized. Under his leadership, Insulet developed, FDA cleared and market launched the
-						"DASH" digital products platform. This product was the first secure Bluetooth connected
-						diabetes management system platform, controlled by smartphone. DASH was also recognized
-						as the first Insulin pump to receive DTSec Cybersecurity Certification in diabetes.
+						was Insulet's Senior Vice President, Advanced Technology and Engineering. At Insulet, 
+						Aiman’s vision for a securely connected diabetes management system, controlled by users’
+						smartphones, was realized. Under his leadership, Insulet developed, FDA cleared and market 
+						launched the "DASH" digital products platform. This product was the first secure Bluetooth 
+						connected diabetes management system platform, controlled by smartphone. DASH was also 
+						recognized as the first Insulin pump to receive DTSec Cybersecurity Certification in 
+						diabetes.
 					</p>
 					<p> Prior to joining Insulet, Aiman served as President of Frictionless Life Analytics, Inc.,
 						a business development and healthcare technology advisory company which enables the growth
 						of start-up ventures focused on Internet of Things (IoT) platforms and solutions. From 2012
 						to 2015, Dr. Abdel-Malek served as Vice President of Engineering at Qualcomm Life, Inc., a
-						mobile
-						healthcare solutions Qualcomm company. From 1988 to 2012, he held various roles at General
-						Electric (GE), including General Manager - Global Services Technology at GE Healthcare where
-						he launched the first GE Healthcare predictive software services offerings. Dr. Abdel-Malek
-						brings over 20 years of experience as a senior executive, leading healthcare business teams
-						to develop breakthrough technology-based business solutions to many healthcare issues
-						globally.
-						He holds a Bachelor of Science in Systems and Biomedical Engineering from Cairo University
-						and
-						a Ph.D. in Biomedical Engineering from the University of Southern California. Dr.
-						Abdel-Malek
-						holds over 30 patents and publications and is a keynote speaker at various digital
-						healthcare,
-						secure IoT and mobile digital healthcare forums.
+						mobile healthcare solutions Qualcomm company. From 1988 to 2012, he held various roles at 
+						General Electric (GE), including General Manager - Global Services Technology at GE 
+						Healthcare where he launched the first GE Healthcare predictive software services offerings. 
+						Dr. Abdel-Malek brings over 20 years of experience as a senior executive, leading 
+						healthcare business teams to develop breakthrough technology-based business solutions to 
+						many healthcare issues globally. He holds a Bachelor of Science in Systems and Biomedical 
+						Engineering from Cairo University and a Ph.D. in Biomedical Engineering from the University 
+						of Southern California. Dr. Abdel-Malek holds over 30 patents and publications and is a 
+						keynote speaker at various digital healthcare, secure IoT and mobile digital healthcare 
+						forums.
 					</p>
 					<p class="company">Sandhya S. Pillalamarri, Insulet Corporation</p>
 					<p> Sandhya Pillalamarri is an experienced leader in User Experience and Product Design of B2C
 						and B2B connected devices, IoT, enterprise and SaaS technology and responsive mobile
-						application
-						development. Sandhya specializes in human-computer interaction and user experience research
-						and
-						design with over 16 years spent leading creative teams on highly visible programs within
-						various industry verticals. She enjoys strategizing, managing and executing next-generation
-						products through to completion by working through the iterative lifecycle of user research,
-						ideation, design, usability analysis and implementation, to deliver product experiences that
-						are useful, usable, and delightful. Sandhya has written for and spoken at several trade
-						conferences, journals and other publications such as JDST, IA Summit, CHI, UXPA, ADA, HIMSS,
-						Stanford Radiology Symposium and Web 2.0 Expo. Sandhya has experience working for several
-						industry verticals such as medical devices, consumer devices, high-tech, education, emerging
-						markets and consumer lifestyle and service design. Most recently, Sandhya was the Senior
-						Director of User Experience COE at Insulet Corporation where she led a talented team of
-						designers, researchers, prototypes, technical writers, content strategists and other UX
-						professionals delivering ubiquitous, cross-platform value to people and caregivers living
-						with diabetes. Prior to Insulet, she worked as the head of user experience at Dell Cloud
-						Manager,
-						director of user experience design at Pearson Education, director of enterprise user
-						experience
-						at Parametric Technology Corporation, senior design researcher at Philips Design, global
-						usability
-						lead at GE Healthcare, among others. Sandhya works to create new value for users by ensuring
-						that products deliver meaningful and valuable moments, build brand equity, and deliver
-						delightful
-						interactions thereby creating social good to the marketplace. Sandhya holds a Masters in
-						Management
-						in General Management, Operations, and Strategy from Harvard University, a Masters in
-						Human-Computer
-						Interaction from Carnegie Mellon University, and a Bachelor of Science in Computer Science
+						application development. Sandhya specializes in human-computer interaction and user 
+						experience research and design with over 16 years spent leading creative teams on highly 
+						visible programs within various industry verticals. She enjoys strategizing, managing and 
+						executing next-generation products through to completion by working through the iterative 
+						lifecycle of user research, ideation, design, usability analysis and implementation, to 
+						deliver product experiences that are useful, usable, and delightful. Sandhya has written 
+						for and spoken at several trade conferences, journals and other publications such as JDST, 
+						IA Summit, CHI, UXPA, ADA, HIMSS, Stanford Radiology Symposium and Web 2.0 Expo. Sandhya 
+						has experience working for several industry verticals such as medical devices, consumer 
+						devices, high-tech, education, emerging markets and consumer lifestyle and service design. 
+						Most recently, Sandhya was the Senior Director of User Experience COE at Insulet 
+						Corporation where she led a talented team of designers, researchers, prototypes, 
+						technical writers, content strategists and other UX professionals delivering ubiquitous, 
+						cross-platform value to people and caregivers living with diabetes. Prior to Insulet, 
+						she worked as the head of user experience at Dell Cloud Manager, director of user 
+						experience design at Pearson Education, director of enterprise user experience at 
+						Parametric Technology Corporation, senior design researcher at Philips Design, global
+						usability lead at GE Healthcare, among others. Sandhya works to create new value for 
+						users by ensuring that products deliver meaningful and valuable moments, build brand 
+						equity, and deliver delightful interactions thereby creating social good to the 
+						marketplace. Sandhya holds a Masters in Management in General Management, Operations, 
+						and Strategy from Harvard University, a Masters in Human-Computer Interaction from 
+						Carnegie Mellon University, and a Bachelor of Science in Computer Science
 						Engineering from Arizona State University.
 					</p>
 				</div>
@@ -2060,7 +2238,7 @@
 				</div>
 				<div class="modal-body">
 					<p class="company">James Weimer</p>
-					<p> <u>ABSTRACT:</u>As AI is integrated into safety critical systems in medicine and autonomy, empirical 
+					<p> <u>ABSTRACT</u>: As AI is integrated into safety critical systems in medicine and autonomy, empirical 
 						training data used to build learning-enabled systems may not assure predictable 
 						performance and safety guarantees since the data can be limited, sparse, or “thin” 
 						due to small sample sizes, dataset shifts, anomalies, and a limited understanding of 
@@ -2093,7 +2271,7 @@
 							<li>How to apply cutting-edge modeling methods of time-series data to real-world 
 							application scenarios?</li>
 						</ul>
-						<p><u>ABSTRACT:</u>Time series database is of great use for data management in IoT, retail, finance, 
+						<p><u>ABSTRACT</u>: Time series database is of great use for data management in IoT, retail, finance, 
 							and many other domains. Alibaba’s TSDB is a time series database that provides 
 							effective and economical services to business users. So far, we were able to 
 							scale our service to thousands of physical nodes and deliver peak performance 
@@ -2164,7 +2342,7 @@
 				</div>
 				<div class="modal-body">
 					<p class="company">Joe Devietti</p>
-					<p> <u>ABSTRACT:</u>As computer architectures become ever more complex and heterogenous, 
+					<p> <u>ABSTRACT</u>: As computer architectures become ever more complex and heterogenous, 
 						optimizing for each platform becomes increasingly difficult. Our "Feedback-Driven 
 						Processors", which uses performance counter data from live executions to discover 
 						performance bugs and automatically repair them, will allow programs to adapt to 
@@ -2181,14 +2359,14 @@
 		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="joe-title">PRECISE Presentation</h5>
+					<h5 class="modal-title" id="oleg-title">PRECISE Presentation</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
 					<p class="company">Oleg Sokolsky</p>
-					<p> <u>ABSTRACT:</u> In modern, highly complex system, design-time verification may 
+					<p> <u>ABSTRACT</u>: In modern, highly complex system, design-time verification may 
 						not guarantee correct operation of the system. Monitoring of system behavior can 
 						help detect unanticipated problems and recover from them. Our tool for generation 
 						and deployment of monitors from formally specified requirements allows users to 
@@ -2201,116 +2379,284 @@
 			</div>
 		</div>
 	</div>
+	<div class="modal fade" id="george" tabindex="-1" role="dialog" aria-labelledby="george" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="george-title">PRECISE Presentation</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="company">George Pappas</p>
+					<p> <u>ABSTRACT</u>: Pending 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="george" tabindex="-1" role="dialog" aria-labelledby="george" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="george-title">PRECISE Presentation</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="company">George Pappas</p>
+					<p> <u>ABSTRACT</u>: Pending 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="rahul" tabindex="-1" role="dialog" aria-labelledby="rahul" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="rahul-title">PRECISE Presentation</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="company">Rahul Mangharam</p>
+					<p> <u>ABSTRACT</u>: Pending 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="insup" tabindex="-1" role="dialog" aria-labelledby="insup" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="insup-title">PRECISE Presentation</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="company">Insup Lee</p>
+					<p> <u>ABSTRACT</u>: Pending 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="linh" tabindex="-1" role="dialog" aria-labelledby="linh" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="george-title">PRECISE Presentation</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="company">Linh Thi Xuan Phan</p>
+					<p> <u>ABSTRACT</u>: Pending 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="osbert" tabindex="-1" role="dialog" aria-labelledby="osbert" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="george-title">PRECISE Presentation</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="company">Osbert Bastani</p>
+					<p> <u>ABSTRACT</u>: Pending 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="rajeev" tabindex="-1" role="dialog" aria-labelledby="rajeev" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="rajeev-title">PRECISE Presentation</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="company">Rajeev Alur</p>
+					<p> <u>ABSTRACT</u>: Pending 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="mayur" tabindex="-1" role="dialog" aria-labelledby="mayur" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="mayur-title">PRECISE Presentation</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="company">Mayur Naik</p>
+					<p> <u>ABSTRACT</u>: Pending 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	</div>
-		<!-- Custom JavaScript-->
-		<script>
-			$('body').scrollspy({target: '#nav'});
 
-			$('.particles').delay(0).animate({
-				opacity: 1.0}, 3000
-			);
+	</div>
 
-			$('.background').delay(0).animate({
-				opacity: 1.0}, 1000
-			);
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	</script>
 
-			$('.date').delay(700).animate({
-				opacity: 1.0}, 200
-			);
+	<!-- Custom JavaScript-->
+	<script>
+		$('body').scrollspy({target: '#nav'});
 
-			$('.time').delay(800).animate({
-				opacity: 1.0}, 200
-			);
+		$('.particles').delay(0).animate({
+			opacity: 1.0}, 3000
+		);
 
-			$('.tickets').delay(900).animate({
-				opacity: 1.0}, 200
-			);
+		$('.background').delay(0).animate({
+			opacity: 1.0}, 1000
+		);
 
-			$('.talk').delay(1000).animate({
-				opacity: 1.0}, 200
-			);
+		$('.date').delay(700).animate({
+			opacity: 1.0}, 200
+		);
 
-			$('.logo').delay(1100).animate({
-				opacity: 1.0}, 200
-			);
+		$('.time').delay(800).animate({
+			opacity: 1.0}, 200
+		);
 
+		$('.tickets').delay(900).animate({
+			opacity: 1.0}, 200
+		);
 
-			$(function () {
-			  $('[data-toggle="popover"]').popover({
-				container: 'body'
-			  })
-			});
+		$('.talk').delay(1000).animate({
+			opacity: 1.0}, 200
+		);
 
-			// Select all links with hashes
-			$('a[href*="#"]')
-			// Remove links that don't actually link to anything
-				.not('[href="#"]')
-				.not('[href="#0"]')
-				.click(function(event) {
-					// On-page links
-					if (
-					location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-					&& 
-					location.hostname == this.hostname
-					) {
-					// Figure out element to scroll to
-					var target = $(this.hash);
-					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-					// Does a scroll target exist?
-					if (target.length) {
-						// Only prevent default if animation is actually gonna happen
-						event.preventDefault();
-						setTimeout(function() {
-							$('html, body').animate({
-								scrollTop: target.offset().top
-							}, 1000, function() {
-								// Callback after animation
-								// Must change focus!
-								var $target = $(target);
-								$target.focus();
-								if ($target.is(":focus")) { // Checking if the target was focused
-									return false;
-								} else {
-									$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-									$target.focus(); // Set focus again
-								};
-							});
-						}, 10);
-						
-					}
+		$('.logo').delay(1100).animate({
+			opacity: 1.0}, 200
+		);
+
+		$(function () {
+		  $('[data-toggle="popover"]').popover({
+			container: 'body'
+		  })
+		});
+
+		// Select all links with hashes
+		$('a[href*="#"]')
+		// Remove links that don't actually link to anything
+			.not('[href="#"]')
+			.not('[href="#0"]')
+			.click(function(event) {
+				// On-page links
+				if (
+				location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+				&& 
+				location.hostname == this.hostname
+				) {
+				// Figure out element to scroll to
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				// Does a scroll target exist?
+				if (target.length) {
+					// Only prevent default if animation is actually gonna happen
+					event.preventDefault();
+					setTimeout(function() {
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 1000, function() {
+							// Callback after animation
+							// Must change focus!
+							var $target = $(target);
+							$target.focus();
+							if ($target.is(":focus")) { // Checking if the target was focused
+								return false;
+							} else {
+								$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+								$target.focus(); // Set focus again
+							};
+						});
+					}, 10);		
 				}
-			});
+			}
+		});
 
-			  // from https://bootsnipp.com/snippets/ZVKyx
-			$(document).ready(function () {
-				$('.nav-toggle-read').click(function () {
-					var collapse_content_selector = $(this).attr('href');
-					var toggle_switch = $(this);
-					$(collapse_content_selector).toggle(function () {
-						if ($(this).css('display') == 'none') {
-							toggle_switch.html('READ MORE');
-						} else {
-							toggle_switch.html('READ LESS');
-						}
-					});
-				});
-				$('.nav-toggle-expand').click(function () {
-					var collapse_content_selector = $(this).attr('href');
-					var toggle_switch = $(this);
-					$(collapse_content_selector).toggle(function () {
-						if ($(this).css('display') == 'none') {
-							toggle_switch.className += "arrow";
-							toggle_switch.html('&darr; EXPAND &darr;');
-						} else {
-							toggle_switch.html('&uarr; COLLAPSE &uarr;');
-						}
-					});
+		// from https://bootsnipp.com/snippets/ZVKyx
+		$(document).ready(function () {
+			$('.nav-toggle-read').click(function () {
+				var collapse_content_selector = $(this).attr('href');
+				var toggle_switch = $(this);
+				$(collapse_content_selector).toggle(function () {
+					if ($(this).css('display') == 'none') {
+						toggle_switch.html('READ MORE');
+					} else {
+						toggle_switch.html('READ LESS');
+					}
 				});
 			});
-			
-		</script>
+			$('.nav-toggle-expand').click(function () {
+				var collapse_content_selector = $(this).attr('href');
+				var toggle_switch = $(this);
+				$(collapse_content_selector).toggle(function () {
+					if ($(this).css('display') == 'none') {
+						toggle_switch.className += "arrow";
+						toggle_switch.html('&darr; EXPAND &darr;');
+					} else {
+						toggle_switch.html('&uarr; COLLAPSE &uarr;');
+					}
+				});
+			});
+		});
+		
+	</script>
 </body>
-
 </html>
