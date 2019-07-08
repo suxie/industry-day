@@ -812,6 +812,10 @@ a>.schedule:hover {
 		cursor:pointer;
 	}
 
+	.min-logo-padding {
+		height:60vw;
+	}
+	
 	.min-padding {
 		height:60vh;
 		min-height:310px;
@@ -1071,6 +1075,12 @@ a>.schedule:hover {
 
 	h2 {
 		font-size:18px;
+	}
+
+	.min-logo-padding {
+		height:60vh;
+		margin:110px;
+		min-height:350px;
 	}
 
 	.min-padding {
@@ -1352,6 +1362,12 @@ a>.schedule:hover {
 
 	h2 {
 		font-size:20px;
+	}
+
+	.min-logo-padding {
+		height:50vh;
+		min-height:380px;
+		margin:130px
 	}
 
 	.min-padding {
@@ -1680,6 +1696,12 @@ a>.schedule:hover {
 		font-size:22px;
 	}
 
+	.min-logo-padding {
+		height:50vh;
+		min-height:400px;
+		margin:150px;
+	}
+
 	.min-padding {
 		height:50vh;
 		min-height:360px;
@@ -2006,6 +2028,12 @@ a>.schedule:hover {
 
 	h2 {
 		font-size:22px;
+	}
+
+	.min-logo-padding {
+		height:50vh;
+		min-height:400px;
+		margin:150px;
 	}
 
 	.min-padding {
