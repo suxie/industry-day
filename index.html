@@ -36,13 +36,15 @@
 				<li class="nav-item"> <a class="nav-link" href="#about" id="nav-about" data-toggle="popover" 
 					data-trigger="hover" data-placement="left" data-content="About"> </a> </li>
 				<li class="nav-item"> <a class="nav-link" href="#keynote" id="nav-keynote" data-toggle="popover" 
-					data-trigger="hover" data-placement="left" data-content="Keynote"> </a> </li>
-				<li class="nav-item"> <a class="nav-link" href="#speakers" id="nav-speakers" data-toggle="popover" 
-					data-trigger="hover" data-placement="left" data-content="Speakers"> </a> </li>
+					data-trigger="hover" data-placement="left" data-content="Keynote Speaker"> </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#speakers-scroll" id="nav-speakers" data-toggle="popover" 
+					data-trigger="hover" data-placement="left" data-content="Industry Presenters"> </a> </li>
 				<li class="nav-item"> <a class="nav-link" href="#agenda" id="nav-agenda" data-toggle="popover" 
 					data-trigger="hover" data-placement="left" data-content="Agenda"> </a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#registration" id="nav-past" data-toggle="popover" 
+					data-trigger="hover" data-placement="left" data-content="Registration"> </a> </li>
 				<li class="nav-item"> <a class="nav-link" href="#travel" id="nav-travel" data-toggle="popover" 
-					data-trigger="hover" data-placement="left" data-content="Travel"> </a> </li>
+					data-trigger="hover" data-placement="left" data-content="Travel Information"> </a> </li>
 				<li class="nav-item"> <a class="nav-link" href="#contact" id="nav-past" data-toggle="popover" 
 					data-trigger="hover" data-placement="left" data-content="Event Contact"> </a> </li>
 				<li class="nav-item"> <a class="nav-link" href="#past-events" id="nav-past" data-toggle="popover" 
@@ -64,10 +66,11 @@
 			<div class="collapse navbar-collapse" id="dropdown" style="z-index:11">
 				<ul class="navbar-collapse list-unstyled">
 					<li class="nav-item collapsed"> <a class="nav-link" href="#about"> ABOUT </a> </li>
-					<li class="nav-item collapsed"> <a class="nav-link" href="#keynote"> KEYNOTE </a> </li>
-					<li class="nav-item collapsed"> <a class="nav-link" href="#speakers"> SPEAKERS </a> </li>
+					<li class="nav-item collapsed"> <a class="nav-link" href="#keynote"> KEYNOTE SPEAKER </a> </li>
+					<li class="nav-item collapsed"> <a class="nav-link" href="#speakers-scroll"> INDUSTRY PRESENTERS </a> </li>
 					<li class="nav-item collapsed"> <a class="nav-link" href="#agenda"> AGENDA </a> </li>
-					<li class="nav-item collapsed"> <a class="nav-link" href="#travel"> TRAVEL </a> </li>
+					<li class="nav-item collapsed"> <a class="nav-link" href="#travel"> REGISTRATION </a> </li>
+					<li class="nav-item collapsed"> <a class="nav-link" href="#travel"> TRAVEL INFORMATION </a> </li>
 					<li class="nav-item collapsed"> <a class="nav-link" href="#contact" > EVENT CONTACT </a> </li>
 					<li class="nav-item collapsed"> <a class="nav-link" href="#past-events" > PAST EVENTS </a> </li>
 					</a> </li>
@@ -85,11 +88,19 @@
 		<div class="overlay">
 
 			<div class="cover container-fluid">
-				<div class="particles">
-					<img class="img-fluid" src="assets/particles_compressed2.gif">
+				<div class="d-block d-md-none">
+					<div class="particles">
+						<img class="img-fluid" src="assets/particles_compressed2.gif">
+					</div>
+					<div class="particles">
+						<div class="min-logo-padding"></div>
+						<img class="penn-logo" src="assets/penn.png">
+					</div>
 				</div>
-				<div class="particles">
-					<div class="min-logo-padding"></div>
+				<div class="d-none d-md-block">
+					<div class="particles">
+						<img class="img-fluid" src="assets/particles_compressed2.gif">
+					</div>
 					<img class="penn-logo" src="assets/penn.png">
 				</div>
 				<h1 class="year">19 </h1>
@@ -151,58 +162,70 @@
 				<div class="col-1"></div>
 				<div class="col-10">
 					<h2 class="about-text">
-						Let’s come together on Oct 25th to drive cross-industry discussion on "Safe AI" and enable an
-						autonomous tomorrow.
+						Join us on October 25th to learn about the latest, cutting-edge developments related to "Safe AI".
 					</h2>
 					<p>
-						PRECISE’s Industry Day 2019 is an informal and engaging day-long symposium for leading executives and engineers involved 
-						in working towards the same goal of making the world a safer, better place through AI/ML. This event allows industry 
-						the opportunity to also see first-hand, the latest, ground-breaking research being undertaken by PRECISE. Given its success 
-						year-after-year, PRECISE's Industry Day has grown to become one of Penn Engineering's signature events.
+						Artificial Intelligence (AI) and Machine Learning (ML) have taken off in recent years, and have 
+						advanced to the point where they are beginning to become integrated into our daily lives.  
+						However, one area of AI/ML that is still in its infant stages and warrants much needed 
+						attention is "Safe Autonomy".  Safety in AI-based systems is critical and undoubtedly one of 
+						the most difficult challenges to solve.  At PRECISE's 6th Annual Industry Day Conference, 
+						experts from both industry and academia will gather to present about and discuss this topic 
+						in depth, across various industries (automotive, medical, etc.).  You will learn about the 
+						latest advancements in the field of "Safe AI", and have the unique opportunity to network 
+						with subject matter experts to share information and be part of a movement that is taking AI 
+						to the next level in its evolution.  
 					</p>
 					<p>
-						In the past, the presentations, given by our Industry Day speakers, covered several areas, such as designing and developing 
-						Cyber-Physical Systems, Embedded Systems, Hybrid Control Systems, and IoT. However, in 2019, PRECISE has shifted its focus 
-						to developing cutting-edge approaches, algorithms, tools and technologies for "Safe AI" - ensuring the safety of autonomous 
-						systems across various industries (e.g., automotive, medical, etc.)
-					</p>
-					<p>
-						"Safe autonomy" is currently one of the most critical and hard open problems in the autonomous systems space. Given our 
-						specific theme, some of the questions that our speakers will answer are listed below:
+						Our speakers, who are leaders in their field, will attempt to address critical questions such as:
 					</p>
 					<div id="carousel-about" class="carousel slide carousel-fade" data-ride="carousel">
 						<ol class="carousel-indicators">
 							<li data-target="#carousel-about" data-slide-to="0" class="active"></li>
 							<li data-target="#carousel-about" data-slide-to="1"></li>
 							<li data-target="#carousel-about" data-slide-to="2"></li>
+							<li data-target="#carousel-about" data-slide-to="3"></li>
+							<li data-target="#carousel-about" data-slide-to="4"></li>
+							<li data-target="#carousel-about" data-slide-to="5"></li>
 						</ol>
 						<div class="carousel-inner">
 							<div class="carousel-item active">
 								<ul>
-									<li>What are the challenges for use of AI/machine learning in safety-critical aerospace
-										applications?</li>
-									<li> What are the shortcomings of current development and verification methods?</li>
-									<li> How can formal methods, new testing techniques, and architectural mitigations address
-										these challenges?</li>
+									<li> What are the challenges for use of AI/ML in safety-critical aerospace applications?</li>
 								</ul>
 							</div>
 							<div class="carousel-item">
 								<ul>
-									<li> How to formalize human concepts of safe driving to make a verifiable benchmark for AV safety?</li>
-									<li> What are the challenges that come with regional differences in driving habits?</li>
-									<li> What are the challenges of building an autonomous simulator? </li>
+									<li> How can formal methods, new testing techniques, and architectural mitigations address these challenges?</li>
 								</ul>
 							</div>
 							<div class="carousel-item">
 								<ul> 
-									<li> How AV simulation on the desktop can provide 10-100x as much test coverage at a fraction of the cost of real world in-the-car testing?</li>
-									<li>What are the state-of-the-art techniques for time-series data management?</li>
-									<li>How to apply cutting-edge modeling methods of time-series data to real-world 
-										application scenarios?</li>
+									<li>What are the challenges that come with regional differences in driving habits?</li>
+								</ul>
+							</div>
+							<div class="carousel-item">
+								<ul> 
+									<li>How can AV simulation on the desktop provide 10-100x as much test coverage, at a fraction of 
+										the cost, as real-world, in-vehicle testing?
+									</li>
+								</ul>
+							</div>
+							<div class="carousel-item">
+								<ul> 
+									<li>How can cutting-edge modeling methods of time-series data be applied to real-world 
+										application scenarios?
+									</li>
 								</ul>
 							</div>
 						</div>
 					</div>
+					<p style="margin-top:20px"> Scroll below to see Industry Day 2019's keynote speaker, industry presenters, agenda, 
+						registration, and travel information.
+					</p>
+					<p> We look forward to seeing you here in Philadelphia, at the University of Pennsylvania, 
+						to be a part of this very special event!
+					</p>
 				</div>
 			</div>
 		</div>
@@ -217,9 +240,6 @@
 				<div class="spotlight-box">
 					<p class="spotlight"> <span class="spotlight-highlight">&nbsp;KEYNOTE&nbsp;</span><br/>
 					<span class="spotlight-highlight">&nbsp;SPOTLIGHT&nbsp;</span></p>
-					<div style="background-color:rgba(0,0,0,0);">
-						<p class="author">Written by: Wai-Ping Ng (Assistant Director, PRECISE) &bull; 15 June 2019</p>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -228,15 +248,13 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<div class="keynote-text" style="text-align:left">
-							<img class="intel" src="assets/intel_ai.png">
-							<img class="intel" src="assets/intel_labs.png">
-						</div>
 						<div class="keynote-text">	
 							<div class="padded">
 								<a class="title" href="https://sites.google.com/view/gottschlich" target="_blank">
 									JUSTIN GOTTSCHLICH </a>
 								<h2 style="margin-bottom:9">Inventor, Leader, and Visionary in Machine Programming</h2>
+								<img class="intel" src="assets/intel_ai.png">
+								<img class="intel" src="assets/intel_labs.png">
 								<p class="main">Dr. Justin Gottschlich, a Senior Staff Research Scientist at Intel Labs, is
 									a prominent figure in artificial intelligence (AI) and machine learning (ML). His 
 									research in AI focuses on machine programming, anomaly detection, neural network 
@@ -312,12 +330,13 @@
 										Mobile Strike and Game of War. He is also the CEO of Nodeka, LLC, an online,
 										multi-player software gaming company that he founded in 1999.
 									</p>
-									<p class="main"> On the research front, between 2015 and 2018, Gottschlich was
-										awarded 20+ patents, with 50+ still pending. He also has 30+ peer-reviewed
-										publications and has given 12+ presentations at conferences and
-										seminars at BoostCon, BMW, IBM Research, Penn, VMWare Research, etc. He won the
-										“Best Presentation” award at several conferences (Intel SWPC 2016, CGO 2010, and
-										Raytheon ISaC 2009).
+									<p class="main"> On the research front, between 2015 and 2018, Gottschlich has over 25 
+											issued patents, with around 100 still pending. He also has 30+ 
+											peer-reviewed publications and has given dozens of presentations and 
+											seminars at Berkeley, BMW, IBM Research, Penn, Stanford, VMWare 
+											Research, etc. He is a prolific public speaker with many speaking awards 
+											at various conferences such as Intel SWPC 2016, CGO 2010, and Raytheon 
+											ISaC 2009.
 										<p class="main"> Gottschlich received his Ph.D. from the University of Colorado
 											in Boulder, where he occasionally teaches a graduate-level course on neural
 											networks. Last fall, at the University of Pennsylvania, he co-lectured a 
@@ -386,7 +405,12 @@
 		<div id="speakers">
 			<div class="agenda-transition">
 				<div class="container">
-					<div class="row" style="display:flex; margin-top:-20vh;">
+					<div class="row" style="margin-top:-40vh;">
+						<div class="title-box" id="speakers-scroll">
+							<h1 class="title white travel-highlight">&nbsp;INDUSTRY PRESENTERS&nbsp;</h1>
+						</div>
+					</div>
+					<div class="row" style="display:flex; margin-top:0;">
 						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
 							<a data-toggle="modal" data-target="#aiman">
 								<div class="card">
@@ -495,7 +519,7 @@
 						<div class="col-12 col-sm-6 col-md-4 col-lg-3 speaker-rows">
 							<a data-toggle="modal" data-target="#vinod">
 								<div class="card">
-									<img class="card-img-top img-fluid" src="assets/vinod-grover.jpg">
+									<img class="card-img-top img-fluid" src="assets/vinod-grover.png">
 									<div class="card-body">
 										<h2 class="card-title">Vinod Grover</h2>
 										<p class="card-text company">NVIDIA</p>
@@ -688,7 +712,7 @@
 			<a data-toggle="modal" data-target="#george">
 				<div class="row schedule">
 					<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text">&nbsp;&nbsp;9:50 AM</p>
+						<p class="schedule-text">&nbsp;&nbsp;9:55 AM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">PRECISE Presentation</p>
@@ -701,7 +725,7 @@
 			</a>
 			<div class="row schedule blue">
 				<div class="col-md-2 col-sm-3 col-4">
-					<p class="schedule-text white">&nbsp;&nbsp;9:55 AM</p>
+					<p class="schedule-text white">&nbsp;10:05 AM</p>
 				</div>
 				<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 					<p class="schedule-text white">Break</p>
@@ -710,7 +734,7 @@
 			<a data-toggle="modal" data-target="#fireside">
 				<div class="row schedule">
 					<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text">10:00 AM</p>
+						<p class="schedule-text">10:10 AM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">Fireside Chat: "Bridging the commercialization gap between Safe AI technology solutions and
@@ -725,10 +749,10 @@
 			<a data-toggle="modal" data-target="#jim">
 				<div class="row schedule">
 					<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text">10:25 AM</p>
+						<p class="schedule-text">10:40 AM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
-						<p class="schedule-text">PRECISE Presentation</p>
+						<p class="schedule-text">PRECISE Presentations</p>
 					</div>
 					<div class="d-inline d-md-none col-sm-3 col-4"></div>
 					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
@@ -767,7 +791,7 @@
 			<a data-toggle="modal" data-target="#lunch">
 				<div class="row schedule blue">
 					<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text white">12:00 PM</p>
+						<p class="schedule-text white">12:15 PM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text white">Lunch</p>
@@ -777,7 +801,7 @@
 			<a data-toggle="modal" data-target="#christina">
 				<div class="row schedule">
 					<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text">&nbsp;&nbsp;1:00 PM</p>
+						<p class="schedule-text">&nbsp;&nbsp;1:30 PM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"Automated Driving at Daimler Trucks"</p>
@@ -791,7 +815,7 @@
 			<a data-toggle="modal" data-target="#justinian">
 				<div class="row schedule">
 					<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text">&nbsp;&nbsp;1:15 PM</p>
+						<p class="schedule-text">&nbsp;&nbsp;1:45 PM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"Fail-Safe Architectures for Autonomous Guided Vehicles"</p>
@@ -805,7 +829,7 @@
 			<a data-toggle="modal" data-target="#steve">
 				<div class="row schedule">
 					<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text">&nbsp;&nbsp;1:30 PM</p>
+						<p class="schedule-text">&nbsp;&nbsp;2:00 PM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"LG's Open Source Autonomous Driving Simulator"</p>
@@ -819,7 +843,7 @@
 			<a data-toggle="modal" data-target="#anand">
 				<div class="row schedule">
 					<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text">&nbsp;&nbsp;1:45 PM</p>
+						<p class="schedule-text">&nbsp;&nbsp;2:15 PM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"Velodyne's Next Generation of Sensors & True Autonomy"</p>
@@ -833,7 +857,7 @@
 			<a data-toggle="modal" data-target="#jack">
 				<div class="row schedule">
 						<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text">&nbsp;&nbsp;2:00 PM</p>
+						<p class="schedule-text">&nbsp;&nbsp;2:30 PM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"An Open, Transparent, Industry-Driven Approach to AV Safety"</p>
@@ -844,10 +868,18 @@
 					</div>
 				</div>
 			</a>
+			<div class="row schedule blue">
+				<div class="col-md-2 col-sm-3 col-4">
+					<p class="schedule-text white">&nbsp;&nbsp;2:45 PM</p>
+				</div>
+				<div class="col-lg-7 col-md-6 col-sm-9 col-8">
+					<p class="schedule-text white">Break</p>
+				</div>
+			</div>
 			<a data-toggle="modal" data-target="#rahul">
 				<div class="row schedule">
 					<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text">&nbsp;&nbsp;2:15 PM</p>
+						<p class="schedule-text">&nbsp;&nbsp;3:00 PM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">PRECISE Presentation</p>
@@ -861,7 +893,7 @@
 			<a data-toggle="modal" data-target="#insup">
 				<div class="row schedule">
 					<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text">&nbsp;&nbsp;2:20 PM</p>
+						<p class="schedule-text">&nbsp;&nbsp;3:10 PM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">PRECISE Presentation</p>
@@ -875,7 +907,7 @@
 			<a data-toggle="modal" data-target="#linh">
 				<div class="row schedule">
 					<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text">&nbsp;&nbsp;2:25 PM</p>
+						<p class="schedule-text">&nbsp;&nbsp;3:20 PM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">PRECISE Presentation</p>
@@ -886,18 +918,10 @@
 					</div>
 				</div>
 			</a>
-			<div class="row schedule blue">
-				<div class="col-md-2 col-sm-3 col-4">
-					<p class="schedule-text white">&nbsp;&nbsp;2:30 PM</p>
-				</div>
-				<div class="col-lg-7 col-md-6 col-sm-9 col-8">
-					<p class="schedule-text white">Break</p>
-				</div>
-			</div>
 			<a data-toggle="modal" data-target="#osbert">
 				<div class="row schedule">
 				<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text">&nbsp;&nbsp;2:45 PM</p>
+						<p class="schedule-text">&nbsp;&nbsp;3:30 PM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">PRECISE Presentation</p>
@@ -911,7 +935,7 @@
 			<a data-toggle="modal" data-target="#rajeev">
 				<div class="row schedule">
 					<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text">&nbsp;&nbsp;2:50 PM</p>
+						<p class="schedule-text">&nbsp;&nbsp;3:40 PM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">PRECISE Presentation</p>
@@ -925,7 +949,7 @@
 			<a data-toggle="modal" data-target="#mayur">
 				<div class="row schedule">
 					<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text">&nbsp;&nbsp;2:55 PM</p>
+						<p class="schedule-text">&nbsp;&nbsp;3:50 PM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">PRECISE Presentation</p>
@@ -939,7 +963,7 @@
 			<a data-toggle="modal" data-target="#joe">
 				<div class="row schedule">
 					<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text">&nbsp;&nbsp;3:00 PM</p>
+						<p class="schedule-text">&nbsp;&nbsp;4:00 PM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">PRECISE Presentation</p>
@@ -950,10 +974,18 @@
 					</div>
 				</div>
 			</a>
+			<div class="row schedule blue">
+				<div class="col-md-2 col-sm-3 col-4">
+					<p class="schedule-text white">&nbsp;&nbsp;4:10 PM</p>
+				</div>
+				<div class="col-lg-7 col-md-6 col-sm-9 col-8">
+					<p class="schedule-text white">Break</p>
+				</div>
+			</div>
 			<a data-toggle="modal" data-target="#byron">
 				<div class="row schedule">
 					<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text">&nbsp;&nbsp;3:05 PM</p>
+						<p class="schedule-text">&nbsp;&nbsp;4:30 PM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"Reasoning about Security of Amazon Web Services"</p>
@@ -967,7 +999,7 @@
 			<a data-toggle="modal" data-target="#vinod">
 				<div class="row schedule">
 					<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text">&nbsp;&nbsp;3:20 PM</p>
+						<p class="schedule-text">&nbsp;&nbsp;4:45 PM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"Improving Productivity and Performance for Writing ML Models"</p>
@@ -981,7 +1013,7 @@
 			<a data-toggle="modal" data-target="#rance">
 				<div class="row schedule">
 					<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text">&nbsp;&nbsp;3:35 PM</p>
+						<p class="schedule-text">&nbsp;&nbsp;5:00 PM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text">"Verification and Validation Issues in Machine-Learning and Control"</p>
@@ -994,7 +1026,7 @@
 			</a>
 			<div class="row schedule blue">
 				<div class="col-md-2 col-sm-3 col-4">
-					<p class="schedule-text white">&nbsp;&nbsp;3:50 PM</p>
+					<p class="schedule-text white">&nbsp;&nbsp;5:15 PM</p>
 				</div>
 				<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 					<p class="schedule-text white">PhDc Poster Overview</p>
@@ -1002,7 +1034,7 @@
 			</div>
 			<div class="row schedule blue">
 				<div class="col-md-2 col-sm-3 col-4">
-					<p class="schedule-text white">&nbsp;&nbsp;4:25 PM</p>
+					<p class="schedule-text white">&nbsp;&nbsp;6:00 PM</p>
 				</div>
 				<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 					<p class="schedule-text white">Closing</p>
@@ -1011,24 +1043,24 @@
 			<a data-toggle="modal" data-target="#reception">
 				<div class="row schedule blue last">
 					<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text white">&nbsp;&nbsp;4:30 PM</p>
+						<p class="schedule-text white">&nbsp;&nbsp;6:10 PM</p>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
 						<p class="schedule-text white">Reception & Poster Session</p>
 					</div>
 				</div>
 			</a>
-
-		
-			<div class="row" style="margin-top:10vh">
-				<div class="button">TICKETS</div>
-			</div>
-			<div class="row">
-				<div class="title-box" style="padding-top:20px">
-					<h2 class="white"> General: <b>$200 (NO REFUND)</b><br/>
-						*** Registration NOT required for Speakers ***
-					</h2>
-				</div>
+		</div>
+	</div>
+	<div id="registration">
+		<div class="row">
+			<div class="button">TICKETS</div>
+		</div>
+		<div class="row">
+			<div class="title-box" style="padding-top:20px">
+				<h2 class="white"> General: <b>$200 (NO REFUND)</b><br/>
+					*** Registration NOT required for Speakers ***
+				</h2>
 			</div>
 		</div>
 	</div>
@@ -1065,21 +1097,14 @@
 					</div>
 				</div>
 				<div class="col-12 col-md-6 col-xl-5">
-					<div class="d-flex d-md-none" style="padding-top:20px">
-						<h2 class="travel-highlight">&nbsp;TIME ZONE&nbsp;</h2>
-					</div>
-					<div class="d-md-inline-block d-none d-md-flex">
-						<h2 class="travel-highlight">&nbsp;TIME ZONE&nbsp;</h2>
-					</div>
-					<div class="d-flex">
-					</div>
-					<p> Eastern Standard Time Zone </p>
 					<div class="d-flex">
 						<h2 class="travel-highlight" style="margin-top:20px;">&nbsp;EMERGENCY&nbsp;</h2>
 					</div>
 					<p> <b>On-Campus Phone:</b> Dial 511 </p>
+					<p> <b>Penn Police/Public Safety:</b>  (215) 573-3333</p>
 					<p> <b>Closest Hospital Emergency:</b><br/>
-						Hospital of the University of Pennsylvania, 3400 Spruce Street </p>
+						Hospital of the University of Pennsylvania<br/>
+						3400 Spruce Street </p>
 					<p><b>Closest Urgent Care Clinic:</b><br/>
 						Penn Presbyterian Med Center, 51 North 39th Street 
 					</p>
@@ -1166,8 +1191,8 @@
 					<img class="img-circle" src="assets/liz.jpg">
 				</div>
 				<div style="margin-left:auto; margin-right:auto; text-align:center;">
-					<h2 class="white" style="font-family:Open Sans"><b>(Liz) Wai-Ping Ng</b></h2>
-					<p class="white"> Assistant Director, PRECISE<br/>
+					<h2 class="white" style="font-family:Open Sans">(Liz) Wai-Ping Ng</h2>
+					<p class="white" style="padding-top:0"> Assistant Director, PRECISE<br/>
 						Associate Director, Embedded Systems MSE<br/>
 						University of Pennsylvania<br/>
 						<a href="mailto:wng@cis.upenn.edu" target="_blank">wng@cis.upenn.edu</a> | Office: (215) 898-8543
@@ -1180,8 +1205,8 @@
 						<img class="img-circle" src="assets/liz.jpg">
 					</div>
 					<div class="col-flex">
-						<h2 class="white" style="font-family:Open Sans"><b>(Liz) Wai-Ping Ng</b></h2>
-						<p class="white"> Assistant Director, PRECISE<br/>
+						<h2 class="white" style="font-family:Open Sans">(Liz) Wai-Ping Ng</h2>
+						<p class="white" style="padding-top:0"> Assistant Director, PRECISE<br/>
 							Associate Director, Embedded Systems MSE<br/>
 							University of Pennsylvania<br/>
 							<a href="mailto:wng@cis.upenn.edu" target="_blank">wng@cis.upenn.edu</a> | Office: (215) 898-8543
@@ -1200,51 +1225,42 @@
 					<h1 class="events-title travel-highlight">&nbsp;PAST EVENTS&nbsp;</h1>
 				</div>
 				<div class="d-sm-inline d-none">
-					<h1 class="events-title travel-highlight" style="line-height:1.0">&nbsp;PAST&nbsp;<br/>&nbsp;EVENTS&nbsp;</h1>
+					<h1 class="events-title" style="line-height:1.0">&nbsp;PAST&nbsp;<br/>&nbsp;EVENTS&nbsp;</h1>
 				</div>
 				<div class="d-block d-sm-none"></div>
-				<p class="event-1 event-year white">2012</p>
+				<p class="event-1 event-year white">&nbsp;2012&nbsp;</p>
 				<a href="assets/past-events/REVISED_Penn PRECISE - Open House Agenda - May 2012.pdf" target="_blank">
 					<p>
 						PRECISE Open House
 					</p>
 				</a>
 				<br />
-				<p class="event-2 event-year white">2013</p>
+				<p class="event-2 event-year white">&nbsp;2013&nbsp;</p>
 				<a href="assets/past-events/Programme Booklet 2013.pdf" target="_blank">
 					<p>
 						PRECISE Industry Day
 					</p>
 				</a>
 				<br />
-				<p class="event-3 event-year white">2014</p>
+				<p class="event-3 event-year white">&nbsp;2014&nbsp;</p>
 				<a href="assets/past-events/Programme Booklet 2014.pdf" target="_blank">
 					<p>
 						PRECISE Industry Day
 					</p>
 				</a>
 				<br />
-				<p class="event-4 event-year white">2015</p>
+				<p class="event-4 event-year white">&nbsp;2015&nbsp;</p>
 				<a href="assets/past-events/Programme Booklet 2015.pdf" target="_blank">
 					<p>
 						PRECISE Industry Day
 					</p>
 				</a>
 				<br />
-				<p class="event-5 event-year white">2018</p>
+				<p class="event-5 event-year white">&nbsp;2018&nbsp;</p>
 				<a href="assets/past-events/Industry Day 2018 Program Booklet.pdf" target="_blank">
-					<div class="d-inline d-sm-none">
-						<p style="line-height:0">
-							Joint PRECISE-GRASP Industry Day Symposium
-						</p>
-					</div>
-					<div class="d-none d-sm-inline">
-						<p style="line-height:0">
-							Joint PRECISE-GRASP Industry
-							<br/><span class="indent">Day Symposium</span>
-						</p>
-					</div>
-					
+					<p style="line-height:0">
+						PRECISE-GRASP Industry Day
+					</p>					
 				</a>
 			</div>
 		</div>
@@ -1253,19 +1269,11 @@
 	<!--Footer-->
 	<div id="footer">
 		<div class="container">
-			<div class="d-block d-lg-none">
-				<div class="row">
-					<div class="col-11 col-sm-10">
-						<img src="assets/Penn-PreciseLogo.png" width=85%>
-						<img src="assets/f1tenth.png" width=10% style="margin-left:2%">
-					</div>
-				</div>
-			</div>
-			<div class="d-lg-block d-none">
-				<div class="row">
-					<img src="assets/Penn-PreciseLogo.png" style="max-width:600px;margin-left:20px">
-					<img src="assets/f1tenth.png" style="max-height:65px; margin-top:15px; margin-left:20px">
-				</div>
+			<div class="row" style="margin-bottom:3vh;">
+				<a href="https://precise.seas.upenn.edu/" target="_blank">
+					<img src="assets/Penn-PreciseLogo.png" class="img-fluid" 
+					style="max-width:600px;margin-left:0;float:left">
+				</a>
 			</div>
 			<div class="d-md-none d-block">
 				<div class="footer-box">
@@ -1276,21 +1284,33 @@
 				</div>
 			</div>
 			<div class="d-md-block d-none">
-				<div class="row footer-box">
+				<div class="row footer-box" style="border-top:solid;border-width:1px;
+					border-color:rgba(0,0,0,0.2)">
 					<div class="col-lg-12">
 						<h2> Web Design & Development </h2>
 					</div>
 				</div>
-				<div class="row footer-box" style="padding-left:18px">
-					<div class="col-flex">
-						<p>Susan Xie, Principal Designer & Webmaster <b>|</b> &nbsp;</p>
+				<div class="row footer-box">
+					<div class="col-12">
+						<div class="d-inline d-md-none">
+							<p>Susan Xie, Principal Designer & Webmaster</p>
+							<p>Reshu Liang, Animations</p>
+							<p>Anne Chen, Mockups and Preliminary Design</p>
+						</div>
+						<div class="d-none d-md-block d-lg-none">
+							<p>Susan Xie, Principal Designer & Webmaster <b>|</b>
+							Reshu Liang, Animations</p>
+							<p>Anne Chen, Mockups and Preliminary Design</p>
+						</div>
+						<div class="d-md-none d-lg-inline">
+							<p> 
+								Susan Xie, Principal Designer & Webmaster <b>|</b> 
+								Reshu Liang, Animations <b>|</b>
+								Anne Chen, Mockups and Preliminary Design
+							</p>
+						</div>
 					</div>
-					<div class="col-flex">
-						<p>Reshu Liang, Animations <b>|</b> &nbsp;</p>
-					</div>
-					<div class="col-flex">
-						Anne Chen, Mockups and Preliminary Design
-					</div>
+					
 				</div>
 			</div>
 		</div>		
@@ -1793,10 +1813,22 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<p class="company">Rance Cleaveland, National Science Foundation</p>
+					<p class="company">Rance Cleaveland, National Science Foundation & University of Maryland</p>
 					<blockquote class="highlights">
 						<ul></ul>
-						<p><u>ABSTRACT</u>: Pending</p>
+						<p><u>ABSTRACT</u>: System verification and validation (V&V) assume great 
+							importance in safety-critical settings, where a malfunctioning component 
+							or piece of software can lead to human injury and even death.  As new 
+							technologies can also lead to safer and more robust systems, engineers 
+							are continually confronted with balancing the appeal of potentially safer 
+							technology with the possibility of unknown safety issues in incorporating 
+							it into their systems.  This talk will focus on the use machine learning 
+							in the context of safety-critical feedback-control systems as an exemplar 
+							of this tension, and the implications it has for V&V.  In particular, the 
+							presentation will highlight the appeal and potential pitfalls of machine 
+							learning in these systems, and suggest possible avenues, based on formal 
+							methods, for coping at design time with machine-learning-based control.
+						</p>
 					</blockquote>
 					<p> Rance Cleaveland is the Director of the Computing and Communications Foundations
 						(CCF) division within the Computing and Information Science and Engineering (CISE)
@@ -2238,14 +2270,15 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<img class="img-circle" src="assets/jim-weimer.jpg">
 					<p class="company">
 						<a href="https://precise.seas.upenn.edu/people/faculty" target="_blank">
 							James Weimer
 						</a>
 					</p>
+					<img class="img-circle" src="assets/jim-weimer.jpg">
 					<blockquote class="highlights">
-						<ul>
+						<p style="margin-bottom:0; padding-top:0; margin-top:5px"> Specialties:</p>
+						<ul style="margin-top:0">
 							<li> Formal Method & Logic </li>
 							<li> Security, Privacy and Abuse Prevention</li>
 							<li> Embedded Systems </li>
@@ -2355,14 +2388,15 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<img class="img-circle" src="assets/joe-devietti.jpg">
 					<p class="company">
 						<a href="https://precise.seas.upenn.edu/people/faculty" target="_blank">
 							Joe Devietti
 						</a>
 					</p>
+					<img class="img-circle" src="assets/joe-devietti.jpg">
 					<blockquote class="highlights">
-						<ul>
+						<p style="margin-bottom:0; padding-top:0; margin-top:5px"> Specialties:</p>
+						<ul style="margin-top:0">
 							<li> Distributed Systems and Parallel Computing </li>
 							<li> Hardware and Architecture </li>
 							<li> Software and Architecture </li>
@@ -2392,14 +2426,15 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<img class="img-circle" src="assets/oleg-sokolsky.jpg">
 					<p class="company">
 						<a href="https://precise.seas.upenn.edu/people/faculty" target="_blank">
 							Oleg Sokolsky
 						</a>
 					</p>
+					<img class="img-circle" src="assets/oleg-sokolsky.jpg">
 					<blockquote class="highlights">
-						<ul>
+						<p style="margin-bottom:0; padding-top:0; margin-top:5px"> Specialties:</p>
+						<ul style="margin-top:0">
 							<li> Formal Method & Logic </li>
 							<li> Embedded Systems </li>
 							<li> Software and Architecture</li>
@@ -2429,14 +2464,15 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<img class="img-circle" src="assets/george-pappas.jpg">
 					<p class="company">
 						<a href="https://precise.seas.upenn.edu/people/faculty" target="_blank">
 							George Pappas
 						</a>
 					</p>
+					<img class="img-circle" src="assets/george-pappas.jpg">
 					<blockquote class="highlights">
-						<ul>
+						<p style="margin-bottom:0; padding-top:0; margin-top:5px"> Specialties:</p>
+						<ul style="margin-top:0">
 							<li> Machine Intelligence </li>
 							<li> Formal Method & Logic </li>
 							<li> Security, Privacy and Abuse Prevention </li>
@@ -2463,14 +2499,15 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<img class="img-circle" src="assets/rahul-mangharam.jpg">
 					<p class="company">
 						<a href="https://precise.seas.upenn.edu/people/faculty" target="_blank">
 							Rahul Mangharam
 						</a>
 					</p>
+					<img class="img-circle" src="assets/rahul-mangharam.jpg">
 					<blockquote class="highlights">
-						<ul>
+						<p style="margin-bottom:0; padding-top:0; margin-top:5px"> Specialties:</p>
+						<ul style="margin-top:0">
 							<li> Machine Intelligence </li>
 							<li> Embedded Systems </li>
 							<li> Hardware and Architecture</li>
@@ -2496,12 +2533,21 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<img class="img-circle" src="assets/insup-lee.jpg">
 					<p class="company">
 						<a href="https://precise.seas.upenn.edu/people/faculty" target="_blank">
 							Insup Lee
 						</a>
 					</p>
+					<img class="img-circle" src="assets/insup-lee.jpg">
+					<blockquote class="highlights">
+						<p style="margin-bottom:0; padding-top:0; margin-top:5px"> Specialties:</p>
+						<ul style="margin-top:0">
+							<li> Formal Method & Logic </li>
+							<li> Embedded Systems </li>
+							<li> Software and Architecture</li>
+							<li> Software Systems </li>
+						</ul>
+					</blockquote>
 					<p> <u>ABSTRACT</u>: Learning-based techniques are increasingly used by 
 						safety-critical autonomous systems. Insup will share the techniques 
 						and tools PRECISE developed to assure/improve the correctness, safety, 
@@ -2524,14 +2570,15 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<img class="img-circle" src="assets/linh-thi-xuan-phan.png">
 					<p class="company">
 						<a href="https://precise.seas.upenn.edu/people/faculty" target="_blank">
 							Linh Thi Xuan Phan
 						</a>
 					</p>
+					<img class="img-circle" src="assets/linh-thi-xuan-phan.png">
 					<blockquote class="highlights">
-						<ul>
+						<p style="margin-bottom:0; padding-top:0; margin-top:5px"> Specialties:</p>
+						<ul style="margin-top:0">
 							<li> Embedded Systems </li>
 							<li> Distributed Systems and Parallel Computing </li>
 							<li> Networking</li>
@@ -2558,14 +2605,15 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<img class="img-circle" src="assets/osbert-bastani.jpg">
 					<p class="company">
 						<a href="https://precise.seas.upenn.edu/people/faculty" target="_blank">
 							Osbert Bastani
 						</a>
 					</p>
+					<img class="img-circle" src="assets/osbert-bastani.jpg">
 					<blockquote class="highlights">
-						<ul>
+						<p style="margin-bottom:0; padding-top:0; margin-top:5px"> Specialties:</p>
+						<ul style="margin-top:0">
 							<li> Machine Intelligence </li>
 							<li> Formal Method & Logic </li>
 							<li> Bio/Health Informatics</li>
@@ -2599,19 +2647,33 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<img class="img-circle" src="assets/rajeev-alur.jpg">
-					<p class="company">
-						<a href="https://precise.seas.upenn.edu/people/faculty" target="_blank">
-							Rajeev Alur
-						</a>
-					</p>
-					<blockquote class="highlights">
-						<ul>
-							<li> Formal Method & Logic </li>
-							<li> Embedded Systems </li>
-						</ul>
-					</blockquote>
-					<p> <u>ABSTRACT</u>: Pending 
+					<div class="flex-row">
+						<p class="company">
+							<a href="https://precise.seas.upenn.edu/people/faculty" target="_blank">
+								Rajeev Alur
+							</a>
+						</p>
+						<img class="img-circle" src="assets/rajeev-alur.jpg">
+						<blockquote class="highlights">
+							<p style="margin-bottom:0; padding-top:0; margin-top:5px"> Specialties:</p>
+							<ul style="margin-top:0">
+								<li> Formal Method & Logic </li>
+								<li> Software Systems </li>
+								<li> Algorithms and Theory </li>
+								<li> Embedded Systems </li>
+							</ul>
+						</blockquote>
+					</div>
+					<p> <u>ABSTRACT</u>: 
+						Emerging research shows that program synthesis and machine learning can 
+						play mutually beneficial roles to transform the way we build software.  
+						The goal of program synthesis is to allow programmers to specify the 
+						desired computation in intuitive ways without having to write 
+						traditional code. We will share our framework of "Syntax-Guided 
+						Synthesis" as a unifying formalization of the computational problem 
+						common to a wide range of synthesis problems such as program 
+						optimization, program repair to fix security vulnerabilities, and 
+						learning programs from examples
 					</p>
 				</div>
 				<div class="modal-footer">
@@ -2630,14 +2692,15 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<img class="img-circle" src="assets/mayur-naik.jpg">
 					<p class="company">
 						<a href="https://precise.seas.upenn.edu/people/faculty" target="_blank">
 							Mayur Naik
 						</a>
 					</p>
+					<img class="img-circle" src="assets/mayur-naik.jpg">
 					<blockquote class="highlights">
-						<ul>
+						<p style="margin-bottom:0; padding-top:0; margin-top:5px"> Specialties:</p>
+						<ul style="margin-top:0">
 							<li> Machine Intelligence </li>
 							<li> Formal Method & Logic </li>
 							<li> Security, Privacy and Abuse Prevention </li>

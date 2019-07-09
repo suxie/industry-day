@@ -6,7 +6,7 @@
 
 .cover {
 	position:relative;
-	height: 100vh;
+	min-height: 100vh;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -425,7 +425,7 @@ a:focus {
 	background-repeat: repeat-y;
 	background-position: top right;
 	background-size: 100%;
-	padding-bottom:30vh;
+	padding-bottom:50vh;
 }
 
 #speakers {
@@ -525,12 +525,16 @@ a:focus {
 }
 
 .highlights {
-	margin-left:20px;
-	padding-left:15px;
+	margin-left:40px;
+	padding-left:0;
 	border-left:solid;
 	border-color:rgba(0, 0, 0, 0.3);
 	border-width:3px;
 	color:rgba(0, 0, 0, 0.8);
+}
+
+.highlights .specialties {
+	margin-top:0;
 }
 
 .highlights ul {
@@ -600,7 +604,6 @@ a>.schedule:hover {
 }
 
 #agenda {
-	padding-bottom:15vh;
 	z-index:2;
 	position:relative;
 }
@@ -608,6 +611,11 @@ a>.schedule:hover {
 #agenda .col-md-6 {
 	padding:0;
 	margin-left:-3%;
+}
+
+#registration {
+	margin-top:10vh;
+	padding-bottom:15vh;
 }
 
 .button {
@@ -719,7 +727,7 @@ a>.schedule:hover {
 }
 
 .events-title {
-	color:#ff292e;
+	color:#fff;
 }
 
 .event-year {
@@ -741,6 +749,7 @@ a>.schedule:hover {
 #footer {
 	padding-top:5vh;
 	background-color:#fff;
+	text-align:center;
 }
 
 #footer p {
@@ -811,11 +820,11 @@ a>.schedule:hover {
 	.nav-pills .nav-link.active:hover {
 		cursor:pointer;
 	}
-
+	
 	.min-logo-padding {
 		height:60vw;
 	}
-	
+
 	.min-padding {
 		height:60vh;
 		min-height:310px;
@@ -894,13 +903,12 @@ a>.schedule:hover {
 	}
 
 	.keynote-text .intel {
-		height:30px;
-		padding:3px;
-		margin-top:-30%;
+		height:35px;
+		margin:5px;
 	}
 
 	.spotlight {
-		font-size:30px;
+		font-size:28px;
 		letter-spacing:1px;
 		font-weight:900;
 	}
@@ -993,7 +1001,7 @@ a>.schedule:hover {
 	}
 
 	.img-circle {
-		max-width:125px;
+		width:100%;
 		margin:auto;
 		text-align:center;
 		margin-bottom:20px;
@@ -1003,10 +1011,11 @@ a>.schedule:hover {
 	}
 
 	.modal .img-circle {
-		float:right;
-		max-width:125px;
+		display:block;
+		max-width:100px;
 		margin:10px;
-		margin-right:40px;
+		margin-right:auto;
+		margin-left:auto;
 		border-style:solid;
 		border-color:rgba(13,32,52, 0.5);
 		border-width:5px;
@@ -1027,10 +1036,10 @@ a>.schedule:hover {
 	}
 
 	#past-events {
-		height: 340px;
+		height: 320px;
 		background-size: 500px;
 		background-position: left;
-		padding-top:20px;
+		padding-top:25px;
 		background-image: url(assets/past-events-cropped.png);
 	}
 
@@ -1043,6 +1052,11 @@ a>.schedule:hover {
 
 	.events-text {
 		text-align: center;
+	}
+
+	.event-1, .event-2, .event-3, .event-4, .event-5 {
+		background-color:rgba(228, 21, 26, 0.416);
+		padding:3px;
 	}
 
 	.events-text p {
@@ -1077,15 +1091,13 @@ a>.schedule:hover {
 		font-size:18px;
 	}
 
-	.min-logo-padding {
-		height:60vh;
-		margin:110px;
-		min-height:350px;
-	}
-
 	.min-padding {
 		height:60vh;
 		min-height:350px;
+	}
+
+	.min-logo-padding {
+		height:50vw;
 	}
 
 	.squares {
@@ -1182,14 +1194,13 @@ a>.schedule:hover {
 	}
 
 	.spotlight-box {
-		top:2vh;
+		top:5vh;
 		left:3%;
 	}
 
 	.keynote-text .intel {
-		height:40px;
-		padding:5px;
-		margin-top:-24vw;
+		height:45px;
+		margin:7px;
 	}
 
 	.spotlight {
@@ -1221,6 +1232,7 @@ a>.schedule:hover {
 
 	.penn-logo {
 		width:130px;
+		margin-top:50px;
 	}
 
 	.company {
@@ -1254,6 +1266,16 @@ a>.schedule:hover {
 		padding:10px;
 	}
 
+	.modal .img-circle {
+		float:right;
+		max-width:120px;
+		margin:2px;
+		margin-right:40px;
+		border-style:solid;
+		border-color:rgba(13,32,52, 0.5);
+		border-width:6px;
+	}
+
 	.img-circle {
 		float:right;
 		max-width:150px;
@@ -1279,7 +1301,7 @@ a>.schedule:hover {
 	}
 
 	#past-events {
-		height: 310px;
+		height: 280px;
 		background-size: 340px;
 		background-position: left;
 		padding-top:20px;
@@ -1311,27 +1333,27 @@ a>.schedule:hover {
 	}
 	
 	.event-1 {
-		margin-left: 300px;
-		display: inline;
-	}
-	
-	.event-2 {
 		margin-left: 280px;
 		display: inline;
 	}
 	
-	.event-3 {
+	.event-2 {
 		margin-left: 260px;
 		display: inline;
 	}
 	
-	.event-4 {
+	.event-3 {
 		margin-left: 240px;
 		display: inline;
 	}
 	
-	.event-5 {
+	.event-4 {
 		margin-left: 220px;
+		display: inline;
+	}
+	
+	.event-5 {
+		margin-left: 200px;
 		display: inline;
 	}
 
@@ -1362,12 +1384,6 @@ a>.schedule:hover {
 
 	h2 {
 		font-size:20px;
-	}
-
-	.min-logo-padding {
-		height:50vh;
-		min-height:380px;
-		margin:130px
 	}
 
 	.min-padding {
@@ -1520,14 +1536,13 @@ a>.schedule:hover {
 	}
 
 	.spotlight-box {
-		top:2vh;
+		top:5vh;
 		left:2.5%;
 	}
 
 	.keynote-text .intel {
-		height:45px;
-		padding:5px;
-		margin-top:-26vw;
+		height:50px;
+		margin:10px;
 	}
 
 	.spotlight {
@@ -1554,6 +1569,9 @@ a>.schedule:hover {
 	}
 
 	.penn-logo {
+		position:absolute;
+		top:8vw;
+		right:100px;
 		width:150px;
 	}
 
@@ -1592,6 +1610,16 @@ a>.schedule:hover {
 		padding:12px;
 	}
 
+	.modal .img-circle {
+		float:right;
+		max-width:120px;
+		margin:2px;
+		margin-right:40px;
+		border-style:solid;
+		border-color:rgba(13,32,52, 0.5);
+		border-width:6px;
+	}
+
 	.img-circle {
 		float:right;
 		max-width:150px;
@@ -1617,7 +1645,7 @@ a>.schedule:hover {
 	}
 
 	#past-events {
-		height: 460px;
+		height: 400px;
 		background-size: 475px;
 		background-position: left;
 		background-image: url(assets/past-events-cropped.png);
@@ -1648,27 +1676,27 @@ a>.schedule:hover {
 	}
 	
 	.event-1 {
-		margin-left: 410px;
+		margin-left: 400px;
 		display: inline;
 	}
 	
 	.event-2 {
-		margin-left: 385px;
+		margin-left: 375px;
 		display: inline;
 	}
 	
 	.event-3 {
-		margin-left: 360px;
+		margin-left: 350px;
 		display: inline;
 	}
 	
 	.event-4 {
-		margin-left: 330px;
+		margin-left: 320px;
 		display: inline;
 	}
 	
 	.event-5 {
-		margin-left: 300px;
+		margin-left: 290px;
 		display: inline;
 	}
 
@@ -1694,12 +1722,6 @@ a>.schedule:hover {
 	
 	h2 {
 		font-size:22px;
-	}
-
-	.min-logo-padding {
-		height:50vh;
-		min-height:400px;
-		margin:150px;
 	}
 
 	.min-padding {
@@ -1800,7 +1822,7 @@ a>.schedule:hover {
 	}
 
 	.keynote-background {
-		height:50vw;
+		height:61vw;
 	}
 
 	.keynote-background .keynote-text {
@@ -1834,14 +1856,13 @@ a>.schedule:hover {
 	}
 
 	.spotlight-box {
-		top:3vh;
+		top:10vh;
 		left:3%;
 	}
 
 	.keynote-text .intel {
-		height:55px;
-		padding:5px;
-		margin-top:-25vw;
+		height:60px;
+		margin:12px;
 	}
 
 	.spotlight {
@@ -1880,6 +1901,9 @@ a>.schedule:hover {
 	}
 
 	.penn-logo {
+		position:absolute;
+		top:7.5vw;
+		right:100px;
 		width:160px;
 	}
 
@@ -1930,7 +1954,7 @@ a>.schedule:hover {
 
 	.img-circle {
 		float:right;
-		max-width:200px;
+		max-width:180px;
 		margin:2px;
 		margin-right:40px;
 		border-style:solid;
@@ -1940,7 +1964,7 @@ a>.schedule:hover {
 
 	.modal .img-circle {
 		float:right;
-		max-width:180px;
+		max-width:150px;
 		margin:2px;
 		margin-right:40px;
 		border-style:solid;
@@ -1949,7 +1973,7 @@ a>.schedule:hover {
 	}
 
 	#past-events {
-		height: 500px;
+		height: 420px;
 		background-size: 570px;
 		background-position: left;
 		background-image: url(assets/past-events-cropped.png);
@@ -1982,29 +2006,29 @@ a>.schedule:hover {
 	}
 	
 	.event-1 {
-		margin-left: 490px;
+		margin-left: 470px;
 		display: inline;
 	}
 	
 	.event-2 {
-		margin-left: 460px;
+		margin-left: 440px;
 		display: inline;
 		vertical-align:middle;
 	}
 	
 	.event-3 {
-		margin-left: 435px;
+		margin-left: 415px;
 		display: inline;
 	}
 	
 	.event-4 {
-		margin-left: 410px;
+		margin-left: 390px;
 		display: inline;
 		vertical-align:middle;
 	}
 	
 	.event-5 {
-		margin-left: 390px;
+		margin-left: 370px;
 		display: inline;
 	}
 
@@ -2030,15 +2054,9 @@ a>.schedule:hover {
 		font-size:22px;
 	}
 
-	.min-logo-padding {
-		height:50vh;
-		min-height:400px;
-		margin:150px;
-	}
-
 	.min-padding {
-		height:50vh;
-		min-height:360px;
+		height:60%;
+		min-height:400px;
 	}
 
 	.squares {
@@ -2056,7 +2074,7 @@ a>.schedule:hover {
 	}
 
 	.background {
-		min-height: 700px;
+		min-height: 800px;
 	}
 
 	.overlay {
@@ -2134,7 +2152,7 @@ a>.schedule:hover {
 	}
 
 	.keynote-background {
-		height:51vw;
+		height:61vw;
 	}
 
 	.keynote-background .keynote-text {
@@ -2153,7 +2171,7 @@ a>.schedule:hover {
 		margin-right:auto;
 		text-align:center;
 		background-color:#fff;
-		margin-top:-10vw;
+		margin-top:-25vh;
 		-webkit-box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.2); 
 		box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.2);
 	}
@@ -2168,13 +2186,12 @@ a>.schedule:hover {
 	}
 
 	.spotlight-box {
-		top:4vh;
+		top:15vh;
 	}
 
 	.keynote-text .intel {
-		height:60px;
-		padding:5px;
-		margin-top:-25vw;
+		height:65px;
+		margin:15px;
 	}
 
 	.spotlight {
@@ -2209,11 +2226,14 @@ a>.schedule:hover {
 		max-width:1000px;
 		width:70%;
 		top:-100px;
-		left:80px;
+		left:100px;
 	}
 
 	.penn-logo {
+		position:absolute;
+		top:100px;
 		width:200px;
+		right:200px;
 	}
 
 	.card:hover {
@@ -2267,9 +2287,10 @@ a>.schedule:hover {
 
 	.modal .img-circle {
 		float:right;
-		max-width:180px;
+		max-width:150px;
 		margin:10px;
 		margin-right:40px;
+		margin-top:0;
 		border-style:solid;
 		border-color:rgba(13,32,52, 0.5);
 		border-width:6px;
@@ -2286,7 +2307,7 @@ a>.schedule:hover {
 	}
 
 	#past-events {
-		height: 570px;
+		height: 510px;
 		background-size: 1230px;
 		background-position: center;
 		background-image: url(assets/past-events-large.png);
@@ -2321,17 +2342,17 @@ a>.schedule:hover {
 	}
 
 	.event-1 {
-		margin-left: 52%;
+		margin-left: 50%;
 		display: inline;
 	}
 	
 	.event-2 {
-		margin-left: 49%;
+		margin-left: 48%;
 		display: inline;
 	}
 	
 	.event-3 {
-		margin-left: 46%;
+		margin-left: 45%;
 		display: inline;
 	}
 	
