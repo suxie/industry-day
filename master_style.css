@@ -1008,6 +1008,7 @@ a>.schedule:hover {
 		border-style:solid;
 		border-color:rgba(13,32,52, 0.5);
 		border-width:5px;
+		max-width:120px;
 	}
 
 	.modal .img-circle {
