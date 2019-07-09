@@ -196,7 +196,7 @@
 #about {
 	background-color:#fff;
 	padding-top:5vh;
-	padding-bottom:15vh;
+	padding-bottom:10vh;
 }
 
 #keynote {
@@ -525,7 +525,7 @@ a:focus {
 }
 
 .highlights {
-	margin-left:40px;
+	margin-left:5%;
 	padding-left:0;
 	border-left:solid;
 	border-color:rgba(0, 0, 0, 0.3);
@@ -1268,13 +1268,8 @@ a>.schedule:hover {
 	}
 
 	.modal .img-circle {
-		float:right;
-		max-width:120px;
-		margin:2px;
-		margin-right:40px;
-		border-style:solid;
-		border-color:rgba(13,32,52, 0.5);
-		border-width:6px;
+		width:100%;
+		margin:0px 5px;
 	}
 
 	.img-circle {
@@ -1612,13 +1607,8 @@ a>.schedule:hover {
 	}
 
 	.modal .img-circle {
-		float:right;
-		max-width:120px;
-		margin:2px;
-		margin-right:40px;
-		border-style:solid;
-		border-color:rgba(13,32,52, 0.5);
-		border-width:6px;
+		width:100%;
+		margin:0px 20px;
 	}
 
 	.img-circle {
@@ -1964,13 +1954,8 @@ a>.schedule:hover {
 	}
 
 	.modal .img-circle {
-		float:right;
-		max-width:150px;
-		margin:2px;
-		margin-right:40px;
-		border-style:solid;
-		border-color:rgba(13,32,52, 0.5);
-		border-width:6px;
+		width:100%;
+		margin:0px 20px;
 	}
 
 	#past-events {
@@ -2287,14 +2272,8 @@ a>.schedule:hover {
 	}
 
 	.modal .img-circle {
-		float:right;
-		max-width:150px;
-		margin:10px;
-		margin-right:40px;
-		margin-top:0;
-		border-style:solid;
-		border-color:rgba(13,32,52, 0.5);
-		border-width:6px;
+		width:100%;
+		margin:0px 20px;
 	}
 
 	.img-circle {
