@@ -1268,8 +1268,13 @@ a>.schedule:hover {
 	}
 
 	.modal .img-circle {
-		width:100%;
-		margin:0px 5px;
+		float:right;
+		max-width:120px;
+		margin:2px;
+		margin-right:40px;
+		border-style:solid;
+		border-color:rgba(13,32,52, 0.5);
+		border-width:6px;
 	}
 
 	.img-circle {
@@ -1607,8 +1612,13 @@ a>.schedule:hover {
 	}
 
 	.modal .img-circle {
-		width:100%;
-		margin:0px 20px;
+		float:right;
+		max-width:120px;
+		margin:2px;
+		margin-right:40px;
+		border-style:solid;
+		border-color:rgba(13,32,52, 0.5);
+		border-width:6px;
 	}
 
 	.img-circle {
@@ -1847,7 +1857,7 @@ a>.schedule:hover {
 	}
 
 	.spotlight-box {
-		top:10vh;
+		top:5vh;
 		left:3%;
 	}
 
@@ -1954,8 +1964,13 @@ a>.schedule:hover {
 	}
 
 	.modal .img-circle {
-		width:100%;
-		margin:0px 20px;
+		float:right;
+		max-width:150px;
+		margin:2px;
+		margin-right:40px;
+		border-style:solid;
+		border-color:rgba(13,32,52, 0.5);
+		border-width:6px;
 	}
 
 	#past-events {
@@ -2038,6 +2053,10 @@ a>.schedule:hover {
 
 	h2 {
 		font-size:22px;
+	}
+
+	.container {
+		min-width:80%;
 	}
 
 	.min-padding {
@@ -2172,7 +2191,7 @@ a>.schedule:hover {
 	}
 
 	.spotlight-box {
-		top:15vh;
+		top:5%;
 	}
 
 	.keynote-text .intel {
@@ -2181,7 +2200,7 @@ a>.schedule:hover {
 	}
 
 	.spotlight {
-		font-size:500%;
+		font-size:600%;
 		letter-spacing:1px;
 		font-weight:900;
 	}
@@ -2272,8 +2291,14 @@ a>.schedule:hover {
 	}
 
 	.modal .img-circle {
-		width:100%;
-		margin:0px 20px;
+		float:right;
+		max-width:150px;
+		margin:10px;
+		margin-right:40px;
+		margin-top:0;
+		border-style:solid;
+		border-color:rgba(13,32,52, 0.5);
+		border-width:6px;
 	}
 
 	.img-circle {
