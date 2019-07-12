@@ -140,6 +140,12 @@
 								<img class="img-fluid hover" src="assets/logo-color.png">
 							</a>
 						</div>
+						<div class="p-2 callout">
+							<a href="#keynote">
+								<img class="justin" src="assets/justin-gottschlich.jpg" height=100%>
+								<img src="assets/keynote.svg" height=100%>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1155,8 +1161,8 @@
 						Please contact <a href="mailto:rpatel@stayaka.com" target="_blank">Ralhan Patel</a>
 						with reservation.</p>
 					<ul>
-						<li>Studio Suites - $246.00 plus tax per night</li>
-						<li>One Bedroom Premium Suites - $246.00 plus tax per night</li>
+						<li>Studio Suites - $275.00 plus tax per night</li>
+						<li>One Bedroom Premium Suites - 315.00 plus tax per night</li>
 					</ul>
 				</div>
 				<div class="col-12 col-md-6 col-xl-5">
@@ -2834,6 +2840,20 @@
 		$('.logo').delay(1100).animate({
 			opacity: 1.0}, 200
 		);
+
+		$('.callout').delay(1800).animate({
+			opacity: 1.0}, 500
+		);
+
+		$('.callout').delay(1800).animate({
+			opacity: 1.0}, 500
+		);
+
+		$(".callout").hover(function(){
+			$(".justin").css("opacity", "1.0");
+			}, function(){
+			$(".justin").css("opacity", "0.5");
+		});
 
 		$(function () {
 		  $('[data-toggle="popover"]').popover({

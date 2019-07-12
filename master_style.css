@@ -831,6 +831,8 @@ a>.schedule:hover {
 		min-height:310px;
 	}
 
+
+
 	.squares {
 		z-index:1;
 	}
@@ -2077,6 +2079,28 @@ a>.schedule:hover {
 	.square {
 		width:150px;
 		height:150px;
+	}
+
+	.callout {
+		width:450px;
+		height:150px;
+		margin-right:auto;
+		margin-left:102px;
+		opacity:0;
+		background: rgba(228, 21, 26, 0.4);
+	}
+
+	.callout:hover {
+		background: rgba(228, 21, 26, 0.5);
+		pointer:cursor;
+	}
+
+	.justin {
+		opacity:0.5;
+	}
+
+	.justin:hover {
+		opacity:1.0;
 	}
 
 	.background {
