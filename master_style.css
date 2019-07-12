@@ -831,8 +831,6 @@ a>.schedule:hover {
 		min-height:310px;
 	}
 
-
-
 	.squares {
 		z-index:1;
 	}
@@ -845,6 +843,10 @@ a>.schedule:hover {
 	.square {
 		width:90px;
 		height:90px;
+	}
+
+	.callout {
+		display:none;
 	}
 
 	.background {
@@ -1116,6 +1118,10 @@ a>.schedule:hover {
 	.square {
 		width:110px;
 		height:110px;
+	}
+
+	.callout {
+		display:none;
 	}
 
 	.background {
@@ -1413,6 +1419,10 @@ a>.schedule:hover {
 	.square {
 		width:130px;
 		height:130px;
+	}
+
+	.callout {
+		display:none;
 	}
 
 	.background {
@@ -1745,6 +1755,10 @@ a>.schedule:hover {
 	.square {
 		width:150px;
 		height:150px;
+	}
+
+	.callout {
+		display:none;
 	}
 
 	.background {
@@ -2085,7 +2099,7 @@ a>.schedule:hover {
 		width:450px;
 		height:150px;
 		margin-right:auto;
-		margin-left:102px;
+		margin-left:100px;
 		opacity:0;
 		background: rgba(228, 21, 26, 0.4);
 	}
