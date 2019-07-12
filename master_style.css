@@ -384,7 +384,7 @@ a:focus {
 	font-weight:400;
 	color:rgba(255, 255, 255, 0.6);
 	background-color:rgba(13,32,52, 0.3);
-	padding-top:0px;
+	padding:0px 30px;
 	margin-bottom:0px;
 }
 
@@ -899,7 +899,6 @@ a>.schedule:hover {
 
 	.author {
 		font-size:10px;
-		max-width:250px;
 	}
 
 	.spotlight-box {
@@ -1198,7 +1197,6 @@ a>.schedule:hover {
 
 	.author {
 		font-size:12px;
-		max-width:300px;
 		margin-left:auto;
 		margin-right:auto;
 	}
