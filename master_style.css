@@ -2115,6 +2115,17 @@ a>.schedule:hover {
 		opacity:1.0;
 	}
 
+	.callout-register {
+		width:450px;
+		height:75px;
+		margin-top:75px;
+		margin-right:auto;
+		margin-left:100px;
+		opacity:0;
+		background: rgba(228, 21, 26, 0.7);
+		
+	}
+
 	.background {
 		min-height: 800px;
 	}
