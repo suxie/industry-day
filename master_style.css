@@ -1011,6 +1011,7 @@ a>.schedule:hover {
 
 	.img-circle {
 		max-width:100%;
+		max-height:100%;
 		margin:auto;
 		text-align:center;
 		margin-bottom:20px;
