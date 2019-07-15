@@ -849,6 +849,11 @@ a>.schedule:hover {
 		display:none;
 	}
 
+	.callout-register {
+		display:none;
+		
+	}
+
 	.background {
 		min-height: 550px;
 	}
@@ -1121,6 +1126,11 @@ a>.schedule:hover {
 
 	.callout {
 		display:none;
+	}
+
+	.callout-register {
+		display:none;
+		
 	}
 
 	.background {
@@ -1421,6 +1431,11 @@ a>.schedule:hover {
 
 	.callout {
 		display:none;
+	}
+
+	.callout-register {
+		display:none;
+		
 	}
 
 	.background {
@@ -1757,6 +1772,11 @@ a>.schedule:hover {
 
 	.callout {
 		display:none;
+	}
+
+	.callout-register {
+		display:none;
+		
 	}
 
 	.background {
@@ -2123,7 +2143,6 @@ a>.schedule:hover {
 		margin-left:100px;
 		opacity:0;
 		background: rgba(228, 21, 26, 0.7);
-		
 	}
 
 	.background {
