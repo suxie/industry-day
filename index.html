@@ -1000,18 +1000,20 @@
 						</div>
 					</div>
 				</a>
-				<div class="row schedule blue">
-					<div class="col-md-2 col-sm-3 col-4">
-						<p class="schedule-text white">&nbsp;&nbsp;4:30 PM</p>
+				<a data-toggle="modal" data-target="#outreach">
+					<div class="row schedule">
+						<div class="col-md-2 col-sm-3 col-4">
+							<p class="schedule-text">&nbsp;&nbsp;4:30 PM</p>
+						</div>
+						<div class="col-lg-7 col-md-6 col-sm-9 col-8">
+							<p class="schedule-text">PRECISE Outreach</p>
+						</div>
+						<div class="d-inline d-md-none col-sm-3 col-4"></div>
+						<div class="col-lg-3 col-md-4 col-sm-9 col-8">
+							<p class="schedule-text">James Weimer</p>
+						</div>
 					</div>
-					<div class="col-lg-7 col-md-6 col-sm-9 col-8">
-						<p class="schedule-text white">PRECISE Outreach</p>
-					</div>
-					<div class="d-inline d-md-none col-sm-3 col-4"></div>
-					<div class="col-lg-3 col-md-4 col-sm-9 col-8">
-						<p class="schedule-text white">James Weimer</p>
-					</div>
-				</div>
+				</a>
 				<div class="row schedule blue">
 					<div class="col-md-2 col-sm-3 col-4">
 						<p class="schedule-text white">&nbsp;&nbsp;4:40 PM</p>
@@ -2475,44 +2477,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="modal fade" id="joe" tabindex="-1" role="dialog" aria-labelledby="joe" aria-hidden="true">
-			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="joe-title">PRECISE Presentation</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<p class="company">
-							<a href="https://precise.seas.upenn.edu/people/faculty" target="_blank">
-								Joe Devietti
-							</a>
-						</p>
-						<img class="img-circle" src="assets/joe-devietti.jpg">
-						<blockquote class="highlights">
-							<p style="margin-bottom:0; padding-top:0; margin-top:5px"> Specialties:</p>
-							<ul style="margin-top:0">
-								<li> Distributed Systems and Parallel Computing </li>
-								<li> Hardware and Architecture </li>
-								<li> Software and Architecture </li>
-								<li> Software Systems </li>
-							</ul>
-						</blockquote>
-						<p> <u>ABSTRACT</u>: As computer architectures become ever more complex and heterogenous,
-							optimizing for each platform becomes increasingly difficult. Our "Feedback-Driven
-							Processors", which uses performance counter data from live executions to discover
-							performance bugs and automatically repair them, will allow programs to adapt to
-							their current platform and run-time conditions without needing programmer effort.
-						</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="modal fade" id="oleg" tabindex="-1" role="dialog" aria-labelledby="oleg" aria-hidden="true">
 			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
 				<div class="modal-content">
@@ -2577,12 +2541,12 @@
 								<li> Control Systems </li>
 							</ul>
 						</blockquote>
-						<p> <u>ABSTRACT</u>: Our "Safe Autonomy in the Wild" research strives to provide safety 
-							guarantees for autonomous systems operating in unknown environments. 
-							  This is accomplished by developing novel methods for semantic mapping 
-							of unknown environments (Semantic SLAM) followed by safe planning in 
-							learned environments.   Our software tools leads to higher assurance 
-							autonomy which provide guarantees that integrated control loops, 
+						<p> <u>ABSTRACT</u>: Our "Safe Autonomy in the Wild" research strives to provide safety
+							guarantees for autonomous systems operating in unknown environments.
+							This is accomplished by developing novel methods for semantic mapping
+							of unknown environments (Semantic SLAM) followed by safe planning in
+							learned environments. Our software tools leads to higher assurance
+							autonomy which provide guarantees that integrated control loops,
 							reasoning, and deep learning perception.
 						</p>
 					</div>
@@ -2666,15 +2630,15 @@
 								<li> Real Time Operating Systems</li>
 							</ul>
 						</blockquote>
-						<p> <u>ABSTRACT</u>: 
-							As new technologies such as AI- and ML-based control software and 
-							cloud infrastructures are being adopted, the complexity of today’s 
-							cyber-physical systems (CPS) is only going to increase. This trend has 
-							introduced a new host of fundamental challenges in terms of 
-							scalability, adaptivity, safety, and security guarantees. I will give 
-							a brief overview of my recent projects that aim to address these 
-							challenges, including, e.g., predictable real-time cloud platforms for 
-							CPS, methods for detecting and defending CPS against adversarial 
+						<p> <u>ABSTRACT</u>:
+							As new technologies such as AI- and ML-based control software and
+							cloud infrastructures are being adopted, the complexity of today’s
+							cyber-physical systems (CPS) is only going to increase. This trend has
+							introduced a new host of fundamental challenges in terms of
+							scalability, adaptivity, safety, and security guarantees. I will give
+							a brief overview of my recent projects that aim to address these
+							challenges, including, e.g., predictable real-time cloud platforms for
+							CPS, methods for detecting and defending CPS against adversarial
 							attacks, and provenance-based diagnosis techniques for data centers.
 						</p>
 					</div>
@@ -2796,6 +2760,74 @@
 						</blockquote>
 						<p> <u>ABSTRACT</u>: Pending
 						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="joe" tabindex="-1" role="dialog" aria-labelledby="joe" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="joe-title">PRECISE Presentation</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p class="company">
+							<a href="https://precise.seas.upenn.edu/people/faculty" target="_blank">
+								Joe Devietti
+							</a>
+						</p>
+						<img class="img-circle" src="assets/joe-devietti.jpg">
+						<blockquote class="highlights">
+							<p style="margin-bottom:0; padding-top:0; margin-top:5px"> Specialties:</p>
+							<ul style="margin-top:0">
+								<li> Distributed Systems and Parallel Computing </li>
+								<li> Hardware and Architecture </li>
+								<li> Software and Architecture </li>
+								<li> Software Systems </li>
+							</ul>
+						</blockquote>
+						<p> <u>ABSTRACT</u>: As computer architectures become ever more complex and heterogenous,
+							optimizing for each platform becomes increasingly difficult. Our "Feedback-Driven
+							Processors", which uses performance counter data from live executions to discover
+							performance bugs and automatically repair them, will allow programs to adapt to
+							their current platform and run-time conditions without needing programmer effort.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="outreach" tabindex="-1" role="dialog" aria-labelledby="outreach" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="outreach-title">PRECISE Outreach</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p class="company">
+							<a href="https://precise.seas.upenn.edu/people/faculty" target="_blank">
+								James Weimer
+							</a>
+						</p>
+						<blockquote class="highlights">
+							<p> <u>ABSTRACT</u>: Within PRECISE, we have many outreach activities which provide 100+
+								Penn and Drexel students the opportunity to develop well-defined cutting-edge
+								connected-health devices (in collaboration with clinical researchers from the University
+								of Pennsylvania Health System). I will present some of the Internet-of-Medical-Things
+								projects from our Medical Device Club.
+							</p>
+						</blockquote>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
