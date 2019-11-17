@@ -1087,6 +1087,11 @@ a>.schedule:hover {
 	.footer-copyright p {
 		font-size:10px;
 	}
+
+	.velodyne {
+		height:45px;
+		margin:5px;
+	}
 }
 
 @media (min-width:576px) and (max-width:768px) {
@@ -1389,6 +1394,11 @@ a>.schedule:hover {
 
 	.footer-copyright p {
 		font-size:11px;
+	}
+
+	.velodyne {
+		height:55px;
+		margin:7px;
 	}
 }
 
@@ -1737,6 +1747,11 @@ a>.schedule:hover {
 	.footer-copyright p {
 		font-size:12px;
 	}
+
+	.velodyne {
+		height:60px;
+		margin:7px;
+	}
 }
 
 @media (min-width:992px) and (max-width:1200px) {
@@ -2075,6 +2090,11 @@ a>.schedule:hover {
 
 	.footer-copyright p {
 		font-size:12px;
+	}
+
+	.velodyne {
+		height:70px;
+		margin:10px;
 	}
 }
 
@@ -2445,6 +2465,11 @@ a>.schedule:hover {
 
 	.footer-copyright p {
 		font-size:12px;
+	}
+
+	.velodyne {
+		height:75px;
+		margin:10px;
 	}
 }
 
