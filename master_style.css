@@ -2485,3 +2485,19 @@ a>.schedule:hover {
 ::-webkit-scrollbar-track {
 	background:rgba(13, 32, 52, 0.7);
 }
+
+.youtube-responsive-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.youtube-responsive-container iframe, .youtube-responsive-container object, .youtube-responsive-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
